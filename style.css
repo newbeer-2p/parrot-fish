@@ -1,0 +1,109 @@
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body{
+    background:#eee;
+    font-family:sans-serif;
+    background-position: center top;
+    height: 100vh;
+    margin: 0;
+    color: 	hsl(8, 38%, 23%);
+    font-family: thonglor, sans-serif;
+    overflow-x: hidden;
+}
+
+body[data-mode="main"], body[data-mode="home"]{
+  background: url(img/bg/bg-home.jpg);
+}
+
+body[data-mode="home"]{
+  overflow-y: hidden;
+}
+
+body[data-mode="main"]{
+  height: 7500px;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 24px;
+    margin: auto;
+    overflow-x: hidden;
+    overflow: visible;
+    text-align:center;
+}
+
+#home{
+  width: 100vw;
+  height: 100vh;
+  /* display: flex; */
+}
+
+.home-logo{
+  margin: 50px;
+}
+
+.home-logo>img{
+  width: 15vh;
+}
+
+.text-parrot-fish{
+  color: 	hsl(24, 93%, 46%);
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.btn-home{
+  margin-top: 20px;
+}
+
+button, .btn-classics{
+  border-style: none;
+  padding: 20px 60px;
+  margin: 10px 0;
+  background: white;
+  border-radius: 50px;
+}
+
+img{
+  width: 100%;
+}
+
+button:hover{
+  cursor: pointer;
+  box-shadow: 0 0 4px hsl(0, 100%, 0%, .25);
+}
+
+.btn-sm{
+  padding: 15px 30px;
+  font-size: 15px;
+}
+
+.btn-fade{
+  background: hsl(0, 100%, 100%, .75);
+}
