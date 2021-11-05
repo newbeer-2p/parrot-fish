@@ -1,109 +1,160 @@
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --wh: white;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+    width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+    background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888; 
-  border-radius: 10px;
+    background: #888;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+    background: #555;
 }
 
-body{
-    background:#eee;
-    font-family:sans-serif;
+body {
+    background: #eee;
+    font-family: sans-serif;
     background-position: center top;
     height: 100vh;
     margin: 0;
-    color: 	hsl(8, 38%, 23%);
+    color: hsl(8, 38%, 23%);
     font-family: thonglor, sans-serif;
     overflow-x: hidden;
 }
 
-body[data-mode="main"], body[data-mode="home"]{
-  background: url(img/bg/bg-home.jpg);
+body[data-mode="main"],
+body[data-mode="home"] {
+    background: url(img/bg/bg-home.jpg);
 }
 
-body[data-mode="home"]{
-  overflow-y: hidden;
+body[data-mode="home"] {
+    overflow-y: hidden;
 }
 
-body[data-mode="main"]{
-  height: 7500px;
+body[data-mode="main"] {
+    height: 7500px;
 }
 
 * {
-  box-sizing: border-box;
-  font-size: 18px;
+    box-sizing: border-box;
+    font-size: 18px;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1280px;
     padding: 0 24px;
     margin: auto;
     overflow-x: hidden;
     overflow: visible;
-    text-align:center;
+    text-align: center;
 }
 
-#home{
-  width: 100vw;
-  height: 100vh;
-  /* display: flex; */
+#home {
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
 }
 
-.home-logo{
-  margin: 50px;
+.home-logo {
+    margin: 50px;
 }
 
-.home-logo>img{
-  width: 15vh;
+.home-logo>img {
+    width: 15vh;
 }
 
-.text-parrot-fish{
-  color: 	hsl(24, 93%, 46%);
-  font-size: 36px;
-  font-weight: bold;
+.img-page2 {
+    width: 30vh;
 }
 
-.btn-home{
-  margin-top: 20px;
+.text-parrot-fish {
+    color: hsl(24, 93%, 46%);
+    font-size: 36px;
+    font-weight: bold;
 }
 
-button, .btn-classics{
-  border-style: none;
-  padding: 20px 60px;
-  margin: 10px 0;
-  background: white;
-  border-radius: 50px;
+.text-white-14 {
+    color: var(--wh);
+    font-size: 14px;
 }
 
-img{
-  width: 100%;
+.text-white-20 {
+    color: var(--wh);
+    font-size: 20px;
 }
 
-button:hover{
-  cursor: pointer;
-  box-shadow: 0 0 4px hsl(0, 100%, 0%, .25);
+.div-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn-sm{
-  padding: 15px 30px;
-  font-size: 15px;
+.btn-home {
+    margin-top: 20px;
 }
 
-.btn-fade{
-  background: hsl(0, 100%, 100%, .75);
+button,
+.btn-classics {
+    border-style: none;
+    padding: 20px 60px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 50px;
+}
+
+.parrot-ani {
+    margin-top: 80vh;
+    position: absolute;
+    animation: dukdik 0.4s linear infinite, swim 8s linear infinite;
+    animation-delay: -10s;
+}
+
+@keyframes dukdik {
+    50% {
+        transform: translateX(2px)rotate(4deg);
+    }
+    100% {
+        transform: translateX(0px)rotate(0deg);
+    }
+}
+
+@keyframes swim {
+    0% {
+        right: -50px;
+    }
+    100% {
+        right: 1500px;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 4px hsl(0, 100%, 0%, .25);
+}
+
+.btn-sm {
+    padding: 15px 30px;
+    font-size: 15px;
+}
+
+.btn-fade {
+    background: hsl(0, 100%, 100%, .75);
 }
