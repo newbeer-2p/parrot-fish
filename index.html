@@ -1,37 +1,67 @@
 <html>
-
 <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>#SaveParrotFish
     </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/akj3mpv.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-mode="home">
-    <div class="page" id="home">
-        <div class="container">
-            <div class="home-logo">
+<body data-mode="main" class="tk-thonglor">
+    <div id="main-part">
+        <div class="page" id="home">
+            <div class="container">
+                <div class="home-logo">
+                    <img src="img/parrot_fish/rainbow_parrot_fish.png">
+                </div>
+                <div class="page-content mb-fs-30">เรื่องราวต่อไปนี้ เป็นเรื่องราวชีวิตของ<br>
+                    <span class="text-parrot-fish mb-fs-48">ปลานกแก้ว</span><br> ปลาสวยงามที่ไม่ได้มีชีวิตสวยงามตามชื่อ
+                </div>
+                <div class="btn-home">
+                    <button class="btn-classics" onclick="goto('main2')">เริ่มต้นเรื่องราว</button><br>
+                    <button class="btn-classics btn-sm btn-fade" onclick="goto('more')">เรียนรู้เพิ่มเติม</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="page div-center" id="main2">
+            <div class="page-content">
+                <span class="text-white-20 div-center">. . .</span><br>
+                <span class="text-white-20 mb-text-wh-20">เอ้ะ! </span>
+                <span class="text-white-14 mb-text-wh-20"> นั่นใครน่ะ</span>
+            </div>
+            <div class="img-page2 parrot-ani" onclick="goto('main3')"><img src="img/parrot_fish/rainbow_parrot_fish.png"></div>
+        </div>
+        <div class="page" id="main3">
+            <div class="page-content">
+                <span class="text-org-36 mb-fs-48">' ปลานกแก้ว '</span><br>
+                <span class="text-white-20 mb-fs-30">นั้นเอง</span>
+            </div>
+            <div class="img-main3">
                 <img src="img/parrot_fish/rainbow_parrot_fish.png">
             </div>
-            <div class="page-content">เรื่องราวต่อไปนี้ เป็นเรื่องราวชีวิตของ<br>
-                <span class="text-parrot-fish">ปลานกแก้ว</span><br> ปลาสวยงามที่ไม่ได้มีชีวิตสวยงามตามชื่อ
-            </div>
-            <div class="btn-home">
-                <button class="btn-classics" onclick="goto('first')">เริ่มต้นเรื่องราว</button><br>
-                <button class="btn-classics btn-sm btn-fade" onclick="goto('more')">เรียนรู้เพิ่มเติม</button>
-            </div>
+        </div>
+
+        <div class="page" id="main4">
+            
+        </div>
+
+        <div class="page" id="main5">
+
+        </div>
+
+        <div class="page" id="main6">
 
         </div>
     </div>
-    <div class="page div-center" id="home">
-        <div class="page-content">
-            <span class="text-white-20 div-center">. . .</span><br>
-            <span class="text-white-20">เอ้ะ! </span>
-            <span class="text-white-14"> นั่นใครน่ะ</span>
-        </div>
-        <div class="img-page2 parrot-ani"><img src="img/parrot_fish/rainbow_parrot_fish.png"></div>
+    <div id="story-part">
+        
     </div>
-    <script src="script.js"></script>
+    <div id="more-part">
+
+    </div>
+<script src="script.js"></script>
 </body>
 
 </html>
