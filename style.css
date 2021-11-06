@@ -25,6 +25,11 @@ html {
     background: #555;
 }
 
+.font-kanit {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+}
+
 body {
     background: #eee;
     height: 100vh;
@@ -51,7 +56,6 @@ body[data-mode="main"] {
 * {
     box-sizing: border-box;
     font-size: 18px;
-    
 }
 
 .container {
@@ -71,7 +75,7 @@ body[data-mode="main"] {
     /* border: 5px solid orange; */
 }
 
-.page-content{
+.page-content {
     text-align: center;
 }
 
@@ -89,24 +93,24 @@ body[data-mode="main"] {
     position: absolute;
 }
 
-.img-page2:hover{
+.img-page2:hover {
     cursor: pointer;
 }
 
 .text-parrot-fish {
     color: var(--org);
     font-size: 36px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
-.text-white-14 {
+.text-white-16 {
     color: var(--wh);
-    font-size: 14px;
+    font-size: 16px;
 }
 
-.text-white-20 {
+.text-white-22 {
     color: var(--wh);
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .text-white-36 {
@@ -114,7 +118,7 @@ body[data-mode="main"] {
     font-size: 36px;
 }
 
-.text-org-36{
+.text-org-36 {
     color: var(--org);
     font-size: 36px;
 }
@@ -139,7 +143,7 @@ button,
 }
 
 .parrot-ani {
-    animation: dukdik 0.4s linear infinite, swim 8s linear infinite;
+    animation: dukdik 0.5s linear infinite, swim 8s linear infinite;
     animation-delay: -10s;
 }
 
@@ -179,7 +183,7 @@ button:hover {
     background: hsl(0, 100%, 100%, .75);
 }
 
-#main3{
+#main3 {
     padding: 200px 0;
     height: 300vh;
 }
@@ -205,39 +209,36 @@ button:hover {
     }
 }
 
-.img-main3 > img {
+.img-main3>img {
     width: 50vw;
     animation: dukdik 1s linear infinite;
 }
 
-#text2-in-main3{
+#text2-in-main3 {
     width: 100vw;
     position: absolute;
     bottom: 105vh;
 }
 
 @media (max-width: 500px) {
-
     body[data-mode="main"] {
         background: url(img/bg/mb_bg_main.jpg);
         background-position: center top;
         background-size: 125vw auto;
         height: 6825px;
     }
-
-    .mb-fs-24, .btn-sm{
+    .mb-fs-24,
+    .btn-sm {
         font-size: 3vw!important;
     }
-
-    .mb-fs-30, .btn-classics{
+    .mb-fs-30,
+    .btn-classics {
         font-size: 4vw;
     }
-
-    .mb-fs-48{
+    .mb-fs-48 {
         font-size: 6vw;
     }
-
-    .img-main3 > img {
+    .img-main3>img {
         width: 100vw;
         animation: dukdik 1s linear infinite;
     }
