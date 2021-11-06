@@ -193,14 +193,36 @@ button:hover {
 }
 
 .img-main3[data-show="1"] {
-    animation: fish-swim 3s linear;
+    animation: fish-swim 2.5s linear;
 }
 
 .img-main3 {
     width: 100vw;
     text-align: center;
     --mvY: 0;
-    transform: translateX(0px) translateY(calc(var(--mvY) * 1px)) scaleX(-1);
+    transform: translateX(0px) translateY(calc(var(--mvY) * 0.2px)) scaleX(-1);
+}
+
+.img-fish {
+    display: inline-block !important;
+    width: 9vw;
+    position: absolute;
+}
+
+.dory {
+    transform: scaleX(-1);
+    left: 15vw;
+    top: 80vh;
+}
+
+.mkfish {
+    left: 25vw;
+    top: 98vh;
+}
+
+.yellowfish {
+    right: 20vw;
+    top: 90vh;
 }
 
 @keyframes fish-swim {
