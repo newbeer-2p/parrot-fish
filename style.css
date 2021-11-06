@@ -68,6 +68,7 @@ body[data-mode="main"] {
     height: 100vh;
     overflow: hidden;
     position: relative;
+    /* border: 5px solid orange; */
 }
 
 .page-content{
@@ -106,6 +107,11 @@ body[data-mode="main"] {
 .text-white-20 {
     color: var(--wh);
     font-size: 20px;
+}
+
+.text-white-36 {
+    color: var(--wh);
+    font-size: 36px;
 }
 
 .text-org-36{
@@ -175,16 +181,39 @@ button:hover {
 
 #main3{
     padding: 200px 0;
+    height: 300vh;
+}
+
+.img-main3[data-show="0"] {
+    transform: translateX(-100vw) scaleX(-1);
+}
+
+.img-main3[data-show="1"] {
+    animation: fish-swim 3s linear;
 }
 
 .img-main3 {
     width: 100vw;
     text-align: center;
+    --mvY: 0;
+    transform: translateX(0px) translateY(calc(var(--mvY) * 1px)) scaleX(-1);
+}
+
+@keyframes fish-swim {
+    from {
+        transform: translateX(-100vw) scaleX(-1);
+    }
 }
 
 .img-main3 > img {
-    width: 35vw;
-    animation: dukdik .4s linear infinite;
+    width: 50vw;
+    animation: dukdik 1s linear infinite;
+}
+
+#text2-in-main3{
+    width: 100vw;
+    position: absolute;
+    bottom: 105vh;
 }
 
 @media (max-width: 500px) {
@@ -197,14 +226,19 @@ button:hover {
     }
 
     .mb-fs-24, .btn-sm{
-        font-size: 2vw!important;
+        font-size: 3vw!important;
     }
 
     .mb-fs-30, .btn-classics{
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .mb-fs-48{
-        font-size: 5vw;
+        font-size: 6vw;
+    }
+
+    .img-main3 > img {
+        width: 100vw;
+        animation: dukdik 1s linear infinite;
     }
 }

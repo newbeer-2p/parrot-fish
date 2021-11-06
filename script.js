@@ -5,11 +5,11 @@ let body = document.body;
 
 window.onscroll = function(){
     let scrollY = window.scrollY;
-
-    main_part.style.setProperty("--sy", scrollY)
-    // if (scrollY+window_height >= document.querySelector("#main4").offsetTop+1100){
-    //     window.scroll(0, document.querySelector("#main4").offsetTop)
-    // }
+    let main3 = document.querySelector("#main3");
+    if (scrollY <= (main3.offsetTop + document.querySelector("#text2-in-main3").offsetTop - 250) && scrollY >= main3.offsetTop){
+        document.querySelector("#parrot-in-main3").dataset.show = "1";
+        document.querySelector("#parrot-in-main3").style.setProperty("--mvY", scrollY - main3.offsetTop);
+    }
 
 
 
@@ -23,8 +23,8 @@ window.onscroll = function(){
 
 function goto(page){
     let des_page = document.querySelector(`#${page}`);
-    // if (page === "main2"){
-    //     body.dataset.mode = "main";
     window.scroll(0, des_page.offsetTop);
-    // }
+    if (page === "main3"){
+        document.querySelector("#parrot-in-main3").dataset.show = "1";
+    }
 }
