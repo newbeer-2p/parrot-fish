@@ -70,9 +70,14 @@ body[data-mode="main"] {
 .page {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
     /* border: 5px solid orange; */
+}
+
+.part{
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 .page-content {
@@ -200,7 +205,8 @@ button:hover {
     width: 100vw;
     text-align: center;
     --mvY: 0;
-    transform: translateX(0px) translateY(calc(var(--mvY) * 0.2px)) scaleX(-1);
+    --scH: 1;
+    transform: translateX(0px) translateY(calc( -7vw + var(--mvY)/var(--scH) * 175vh)) scaleX(-1);
 }
 
 .img-fish {
@@ -232,14 +238,14 @@ button:hover {
 }
 
 .img-main3>img {
-    width: 50vw;
+    width: 35vw;
     animation: dukdik 1s linear infinite;
 }
 
 #text2-in-main3 {
     width: 100vw;
     position: absolute;
-    bottom: 105vh;
+    bottom: 100vh;
 }
 
 @media (max-width: 500px) {
