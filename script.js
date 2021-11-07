@@ -28,7 +28,10 @@ window.onscroll = function() {
 function goto(page) {
     let des_page = document.querySelector(`#${page}`);
     window.scroll(0, des_page.offsetTop);
-    if (page === "main3") {
-        document.querySelector("#parrot-in-main3").dataset.show = "1";
-    }
+}
+
+function gotopart(part){
+    // let des_part = document.querySelector(`#${part}-part`);
+    window.scroll(0, 0);
+    body.dataset.mode = part;
 }

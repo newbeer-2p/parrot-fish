@@ -22,7 +22,7 @@
                 </div>
                 <div class="btn-home">
                     <button class="btn-classics" onclick="goto('main2')" data-aos="zoom-in-down">เริ่มต้นเรื่องราว</button><br>
-                    <button class="btn-classics btn-sm btn-fade" onclick="goto('more')" data-aos="zoom-in-down">เรียนรู้เพิ่มเติม</button>
+                    <button class="btn-classics btn-sm btn-fade" onclick="gotopart('more')" data-aos="zoom-in-down">เรียนรู้เพิ่มเติม</button>
                 </div>
 
             </div>
@@ -53,16 +53,30 @@
             </div>
         </div>
 
-        <div class="page" id="main6">
-
+        <div class="page" id="main4">
+            <div class="btn-to-story">
+                <button class="btn-classics" onclick="gotopart('story')">ตามปลานกแก้วไปกันเถอะ!</button>
+            </div>
 
         </div>
     </div>
     <div id="story-part" class="part">
-
+        <div>
+            <div class="text-coming-soon">หน้าเรื่องราว</div>
+            <div class="coming-soon">(Coming Soon)</div>
+            <div class="btn-to-main">
+                <button onclick="gotopart('main')">กลับไปสู่หน้าหลัก</button>
+            </div>
+        </div>
     </div>
     <div id="more-part" class="part">
-
+        <div>
+            <div class="text-coming-soon">หน้าเพิ่มเติม</div>
+            <div class="coming-soon">(Comming Soon)</div>
+            <div class="btn-to-main">
+                <button onclick="gotopart('main')">กลับไปสู่หน้าหลัก</button>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

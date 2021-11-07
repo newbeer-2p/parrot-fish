@@ -5,6 +5,7 @@ html {
 :root {
     --wh: white;
     --org: hsl(24, 93%, 46%);
+    --aqua: hsl(182, 60%, 39%);
 }
 
 ::-webkit-scrollbar {
@@ -39,18 +40,56 @@ body {
     font-family: "thonglor";
 }
 
-body[data-mode="main"],
-body[data-mode="home"] {
+.part{
+    overflow-x: hidden;
+    width: 100vw;
+    z-index: 2;
+    position: absolute;
+    transition: .5s;
+}
+
+#story-part>div, #more-part>div{
+    text-align: center;
+    top: 500px;
+}
+
+
+body[data-mode="main"]{
     background: url(img/bg/bg_main.jpg);
     background-position: center top;
-}
-
-body[data-mode="home"] {
-    overflow-y: hidden;
-}
-
-body[data-mode="main"] {
     height: 7500px;
+}
+
+body[data-mode="story"]{
+    background: darkcyan;
+    height: 100vh;
+}
+
+body[data-mode="more"]{
+    background: salmon;
+    height: 100vh;
+}
+
+body[data-mode="main"]>:where(#story-part, #more-part){
+    opacity: 0;
+    z-index: 0;
+}
+
+body[data-mode="story"]>:where(#main-part, #more-part){
+    opacity: 0;
+    z-index: 0;
+}
+
+body[data-mode="more"]>:where(#story-part, #main-part){
+    opacity: 0;
+    z-index: 0;
+}
+
+#story-part, #more-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 * {
@@ -73,11 +112,6 @@ body[data-mode="main"] {
     overflow: visible;
     position: relative;
     /* border: 5px solid orange; */
-}
-
-.part{
-    overflow-x: hidden;
-    width: 100vw;
 }
 
 .page-content {
@@ -248,6 +282,16 @@ button:hover {
     bottom: 100vh;
 }
 
+.btn-to-story{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-to-story>button{
+    color: var(--aqua);
+}
+
 @media (max-width: 500px) {
     body[data-mode="main"] {
         background: url(img/bg/mb_bg_main.jpg);
@@ -270,4 +314,14 @@ button:hover {
         width: 100vw;
         animation: dukdik 1s linear infinite;
     }
+}
+
+/* รอลบได้เลย */
+.coming-soon{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.text-coming-soon{
+    font-size: 50px;
 }
