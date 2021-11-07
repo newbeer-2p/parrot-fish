@@ -24,42 +24,52 @@
                     <button class="btn-classics" onclick="goto('main2')" data-aos="zoom-in-down">เริ่มต้นเรื่องราว</button><br>
                     <button class="btn-classics btn-sm btn-fade" onclick="gotopart('more')" data-aos="zoom-in-down">เรียนรู้เพิ่มเติม</button>
                 </div>
-
+            </div>
+            <div class="small-ship">
+                <img src="img/object/small_ship.png">
             </div>
         </div>
-        <div class="page div-center" id="main2">
+        <div class="page div-center" id="main2" data-show="0">
             <div class="page-content">
                 <div data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
                     <span class="text-white-22 div-center">. . .</span><br>
-                    <span class="text-white-22 mb-text-wh-20">เอ้ะ! </span>
+                    <span class="text-white-22 mb-text-wh-20">เอ้ะ!</span>
                     <span class="text-white-16 mb-text-wh-20"> นั่นใครน่ะ</span>
                 </div>
             </div>
             <div class="img-page2 parrot-ani" onclick="goto('main3')"><img src="img/parrot_fish/rainbow_parrot_fish.png"></div>
         </div>
-        <div class="page" id="main3">
+        <div class="page" id="main3" data-show="0">
             <div class="page-content" data-aos="fade-up" data-aos-duration="1000">
-                <span class="text-org-36 mb-fs-48">' ปลานกแก้ว '</span><br>
-                <span class="text-white-20 mb-fs-30">นั่นเอง</span>
+                <span class="text-org-36 mb-fs-48">'ปลานกแก้ว'</span><br>
+                <span class="text-white-22 mb-fs-30">นั่นเอง</span>
             </div>
-            <div id="parrot-in-main3" class="img-main3" data-show="0">
+            <div id="parrot-in-main3" class="img-main3" data-show="0" data-play="0">
                 <img src="img/parrot_fish/rainbow_parrot_fish.png">
             </div>
             <div class="page-content" id="text2-in-main3" data-aos="fade-up" data-aos-duration="1000">
-                <span class="text-white-22 mb-fs-30">“ สวัสดี ฉันคือปลานกแก้ว ”</span>
-                <div class="img-fish dory"><img src="img/Stickers/Dory.png"></div>
+                <span class="text-white-22 mb-fs-30">“สวัสดี ฉันคือปลานกแก้ว”</span>
+            </div>
+            <div class="img-fish dory"><img src="img/Stickers/Dory.png"></div>
                 <div class="img-fish mkfish"><img src="img/Stickers/Mk fish.png"></div>
                 <div class="img-fish yellowfish"><img src="img/Stickers/Yellow fish .png"></div>
+        </div>
+        <div class="page div-center" id="main4" data-show="0">
+            <div class="page-content" data-aos="fade-up" data-aos-duration="1000">
+                <span class="text-org-36 mb-fs-48">“!!!”</span><br>
+                <span class="text-white-22 mb-fs-48">เกิดอะไรขึ้นกับปลานกแก้วน่ะ</span>
             </div>
         </div>
-
-        <div class="page" id="main4">
+        <div class="page" id="main5" data-show="0">
+            <div class="fishing-ship">
+                <img src="img/object/fishing_ship.png">
+            </div>
             <div class="btn-to-story">
                 <button class="btn-classics" onclick="gotopart('story')">ตามปลานกแก้วไปกันเถอะ!</button>
             </div>
-
         </div>
     </div>
+
     <div id="story-part" class="part">
         <div>
             <div class="text-coming-soon">หน้าเรื่องราว</div>
@@ -69,6 +79,7 @@
             </div>
         </div>
     </div>
+
     <div id="more-part" class="part">
         <div>
             <div class="text-coming-soon">หน้าเพิ่มเติม</div>

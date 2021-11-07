@@ -33,7 +33,8 @@ html {
 
 body {
     background: #eee;
-    height: 100vh;
+    /* height: 100vh; */
+    /* height: fit-content; */
     margin: 0;
     color: hsl(8, 38%, 23%);
     overflow-x: hidden;
@@ -45,7 +46,7 @@ body {
     width: 100vw;
     z-index: 2;
     position: absolute;
-    transition: .5s;
+    transition: .25s;
 }
 
 #story-part>div, #more-part>div{
@@ -57,7 +58,7 @@ body {
 body[data-mode="main"]{
     background: url(img/bg/bg_main.jpg);
     background-position: center top;
-    height: 7500px;
+    /* height: 7500px; */
 }
 
 body[data-mode="story"]{
@@ -99,16 +100,18 @@ body[data-mode="more"]>:where(#story-part, #main-part){
 
 .container {
     width: 100%;
+    height: 100%;
     max-width: 1280px;
     padding: 0 24px;
     margin: auto;
     overflow: hidden;
     text-align: center;
+    position: relative;
 }
 
 .page {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     overflow: visible;
     position: relative;
     /* border: 5px solid orange; */
@@ -155,6 +158,11 @@ body[data-mode="more"]>:where(#story-part, #main-part){
 .text-white-36 {
     color: var(--wh);
     font-size: 36px;
+}
+
+.text-org-22 {
+    color: var(--org);
+    font-size: 22px;
 }
 
 .text-org-36 {
@@ -222,6 +230,29 @@ button:hover {
     background: hsl(0, 100%, 100%, .75);
 }
 
+.small-ship{
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: ship-move 10s infinite linear, ship-idle .5s infinite linear alternate;
+}
+
+@keyframes ship-move {
+    from{
+        right: -25vw;
+    }
+    to{
+        right: 125vw;
+    }
+}
+
+@keyframes ship-idle {
+    to{
+        transform: translateY(10px);
+    }
+}
+
 #main3 {
     padding: 200px 0;
     height: 300vh;
@@ -232,7 +263,7 @@ button:hover {
 }
 
 .img-main3[data-show="1"] {
-    animation: fish-swim 2.5s linear;
+    animation: fish-swim 2s;
 }
 
 .img-main3 {
@@ -240,7 +271,12 @@ button:hover {
     text-align: center;
     --mvY: 0;
     --scH: 1;
-    transform: translateX(0px) translateY(calc( -7vw + var(--mvY)/var(--scH) * 175vh)) scaleX(-1);
+    /* transform: translateX(0px) translateY(calc( -7vw + var(--mvY)/var(--scH) * 175vh)) scaleX(-1); */
+    transform: translateX(0px) translateY(calc(var(--mvY) * 1px)) scaleX(-1);
+}
+
+#parrot-in-main3[data-play="1"]{
+    cursor: pointer;
 }
 
 .img-fish {
@@ -267,7 +303,7 @@ button:hover {
 
 @keyframes fish-swim {
     from {
-        transform: translateX(-100vw) scaleX(-1);
+        transform: translateX(-75vw) scaleX(-1);
     }
 }
 
@@ -282,10 +318,29 @@ button:hover {
     bottom: 100vh;
 }
 
+.fishing-ship{
+    width: 100vw;
+    text-align: center;
+}
+
+.fishing-ship>img{
+    width: 75%;
+}
+
+.page[data-show="0"]{
+    display: none;
+}
+
+#main5{
+    height: fit-content;
+}
+
 .btn-to-story{
     width: 100vw;
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
 }
 
 .btn-to-story>button{
@@ -297,7 +352,6 @@ button:hover {
         background: url(img/bg/mb_bg_main.jpg);
         background-position: center top;
         background-size: 125vw auto;
-        height: 6825px;
     }
     .mb-fs-24,
     .btn-sm {
@@ -311,8 +365,7 @@ button:hover {
         font-size: 6vw;
     }
     .img-main3>img {
-        width: 100vw;
-        animation: dukdik 1s linear infinite;
+        width: 55vw;
     }
 }
 
