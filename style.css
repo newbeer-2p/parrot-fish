@@ -338,7 +338,7 @@ button:hover {
 
 .coral-orange-r {
     right: 17vw;
-    top: 70vh;
+    bottom: -5vh;
     width: 11vw !important;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
@@ -346,14 +346,14 @@ button:hover {
 
 .seaweed-l {
     left: 18vw;
-    top: 61vh;
+    bottom: 13vh;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .seaweed-r {
     right: 3vw;
-    top: 78vh;
+    bottom: -10vh;
     width: 14vw !important;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
@@ -361,42 +361,42 @@ button:hover {
 
 .coral-pp-r {
     right: 23vw;
-    top: 87vh;
+    bottom: -5vh;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pp-l {
     left: -2vw;
-    top: 76vh;
+    bottom: 7vh;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink-l {
     left: 24vw;
-    top: 78vh;
+    bottom: 7vh;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink-r {
     right: -1vw;
-    top: 102vh;
+    bottom: -15vh;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink {
     right: 12vw;
-    top: 80vh;
+    bottom: -10vh;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .seaweed {
     left: 20vw;
-    top: 75vh;
+    bottom: -1vh;
     width: 8vw !important;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
@@ -425,27 +425,27 @@ button:hover {
 
 .nemo {
     right: 25vw;
-    top: 81vh;
+    bottom: 10vh;
     animation: dukdik 0.6s linear infinite, swim 9s linear infinite;
     animation-delay: -10s;
 }
 
 .star {
     left: 25vw;
-    top: 92vh;
+    bottom: -8vh;
     animation: dukdik 2s linear infinite;
     animation-delay: -10s;
 }
 
 .shell-l {
     left: 10vw;
-    top: 87vh;
+    bottom: -2vh;
 }
 
 .shell-r {
     transform: scaleX(-1);
     right: 20vw;
-    top: 100vh;
+    bottom: -12vh;
 }
 
 @keyframes fish-swim {
