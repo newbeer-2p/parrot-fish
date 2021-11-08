@@ -41,7 +41,7 @@ body {
     font-family: "thonglor";
 }
 
-.part{
+.part {
     overflow-x: hidden;
     width: 100vw;
     z-index: 2;
@@ -49,7 +49,8 @@ body {
     transition: .25s;
 }
 
-#story-part>div, #more-part>div{
+#story-part>div,
+#more-part>div {
     text-align: center;
     top: 500px;
 }
@@ -61,32 +62,33 @@ body[data-mode="main"]{
     /* height: 7500px; */
 }
 
-body[data-mode="story"]{
+body[data-mode="story"] {
     background: darkcyan;
     height: 100vh;
 }
 
-body[data-mode="more"]{
+body[data-mode="more"] {
     background: salmon;
     height: 100vh;
 }
 
-body[data-mode="main"]>:where(#story-part, #more-part){
+body[data-mode="main"]>:where(#story-part, #more-part) {
     opacity: 0;
     z-index: 0;
 }
 
-body[data-mode="story"]>:where(#main-part, #more-part){
+body[data-mode="story"]>:where(#main-part, #more-part) {
     opacity: 0;
     z-index: 0;
 }
 
-body[data-mode="more"]>:where(#story-part, #main-part){
+body[data-mode="more"]>:where(#story-part, #main-part) {
     opacity: 0;
     z-index: 0;
 }
 
-#story-part, #more-part{
+#story-part,
+#more-part {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,17 +254,25 @@ button:hover {
     background: hsl(0, 100%, 100%, .75);
 }
 
+.small-ship {
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: ship-move 10s infinite linear, ship-idle .5s infinite linear alternate;
+}
+
 @keyframes ship-move {
-    from{
+    from {
         right: -25vw;
     }
-    to{
+    to {
         right: 125vw;
     }
 }
 
 @keyframes ship-idle {
-    to{
+    to {
         transform: translateY(10px);
     }
 }
@@ -303,7 +313,7 @@ button:hover {
     transform: translateX(0px) scaleX(-1);
 }
 
-#parrot-in-main3[data-play="1"]{
+#parrot-in-main3[data-play="1"] {
     cursor: pointer;
 }
 
@@ -317,16 +327,48 @@ button:hover {
     transform: scaleX(-1);
     left: 15vw;
     top: 80vh;
+    animation: dukdik 0.7s linear infinite;
+    animation-delay: -10s;
 }
 
 .mkfish {
     left: 25vw;
     top: 98vh;
+    animation: dukdik 0.7s linear infinite;
+    animation-delay: -10s;
 }
 
 .yellowfish {
     right: 20vw;
     top: 90vh;
+    animation: dukdik 0.7s linear infinite;
+    animation-delay: -10s;
+}
+
+.nemo {
+    right: 25vw;
+    top: 115vh;
+    animation: dukdik 0.5s linear infinite, swim 9s linear infinite;
+    animation-delay: -10s;
+}
+
+.star {
+    transform: scaleX(-1);
+    left: 30vw;
+    top: 140vh;
+    animation: dukdik 2s linear infinite;
+    animation-delay: -10s;
+}
+
+.shell-l {
+    left: 10vw;
+    top: 125vh;
+}
+
+.shell-r {
+    transform: scaleX(-1);
+    right: 20vw;
+    top: 150vh;
 }
 
 @keyframes fish-swim {
@@ -363,7 +405,7 @@ button:hover {
     overflow: hidden;
 }
 
-.fishing-ship{
+.fishing-ship {
     width: 100vw;
     text-align: center;
     z-index: 3;
@@ -374,7 +416,7 @@ button:hover {
     width: 50%;
 }
 
-.page[data-show="0"]{
+.page[data-show="0"] {
     display: none;
 }
 
@@ -402,7 +444,7 @@ button:hover {
     height: fit-content;
 }
 
-.btn-to-story{
+.btn-to-story {
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -410,7 +452,7 @@ button:hover {
     margin-bottom: 25px;
 }
 
-.btn-to-story>button{
+.btn-to-story>button {
     color: var(--aqua);
 }
 
@@ -439,12 +481,14 @@ button:hover {
     }
 }
 
+
 /* รอลบได้เลย */
-.coming-soon{
+
+.coming-soon {
     font-size: 24px;
     margin-bottom: 40px;
 }
 
-.text-coming-soon{
+.text-coming-soon {
     font-size: 50px;
 }
