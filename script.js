@@ -27,23 +27,17 @@ window.onscroll = function() {
     if (main3.offsetTop != 0 && scrollY >= main3.offsetTop) {
         parrot_in_main3.dataset.show = "1";
     }
-    else {
+    else if (main3.offsetTop != 0) {
         parrot_in_main3.dataset.show = "0";
     }
 
-    if (main4.offsetTop != 0 && scrollY >= main4.offsetTop){
+    if (main4.offsetTop != 0 && scrollY >= main4.offsetTop - 100 && scrollY <= main4.offsetTop+300){
         parrot_in_main3.onclick = changeText;
         parrot_in_main3.dataset.play = "1";
     }
-
-
-
-    // if (scrollY == 0){
-    //     body.dataset.mode = "home";
-    // }
-    // else{
-    //     body.dataset.mode = "main";
-    // }
+    else {
+        parrot_in_main3.dataset.play = "0";
+    }
 }
 
 function goto(page) {
@@ -79,6 +73,7 @@ function changeText(){
     }
     parrot_fish_text_num++;
     if (parrot_fish_text_num == 2){
+        document.querySelector("#parrot-in-main3").dataset.play = "0";
         openPage("main5");
         openPage("main6");
         openPage("main7");
