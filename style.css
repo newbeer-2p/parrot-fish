@@ -55,8 +55,7 @@ body {
     top: 500px;
 }
 
-
-body[data-mode="main"]{
+body[data-mode="main"] {
     /* background: url(img/bg/bg_main.jpg); */
     background-position: center top;
     /* height: 7500px; */
@@ -138,7 +137,7 @@ body[data-mode="more"]>:where(#story-part, #main-part) {
     width: 175px;
 }
 
-.small-ship{
+.small-ship {
     width: 250px;
     position: absolute;
     bottom: 30vh;
@@ -331,7 +330,7 @@ button:hover {
 
 .coral-orange-l {
     left: 5vw;
-    top: 80vh;
+    top: 50vh;
     width: 15vw !important;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
@@ -339,7 +338,7 @@ button:hover {
 
 .coral-orange-r {
     right: 17vw;
-    top: 100vh;
+    top: 70vh;
     width: 11vw !important;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
@@ -347,14 +346,14 @@ button:hover {
 
 .seaweed-l {
     left: 18vw;
-    top: 91vh;
+    top: 61vh;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .seaweed-r {
     right: 3vw;
-    top: 108vh;
+    top: 78vh;
     width: 14vw !important;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
@@ -362,42 +361,42 @@ button:hover {
 
 .coral-pp-r {
     right: 23vw;
-    top: 117vh;
+    top: 87vh;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pp-l {
     left: -2vw;
-    top: 106vh;
+    top: 76vh;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink-l {
     left: 24vw;
-    top: 108vh;
+    top: 78vh;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink-r {
     right: -1vw;
-    top: 132vh;
+    top: 102vh;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink {
     right: 12vw;
-    top: 110vh;
+    top: 80vh;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .seaweed {
     left: 20vw;
-    top: 105vh;
+    top: 75vh;
     width: 8vw !important;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
@@ -405,48 +404,48 @@ button:hover {
 
 .dory {
     left: 15vw;
-    top: 78vh;
+    top: 48vh;
     animation: dukdik 0.7s linear infinite;
     animation-delay: -10s;
 }
 
 .mkfish {
     left: 25vw;
-    top: 93vh;
+    top: 63vh;
     animation: dukdik 0.8s linear infinite;
     animation-delay: -10s;
 }
 
 .yellowfish {
     right: 20vw;
-    top: 87vh;
+    top: 57vh;
     animation: dukdik 0.7s linear infinite;
     animation-delay: -10s;
 }
 
 .nemo {
     right: 25vw;
-    top: 111vh;
+    top: 81vh;
     animation: dukdik 0.6s linear infinite, swim 9s linear infinite;
     animation-delay: -10s;
 }
 
 .star {
     left: 25vw;
-    top: 122vh;
+    top: 92vh;
     animation: dukdik 2s linear infinite;
     animation-delay: -10s;
 }
 
 .shell-l {
     left: 10vw;
-    top: 117vh;
+    top: 87vh;
 }
 
 .shell-r {
     transform: scaleX(-1);
     right: 20vw;
-    top: 130vh;
+    top: 100vh;
 }
 
 @keyframes fish-swim {
@@ -490,7 +489,7 @@ button:hover {
     transform: translateY(15vh);
 }
 
-.fishing-ship>img{
+.fishing-ship>img {
     width: 50%;
 }
 
@@ -514,7 +513,7 @@ button:hover {
     height: 200px;
 }
 
-#main7{
+#main7 {
     background: url(img/bg/ฉากเริ่มต้น5.png);
     background-size: 100% 100%;
     background-position: center bottom;
