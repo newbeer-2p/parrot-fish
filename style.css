@@ -56,7 +56,7 @@ body {
 
 
 body[data-mode="main"]{
-    background: url(img/bg/bg_main.jpg);
+    /* background: url(img/bg/bg_main.jpg); */
     background-position: center top;
     /* height: 7500px; */
 }
@@ -112,9 +112,16 @@ body[data-mode="more"]>:where(#story-part, #main-part){
 .page {
     width: 100vw;
     min-height: 100vh;
-    overflow: visible;
+    overflow: hidden;
     position: relative;
     /* border: 5px solid orange; */
+}
+
+#home {
+    background: url(img/bg/ฉากเริ่มต้น4.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 .page-content {
@@ -127,6 +134,21 @@ body[data-mode="more"]>:where(#story-part, #main-part){
 
 .home-logo>img {
     width: 175px;
+}
+
+.small-ship{
+    width: 250px;
+    position: absolute;
+    bottom: 30vh;
+    right: 0;
+    animation: ship-move 10s infinite linear, ship-idle .5s infinite linear alternate;
+}
+
+#main2 {
+    background: url(img/bg/ฉากเริ่มต้น3.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 .img-page2 {
@@ -230,14 +252,6 @@ button:hover {
     background: hsl(0, 100%, 100%, .75);
 }
 
-.small-ship{
-    width: 250px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    animation: ship-move 10s infinite linear, ship-idle .5s infinite linear alternate;
-}
-
 @keyframes ship-move {
     from{
         right: -25vw;
@@ -255,15 +269,25 @@ button:hover {
 
 #main3 {
     padding: 200px 0;
-    height: 300vh;
+    height: 100vh;
+    overflow: visible;
+    background: url(img/bg/ฉากเริ่มต้น2.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 .img-main3[data-show="0"] {
-    transform: translateX(-100vw) scaleX(-1);
+    /* transform: translateX(-125vw) scaleX(-1); */
+    animation: fish-swim-go 2s
 }
 
 .img-main3[data-show="1"] {
     animation: fish-swim 2s;
+}
+
+.img-main3[data-show="2"] {
+    transform: translateX(0px) scaleX(-1)
 }
 
 .img-main3 {
@@ -271,8 +295,12 @@ button:hover {
     text-align: center;
     --mvY: 0;
     --scH: 1;
+    z-index: 1;
+    top: 45vh;
+    position: fixed;
     /* transform: translateX(0px) translateY(calc( -7vw + var(--mvY)/var(--scH) * 175vh)) scaleX(-1); */
-    transform: translateX(0px) translateY(calc(var(--mvY) * 1px)) scaleX(-1);
+    /* transform: translateX(0px) translateY(calc(var(--mvY) * 1px)) scaleX(-1); */
+    transform: translateX(0px) scaleX(-1);
 }
 
 #parrot-in-main3[data-play="1"]{
@@ -307,31 +335,70 @@ button:hover {
     }
 }
 
+@keyframes fish-swim-go {
+    from {
+        transform: translateX(0px) scaleX(-1);
+    }
+    to {
+        transform: translateX(125vw) scaleX(-1);
+    }
+}
+
 .img-main3>img {
     width: 20vw;
     animation: dukdik 1s linear infinite;
 }
 
-#text2-in-main3 {
-    width: 100vw;
+#text2-in-main4 {
     position: absolute;
-    bottom: 100vh;
+    width: 100vw;
+    bottom: 60vh;
+}
+
+#main4 {
+    background: url(img/bg/ฉากเริ่มต้น1.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .fishing-ship{
     width: 100vw;
     text-align: center;
+    z-index: 3;
+    transform: translateY(15vh);
 }
 
 .fishing-ship>img{
-    width: 75%;
+    width: 50%;
 }
 
 .page[data-show="0"]{
     display: none;
 }
 
-#main5{
+#main5 {
+    background: url(img/bg/ฉากเริ่มต้น7.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#main6 {
+    background: url(img/bg/ฉากเริ่มต้น6.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+#main7{
+    background: url(img/bg/ฉากเริ่มต้น5.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
     height: fit-content;
 }
 
@@ -339,7 +406,7 @@ button:hover {
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 25px;
 }
 
@@ -349,7 +416,7 @@ button:hover {
 
 @media (max-width: 500px) {
     body[data-mode="main"] {
-        background: url(img/bg/mb_bg_main.jpg);
+        /* background: url(img/bg/mb_bg_main.jpg); */
         background-position: center top;
         background-size: 125vw auto;
     }
@@ -365,7 +432,10 @@ button:hover {
         font-size: 6vw;
     }
     .img-main3>img {
-        width: 55vw;
+        width: 40%;
+    }
+    .fishing-ship>img {
+        width: 90%;
     }
 }
 
