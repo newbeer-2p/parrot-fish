@@ -290,7 +290,6 @@ button:hover {
     transform: translateX(0px) scaleX(-1);
 }
 
-
 @keyframes fish-swim {
     from {
         transform: translateX(-75vw) scaleX(-1);
@@ -329,122 +328,123 @@ button:hover {
 
 .coral-orange-l {
     left: 5vw;
-    top: 50vh;
+    bottom: 17vh;
     width: 15vw !important;
-    animation: dukdik 1s linear infinite;
+    animation: dukdik 2s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-orange-r {
     right: 17vw;
-    bottom: -5vh;
+    bottom: 5vh;
     width: 11vw !important;
-    animation: dukdik 1s linear infinite;
+    animation: dukdik 1.5s linear infinite;
     animation-delay: -10s;
 }
 
 .seaweed-l {
     left: 18vw;
-    bottom: 13vh;
-    animation: dukdik 1s linear infinite;
+    bottom: 23vh;
+    animation: dukdik 3s linear infinite;
     animation-delay: -10s;
 }
 
 .seaweed-r {
     right: 3vw;
-    bottom: -10vh;
+    bottom: 0vh;
     width: 14vw !important;
-    animation: dukdik 1s linear infinite;
+    animation: dukdik 3s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pp-r {
     right: 23vw;
-    bottom: -5vh;
-    animation: dukdik 1s linear infinite;
+    bottom: 5vh;
+    animation: dukdik 2s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pp-l {
     left: -2vw;
-    bottom: 7vh;
-    animation: dukdik 1s linear infinite;
+    bottom: 17vh;
+    width: 14vw !important;
+    animation: dukdik 1.5s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink-l {
     left: 24vw;
-    bottom: 7vh;
-    animation: dukdik 1s linear infinite;
+    bottom: 17vh;
+    animation: dukdik 1.5s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink-r {
     right: -1vw;
-    bottom: -15vh;
+    bottom: -5vh;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink {
     right: 12vw;
-    bottom: -10vh;
-    animation: dukdik 1s linear infinite;
+    bottom: 0vh;
+    animation: dukdik 3s linear infinite;
     animation-delay: -10s;
 }
 
 .seaweed {
     left: 20vw;
-    bottom: -1vh;
+    bottom: 9vh;
     width: 8vw !important;
-    animation: dukdik 1s linear infinite;
+    animation: dukdik 0.8s linear infinite;
     animation-delay: -10s;
 }
 
 .dory {
     left: 15vw;
-    top: 48vh;
+    bottom: 42vh;
     animation: dukdik 0.7s linear infinite;
     animation-delay: -10s;
 }
 
 .mkfish {
     left: 25vw;
-    top: 63vh;
+    bottom: 33vh;
     animation: dukdik 0.8s linear infinite;
     animation-delay: -10s;
 }
 
 .yellowfish {
     right: 20vw;
-    top: 57vh;
+    bottom: 37vh;
     animation: dukdik 0.7s linear infinite;
     animation-delay: -10s;
 }
 
 .nemo {
     right: 25vw;
-    bottom: 10vh;
+    bottom: 20vh;
     animation: dukdik 0.6s linear infinite, swim 9s linear infinite;
     animation-delay: -10s;
 }
 
 .star {
     left: 25vw;
-    bottom: -8vh;
+    bottom: 2vh;
     animation: dukdik 2s linear infinite;
     animation-delay: -10s;
 }
 
 .shell-l {
     left: 10vw;
-    bottom: -2vh;
+    bottom: 8vh;
 }
 
 .shell-r {
     transform: scaleX(-1);
     right: 20vw;
-    bottom: -12vh;
+    bottom: -2vh;
 }
 
 #text2-in-main4 {
@@ -490,7 +490,7 @@ button:hover {
     height: 200px;
 }
 
-#main7{
+#main7 {
     background: url(img/bg/mobile/ฉากเริ่มต้น5.png);
     background-size: 100% 100%;
     background-position: center bottom;
@@ -511,56 +511,48 @@ button:hover {
 }
 
 @media (max-width: 500px) {
-
-    #home{
+    #home {
         background: url(img/bg/mobile/ฉากเริ่มต้น4.png);
         background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
-
-    #main2{
+    #main2 {
         background: url(img/bg/mobile/ฉากเริ่มต้น3.png);
         background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
-
-    #main3{
+    #main3 {
         background: url(img/bg/mobile/ฉากเริ่มต้น2.png);
         background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
-
-    #main4{
+    #main4 {
         background: url(img/bg/mobile/ฉากเริ่มต้น1.png);
         background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
-
-    #main5{
+    #main5 {
         background: url(img/bg/mobile/ฉากเริ่มต้น7.png);
         background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
-
-    #main6{
+    #main6 {
         background: url(img/bg/mobile/ฉากเริ่มต้น6.png);
         background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
-
-    #main7{
+    #main7 {
         background: url(img/bg/mobile/ฉากเริ่มต้น5.png);
         background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
-
     .mb-fs-24,
     .btn-sm {
         font-size: 3vw!important;
