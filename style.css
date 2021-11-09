@@ -338,9 +338,9 @@ button:hover {
 }
 
 .coral-orange-l {
-    left: 80px;
+    left: 60px;
     bottom: 150px;
-    width: 210px !important;
+    width: 190px !important;
     animation: dukdik 2s linear infinite;
     animation-delay: -10s;
 }
@@ -354,7 +354,7 @@ button:hover {
 }
 
 .seaweed-l {
-    left: 260px;
+    left: 220px;
     bottom: 160px;
     animation: dukdik 3s linear infinite;
     animation-delay: -10s;
@@ -363,7 +363,7 @@ button:hover {
 .seaweed-r {
     right: 10px;
     bottom: 0px;
-    width: 230px !important;
+    width: 200px !important;
     animation: dukdik 3s linear infinite;
     animation-delay: -10s;
 }
@@ -376,23 +376,23 @@ button:hover {
 }
 
 .coral-pp-l {
-    left: -20px;
-    bottom: 130px;
-    width: 200px !important;
+    left: -30px;
+    bottom: 120px;
+    width: 180px !important;
     animation: dukdik 1.5s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink-l {
     left: 380px;
-    bottom: 150px;
+    bottom: 130px;
     animation: dukdik 1.5s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink-r {
-    right: 1px;
-    bottom: -10px;
+    right: 10px;
+    bottom: -20px;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
@@ -405,15 +405,15 @@ button:hover {
 }
 
 .seaweed {
-    left: 300px;
+    left: 320px;
     bottom: 70px;
-    width: 8vw !important;
+    width: 100px !important;
     animation: dukdik 0.8s linear infinite;
     animation-delay: -10s;
 }
 
 .dory {
-    left: 200px;
+    left: 300px;
     bottom: 320px;
     animation: dukdik 0.7s linear infinite;
     animation-delay: -10s;
@@ -427,7 +427,7 @@ button:hover {
 }
 
 .yellowfish {
-    right: 250px;
+    right: 300px;
     bottom: 300px;
     animation: dukdik 0.7s linear infinite;
     animation-delay: -10s;
@@ -442,14 +442,14 @@ button:hover {
 
 .star {
     left: 380px;
-    bottom: 40px;
+    bottom: 30px;
     animation: dukdik 2s linear infinite;
     animation-delay: -10s;
 }
 
 .shell-l {
     left: 80px;
-    bottom: 40px;
+    bottom: 30px;
 }
 
 .shell-r {
@@ -509,13 +509,13 @@ button:hover {
     height: fit-content;
 }
 
-#main7-content-1{
+#main7-content-1 {
     position: absolute;
     top: 10vh;
     width: 100%;
 }
 
-#main7-content-2{
+#main7-content-2 {
     position: absolute;
     bottom: 60vh;
     width: 100%;
