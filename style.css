@@ -316,135 +316,135 @@ button:hover {
 
 .img-fish {
     display: inline-block !important;
-    width: 8vw;
+    width: 90px;
     position: absolute;
 }
 
 .img-coral {
     display: inline-block !important;
-    width: 10vw;
+    width: 100px;
     position: absolute;
 }
 
 .coral-orange-l {
-    left: 5vw;
-    bottom: 17vh;
-    width: 15vw !important;
+    left: 80px;
+    bottom: 150px;
+    width: 210px !important;
     animation: dukdik 2s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-orange-r {
-    right: 17vw;
-    bottom: 5vh;
-    width: 11vw !important;
+    right: 200px;
+    bottom: 60px;
+    width: 160px !important;
     animation: dukdik 1.5s linear infinite;
     animation-delay: -10s;
 }
 
 .seaweed-l {
-    left: 18vw;
-    bottom: 23vh;
+    left: 260px;
+    bottom: 160px;
     animation: dukdik 3s linear infinite;
     animation-delay: -10s;
 }
 
 .seaweed-r {
-    right: 3vw;
-    bottom: 0vh;
-    width: 14vw !important;
+    right: 10px;
+    bottom: 0px;
+    width: 230px !important;
     animation: dukdik 3s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pp-r {
-    right: 23vw;
-    bottom: 5vh;
+    right: 330px;
+    bottom: 60px;
     animation: dukdik 2s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pp-l {
-    left: -2vw;
-    bottom: 17vh;
-    width: 14vw !important;
+    left: -20px;
+    bottom: 130px;
+    width: 200px !important;
     animation: dukdik 1.5s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink-l {
-    left: 24vw;
-    bottom: 17vh;
+    left: 380px;
+    bottom: 150px;
     animation: dukdik 1.5s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink-r {
-    right: -1vw;
-    bottom: -5vh;
+    right: 1px;
+    bottom: -10px;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink {
-    right: 12vw;
-    bottom: 0vh;
+    right: 180px;
+    bottom: 10px;
     animation: dukdik 3s linear infinite;
     animation-delay: -10s;
 }
 
 .seaweed {
-    left: 20vw;
-    bottom: 9vh;
+    left: 300px;
+    bottom: 70px;
     width: 8vw !important;
     animation: dukdik 0.8s linear infinite;
     animation-delay: -10s;
 }
 
 .dory {
-    left: 15vw;
-    bottom: 42vh;
+    left: 200px;
+    bottom: 320px;
     animation: dukdik 0.7s linear infinite;
     animation-delay: -10s;
 }
 
 .mkfish {
-    left: 25vw;
-    bottom: 33vh;
+    left: 370px;
+    bottom: 250px;
     animation: dukdik 0.8s linear infinite;
     animation-delay: -10s;
 }
 
 .yellowfish {
-    right: 20vw;
-    bottom: 37vh;
+    right: 250px;
+    bottom: 300px;
     animation: dukdik 0.7s linear infinite;
     animation-delay: -10s;
 }
 
 .nemo {
-    right: 25vw;
-    bottom: 20vh;
+    right: 250px;
+    bottom: 150px;
     animation: dukdik 0.6s linear infinite, swim 9s linear infinite;
     animation-delay: -10s;
 }
 
 .star {
-    left: 25vw;
-    bottom: 2vh;
+    left: 380px;
+    bottom: 40px;
     animation: dukdik 2s linear infinite;
     animation-delay: -10s;
 }
 
 .shell-l {
-    left: 10vw;
-    bottom: 8vh;
+    left: 80px;
+    bottom: 40px;
 }
 
 .shell-r {
     transform: scaleX(-1);
-    right: 20vw;
-    bottom: -2vh;
+    right: 300px;
+    bottom: -5px;
 }
 
 #text2-in-main4 {
