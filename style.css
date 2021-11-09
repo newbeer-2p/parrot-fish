@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'mali-bold';
+    src: url('img/font/Mali-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'mali-bold';
 }
 
 :root {
