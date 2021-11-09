@@ -343,7 +343,7 @@ button:hover {
 }
 
 .seaweed-l {
-    left: 240px;
+    left: 220px;
     bottom: 160px;
     animation: dukdik 3s linear infinite;
     animation-delay: -10s;
@@ -373,15 +373,15 @@ button:hover {
 }
 
 .coral-pink-l {
-    left: 360px;
+    left: 380px;
     bottom: 130px;
     animation: dukdik 1.5s linear infinite;
     animation-delay: -10s;
 }
 
 .coral-pink-r {
-    right: 1px;
-    bottom: -10px;
+    right: 10px;
+    bottom: -20px;
     animation: dukdik 1s linear infinite;
     animation-delay: -10s;
 }
@@ -498,13 +498,13 @@ button:hover {
     height: fit-content;
 }
 
-#main7-content-1{
+#main7-content-1 {
     position: absolute;
     top: 10vh;
     width: 100%;
 }
 
-#main7-content-2{
+#main7-content-2 {
     position: absolute;
     bottom: 60vh;
     width: 100%;
