@@ -498,6 +498,18 @@ button:hover {
     height: fit-content;
 }
 
+#main7-content-1{
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+}
+
+#main7-content-2{
+    position: absolute;
+    bottom: 60vh;
+    width: 100%;
+}
+
 .btn-to-story {
     width: 100vw;
     display: flex;
