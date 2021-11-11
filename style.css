@@ -484,6 +484,12 @@ button:hover {
 .page[data-show="0"] {
     display: none;
 }
+.fish-store{
+    width: 100vw;
+    text-align: center;
+}
+
+
 
 #main5 {
     background: url(img/bg/mobile/ฉากเริ่มต้น7.png);
