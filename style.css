@@ -485,8 +485,16 @@ button:hover {
     display: none;
 }
 .fish-store{
-    width: 100vw;
-    text-align: center;
+    width: 25vw;
+}
+.mid-store{
+    width: 50vh;
+}
+.Rstore{
+    width: 40vh;
+}
+.Lstore{
+    width: 40vh;
 }
 
 
