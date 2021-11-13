@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'mali-bold';
+    src: url('img/font/Mali-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'mali-bold';
 }
 
 :root {
@@ -41,7 +52,7 @@ body {
     font-family: "thonglor";
 }
 
-.part{
+.part {
     overflow-x: hidden;
     width: 100vw;
     z-index: 2;
@@ -49,44 +60,39 @@ body {
     transition: .25s;
 }
 
-#story-part>div, #more-part>div{
+#story-part>div,
+#more-part>div {
     text-align: center;
     top: 500px;
 }
 
-
-body[data-mode="main"]{
-    background: url(img/bg/bg_main.jpg);
-    background-position: center top;
-    /* height: 7500px; */
-}
-
-body[data-mode="story"]{
+body[data-mode="story"] {
     background: darkcyan;
     height: 100vh;
 }
 
-body[data-mode="more"]{
+body[data-mode="more"] {
     background: salmon;
     height: 100vh;
 }
 
-body[data-mode="main"]>:where(#story-part, #more-part){
+body[data-mode="main"]>:where(#story-part, #more-part) {
     opacity: 0;
     z-index: 0;
 }
 
-body[data-mode="story"]>:where(#main-part, #more-part){
+body[data-mode="story"]>:where(#main-part, #more-part) {
     opacity: 0;
     z-index: 0;
 }
 
-body[data-mode="more"]>:where(#story-part, #main-part){
+body[data-mode="more"]>:where(#story-part, #main-part) {
     opacity: 0;
     z-index: 0;
 }
 
-#story-part, #more-part{
+#story-part,
+#more-part {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,9 +118,16 @@ body[data-mode="more"]>:where(#story-part, #main-part){
 .page {
     width: 100vw;
     min-height: 100vh;
-    overflow: visible;
+    overflow: hidden;
     position: relative;
     /* border: 5px solid orange; */
+}
+
+#home {
+    background: url(img/bg/mobile/ฉากเริ่มต้น4.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 .page-content {
@@ -127,6 +140,21 @@ body[data-mode="more"]>:where(#story-part, #main-part){
 
 .home-logo>img {
     width: 175px;
+}
+
+.small-ship {
+    width: 250px;
+    position: absolute;
+    bottom: 30vh;
+    right: 0;
+    animation: ship-move 10s infinite linear, ship-idle .5s infinite linear alternate;
+}
+
+#main2 {
+    background: url(img/bg/mobile/ฉากเริ่มต้น3.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 .img-page2 {
@@ -230,36 +258,34 @@ button:hover {
     background: hsl(0, 100%, 100%, .75);
 }
 
-.small-ship{
-    width: 250px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    animation: ship-move 10s infinite linear, ship-idle .5s infinite linear alternate;
-}
-
 @keyframes ship-move {
-    from{
+    from {
         right: -25vw;
     }
-    to{
+    to {
         right: 125vw;
     }
 }
 
 @keyframes ship-idle {
-    to{
+    to {
         transform: translateY(10px);
     }
 }
 
 #main3 {
     padding: 200px 0;
-    height: 300vh;
+    height: 100vh;
+    overflow: visible;
+    background: url(img/bg/mobile/ฉากเริ่มต้น2.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 .img-main3[data-show="0"] {
-    transform: translateX(-100vw) scaleX(-1);
+    transform: translateX(125vw) scaleX(-1);
+    /* animation: fish-swim-go 2s; */
 }
 
 .img-main3[data-show="1"] {
@@ -269,36 +295,10 @@ button:hover {
 .img-main3 {
     width: 100vw;
     text-align: center;
-    --mvY: 0;
-    --scH: 1;
-    /* transform: translateX(0px) translateY(calc( -7vw + var(--mvY)/var(--scH) * 175vh)) scaleX(-1); */
-    transform: translateX(0px) translateY(calc(var(--mvY) * 1px)) scaleX(-1);
-}
-
-#parrot-in-main3[data-play="1"]{
-    cursor: pointer;
-}
-
-.img-fish {
-    display: inline-block !important;
-    width: 9vw;
-    position: absolute;
-}
-
-.dory {
-    transform: scaleX(-1);
-    left: 15vw;
-    top: 80vh;
-}
-
-.mkfish {
-    left: 25vw;
-    top: 98vh;
-}
-
-.yellowfish {
-    right: 20vw;
-    top: 90vh;
+    z-index: 1;
+    top: 45vh;
+    position: fixed;
+    transform: translateX(0px) scaleX(-1);
 }
 
 @keyframes fish-swim {
@@ -307,51 +307,288 @@ button:hover {
     }
 }
 
+@keyframes fish-swim-go {
+    from {
+        transform: translateX(0px) scaleX(-1);
+    }
+    to {
+        transform: translateX(125vw) scaleX(-1);
+    }
+}
+
 .img-main3>img {
     width: 20vw;
     animation: dukdik 1s linear infinite;
 }
 
-#text2-in-main3 {
-    width: 100vw;
-    position: absolute;
-    bottom: 100vh;
+#parrot-in-main3[data-play="1"] {
+    cursor: pointer;
 }
 
-.fishing-ship{
+.img-fish {
+    display: inline-block !important;
+    width: 90px;
+    position: absolute;
+}
+
+.img-coral {
+    display: inline-block !important;
+    width: 100px;
+    position: absolute;
+}
+
+.coral-orange-l {
+    left: 60px;
+    bottom: 150px;
+    width: 190px !important;
+    animation: dukdik 2s linear infinite;
+    animation-delay: -10s;
+}
+
+.coral-orange-r {
+    right: 200px;
+    bottom: 60px;
+    width: 160px !important;
+    animation: dukdik 1.5s linear infinite;
+    animation-delay: -10s;
+}
+
+.seaweed-l {
+    left: 220px;
+    bottom: 160px;
+    animation: dukdik 3s linear infinite;
+    animation-delay: -10s;
+}
+
+.seaweed-r {
+    right: 10px;
+    bottom: 0px;
+    width: 200px !important;
+    animation: dukdik 3s linear infinite;
+    animation-delay: -10s;
+}
+
+.coral-pp-r {
+    right: 330px;
+    bottom: 60px;
+    animation: dukdik 2s linear infinite;
+    animation-delay: -10s;
+}
+
+.coral-pp-l {
+    left: -30px;
+    bottom: 120px;
+    width: 180px !important;
+    animation: dukdik 1.5s linear infinite;
+    animation-delay: -10s;
+}
+
+.coral-pink-l {
+    left: 380px;
+    bottom: 130px;
+    animation: dukdik 1.5s linear infinite;
+    animation-delay: -10s;
+}
+
+.coral-pink-r {
+    right: 10px;
+    bottom: -20px;
+    animation: dukdik 1s linear infinite;
+    animation-delay: -10s;
+}
+
+.coral-pink {
+    right: 180px;
+    bottom: 10px;
+    animation: dukdik 3s linear infinite;
+    animation-delay: -10s;
+}
+
+.seaweed {
+    left: 320px;
+    bottom: 70px;
+    width: 100px !important;
+    animation: dukdik 0.8s linear infinite;
+    animation-delay: -10s;
+}
+
+.dory {
+    left: 300px;
+    bottom: 320px;
+    animation: dukdik 0.7s linear infinite;
+    animation-delay: -10s;
+}
+
+.mkfish {
+    left: 370px;
+    bottom: 250px;
+    animation: dukdik 0.8s linear infinite;
+    animation-delay: -10s;
+}
+
+.yellowfish {
+    right: 300px;
+    bottom: 300px;
+    animation: dukdik 0.7s linear infinite;
+    animation-delay: -10s;
+}
+
+.nemo {
+    right: 250px;
+    bottom: 150px;
+    animation: dukdik 0.6s linear infinite, swim 9s linear infinite;
+    animation-delay: -10s;
+}
+
+.star {
+    left: 380px;
+    bottom: 30px;
+    animation: dukdik 2s linear infinite;
+    animation-delay: -10s;
+}
+
+.shell-l {
+    left: 80px;
+    bottom: 30px;
+}
+
+.shell-r {
+    transform: scaleX(-1);
+    right: 300px;
+    bottom: -5px;
+}
+
+#text2-in-main4 {
+    width: 100vw;
+    margin-top: 30vh;
+}
+
+#main4 {
+    background: url(img/bg/mobile/ฉากเริ่มต้น1.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.fishing-ship {
     width: 100vw;
     text-align: center;
+    transform: translateY(15vh);
 }
 
-.fishing-ship>img{
-    width: 75%;
+.fishing-ship>img {
+    width: 50%;
 }
 
-.page[data-show="0"]{
+.page[data-show="0"] {
     display: none;
 }
+.fish-store{
+    width: 25vw;
+}
+.mid-store{
+    width: 50vh;
+}
+.Rstore{
+    width: 40vh;
+}
+.Lstore{
+    width: 40vh;
+}
 
-#main5{
+
+
+#main5 {
+    background: url(img/bg/mobile/ฉากเริ่มต้น7.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#main6 {
+    background: url(img/bg/mobile/ฉากเริ่มต้น6.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+#main7 {
+    background: url(img/bg/mobile/ฉากเริ่มต้น5.png);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
     height: fit-content;
 }
 
-.btn-to-story{
+#main7-content-1 {
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+}
+
+#main7-content-2 {
+    position: absolute;
+    bottom: 60vh;
+    width: 100%;
+}
+
+.btn-to-story {
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 25px;
 }
 
-.btn-to-story>button{
+.btn-to-story>button {
     color: var(--aqua);
 }
 
 @media (max-width: 500px) {
-    body[data-mode="main"] {
-        background: url(img/bg/mb_bg_main.jpg);
-        background-position: center top;
-        background-size: 125vw auto;
+    #home {
+        background: url(img/bg/mobile/ฉากเริ่มต้น4.png);
+        background-size: 100% 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    #main2 {
+        background: url(img/bg/mobile/ฉากเริ่มต้น3.png);
+        background-size: 100% 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    #main3 {
+        background: url(img/bg/mobile/ฉากเริ่มต้น2.png);
+        background-size: 100% 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    #main4 {
+        background: url(img/bg/mobile/ฉากเริ่มต้น1.png);
+        background-size: 100% 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    #main5 {
+        background: url(img/bg/mobile/ฉากเริ่มต้น7.png);
+        background-size: 100% 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    #main6 {
+        background: url(img/bg/mobile/ฉากเริ่มต้น6.png);
+        background-size: 100% 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    #main7 {
+        background: url(img/bg/mobile/ฉากเริ่มต้น5.png);
+        background-size: 100% 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
     }
     .mb-fs-24,
     .btn-sm {
@@ -365,16 +602,21 @@ button:hover {
         font-size: 6vw;
     }
     .img-main3>img {
-        width: 55vw;
+        width: 40%;
+    }
+    .fishing-ship>img {
+        width: 90%;
     }
 }
 
+
 /* รอลบได้เลย */
-.coming-soon{
+
+.coming-soon {
     font-size: 24px;
     margin-bottom: 40px;
 }
 
-.text-coming-soon{
+.text-coming-soon {
     font-size: 50px;
 }
