@@ -489,14 +489,36 @@ button:hover {
 }
 .mid-store{
     width: 50vh;
+    position: absolute;
+    bottom: 150px;
+    right: 35%;
 }
 .Rstore{
     width: 40vh;
+    position: absolute;
+    bottom: 150px;
+    right: 150px;
 }
 .Lstore{
     width: 40vh;
+    position: absolute;
+    bottom: 150px;
+    left: 150px;
 }
-
+.fishtank1{
+    width: 30vh;
+    position: absolute;
+    bottom: 300px;
+    left: 800px;
+    z-index: 1;
+}
+.fishtank2{
+    width: 20vh;
+    position: absolute;
+    bottom: 120px;
+    left: 450px;
+    z-index: 1;
+}
 
 
 #main5 {
