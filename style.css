@@ -489,16 +489,36 @@ button:hover {
 }
 .mid-store{
     width: 50vh;
+    position: absolute;
+    bottom: 600px;
+    right: 600px;
 }
 .Rstore{
     width: 40vh;
+    position: absolute;
+    bottom: 600px;
+    right: 150px;
 }
 .Lstore{
     width: 40vh;
+    position: absolute;
+    bottom: 600px;
+    left: 150px;
 }
-
-
-
+.fishtank1{
+    width: 30vh;
+    position: absolute;
+    bottom: 600px;
+    left: 800px;
+    z-index: 1;
+}
+.fishtank2{
+    width: 20vh;
+    position: absolute;
+    bottom: 600px;
+    left: 450px;
+    z-index: 1;
+}
 #main5 {
     background: url(img/bg/mobile/ฉากเริ่มต้น7.png);
     background-size: 100% 100%;
@@ -546,7 +566,24 @@ button:hover {
 .btn-to-story>button {
     color: var(--aqua);
 }
-
+#story5{
+    background: url();
+}
+.nok{
+    position: absolute;
+    bottom: 60vh;
+    left: 45vw;
+    width: 20vh;
+    animation:nokbin 0.1s infinite alternate;
+}
+@keyframes nokbin{
+    from{
+        transform:translateY(0px);
+    }
+    to{
+        transform:translateY(25px);
+    }
+}
 @media (max-width: 500px) {
     #home {
         background: url(img/bg/mobile/ฉากเริ่มต้น4.png);
