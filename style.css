@@ -118,7 +118,7 @@ body[data-mode="more"]>:where(#story-part, #main-part) {
 .page {
     width: 100vw;
     min-height: 100vh;
-    overflow: hidden;
+    
     position: relative;
     /* border: 5px solid orange; */
 }
@@ -473,6 +473,13 @@ button:hover {
 
 #story1{
     background: url(img/bg/desktop/ตลาด1.jpg);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+#story2{
+    background: url(img/bg/desktop/ตลาด2.jpg);
     background-size: 100% 100%;
     background-position: center bottom;
     background-repeat: no-repeat;
