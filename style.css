@@ -63,7 +63,6 @@ body {
 #story-part>div,
 #more-part>div {
     text-align: center;
-    top: 500px;
 }
 
 body[data-mode="story"] {
@@ -77,26 +76,18 @@ body[data-mode="more"] {
 }
 
 body[data-mode="main"]>:where(#story-part, #more-part) {
-    opacity: 0;
+    display: none;
     z-index: 0;
 }
 
 body[data-mode="story"]>:where(#main-part, #more-part) {
-    opacity: 0;
+    display: none;
     z-index: 0;
 }
 
 body[data-mode="more"]>:where(#story-part, #main-part) {
-    opacity: 0;
+    display: none;
     z-index: 0;
-}
-
-#story-part,
-#more-part {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 * {
@@ -118,7 +109,6 @@ body[data-mode="more"]>:where(#story-part, #main-part) {
 .page {
     width: 100vw;
     min-height: 100vh;
-    
     position: relative;
     /* border: 5px solid orange; */
 }
@@ -573,8 +563,7 @@ button:hover {
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin-top: 150px;
-    margin-bottom: 25px;
+    margin-top: 18vh;
 }
 
 .btn-to-story>button {
@@ -583,6 +572,7 @@ button:hover {
 
 #story5{
     background: url();
+    height: 200vh;
 }
 .nok{
     position: absolute;
@@ -671,4 +661,10 @@ button:hover {
 
 .text-coming-soon {
     font-size: 50px;
+}
+
+.test-goto{
+    right: 15px;
+    position: absolute;
+    z-index: 5;
 }

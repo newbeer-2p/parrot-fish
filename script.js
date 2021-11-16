@@ -53,7 +53,6 @@ function goto(page) {
 }
 
 function gotopart(part){
-    // let des_part = document.querySelector(`#${part}-part`);
     window.scroll(0, 0);
     body.dataset.mode = part;
 }

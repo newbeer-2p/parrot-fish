@@ -19,6 +19,12 @@
             <div class="small-ship">
                 <img src="img/object/small_ship.png">
             </div>
+            <!-- เอาไว้กดข้ามหน้าเฉยๆ ทำเสร็จถึงลบ -->
+            <div class="test-goto">
+                <button class="btn-classics" onclick="gotopart('story')">Story Part</button>
+                <button class="btn-classics" onclick="gotopart('more')">More Part</button>
+            </div>
+            <!-- จบ -->
             <div class="container">
                 <div class="home-logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
                     <img src="img/parrot_fish/Main_Parrot_Fish.png">
@@ -95,7 +101,13 @@
     </div>
 
     <div id="story-part" class="part">
+        <!-- เริ่มต้น ส่วนของเอิร์ธ -->
         <div class="page" id="story1" data-show="1">
+            <!-- เอาไว้กดข้ามหน้าเฉยๆ ทำเสร็จถึงลบ -->
+            <div class="test-goto">
+                <button class="btn-classics" onclick="gotopart('main')">กลับไปสู่หน้าหลัก</button>
+            </div>
+            <!-- จบ -->
             <div class="fish-store">
                 <div class="mid-store"><img src="img/element/ขายปลาสด.png"></div>
                 <div class="fishtank1"><img src="img/element/ตู้ปลา.png"></div>
@@ -107,29 +119,47 @@
         <div class="page" id="story2" data-show="1">
             
         </div>
-        <div class="page" id="story3" data-show="0">
+        <div class="page" id="story3" data-show="1">
             
         </div>
-        <div class="page" id="story4" data-show="0">
+        <div class="page" id="story4" data-show="1">
             
         </div>
-        <div class="page" id="story5" data-show="0">
+        <!-- จบ ส่วนของเอิร์ธ -->
+        
+        <!-- เริ่มต้น ส่วนของบูม -->
+        <div class="page" id="story5" data-show="1">
             <div class="nok"><span class="text-white-22">แอ๊ก แอ๊ก</span><img src="img/element/นกนางนวย.png"></div>
             <div id="" class="" data-show="0" data-play="0">
                 <img src="img/parrot_fish/Main_Parrot_Fish.png">
             </div>
         </div>
-        
+        <div class="page" id="story6" data-show="1">
+            
+        </div>
+        <div class="page" id="story7" data-show="1">
+            
+        </div>
+        <div class="page" id="story8" data-show="1">
+            
+        </div>
+        <!-- จบ ส่วนของบูม -->
+
+        <!-- เริ่มต้น ส่วนของเอิ้น -->
+        <div class="page" id="story9" data-show="1">
+            
+        </div>
+        <!-- จบ ส่วนของเอิ้น -->
     </div>
 
     <div id="more-part" class="part">
-        <div>
-            <div class="text-coming-soon">หน้าเพิ่มเติม</div>
-            <div class="coming-soon">(Comming Soon)</div>
-            <div class="btn-to-main">
-                <button onclick="gotopart('main')">กลับไปสู่หน้าหลัก</button>
+       <div class="page" id="more1">
+           <!-- เอาไว้กดข้ามหน้าเฉยๆ ทำเสร็จถึงลบ -->
+           <div class="test-goto">
+                <button class="btn-classics" onclick="gotopart('main')">กลับไปสู่หน้าหลัก</button>
             </div>
-        </div>
+            <!-- จบ -->
+       </div>
     </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
