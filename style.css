@@ -537,17 +537,66 @@ button:hover {
     left: 350px;
     z-index: 1;
 }
+.blue-boy{
+    width: 50vh;
+    position: absolute;
+    bottom: 5px;
+    left: 550px;
+    z-index: 1;
+}
+.pa-orange{
+    width: 50vh;
+    position: absolute;
+    bottom: 5px;
+    left: 700px;
+    z-index: 1;
+}
+.pink-girl{
+    width: 50vh;
+    position: absolute;
+    bottom: 5px;
+    left: 650px;
+    z-index: 1;
+}
 .mid-store2{
     width: 45vh;
     position: absolute;
     top: 50px;
-    left: 350px;
+    left: 450px;
+    z-index: 1;
 }
 .table{
-    width: 50vh;
+    width: 45vh;
     position: absolute;
     bottom: 70px;
-    right: 350px;
+    right: 340px;
+    z-index: 1;
+}
+.hand{
+    width: 80vh;
+    position: absolute;
+    top: 120px;
+    left: -80px;
+    z-index: 1;
+}
+.pa-yellow{
+    width: 60vh;
+    position: absolute;
+    top: 100px;
+    right: 260px;
+    z-index: 1;
+}
+.fishtank3{
+    width: 30vh;
+    position: absolute;
+    top: 160px;
+    left: 510px;
+}
+.fishtank4{
+    width: 60vh;
+    position: absolute;
+    bottom: 100px;
+    right: 550px;
     z-index: 1;
 }
 #main5 {
