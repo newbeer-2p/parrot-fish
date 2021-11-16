@@ -475,6 +475,20 @@ button:hover {
     background-repeat: no-repeat;
 }
 
+#story3{
+    background: url(img/bg/desktop/ตลาด3.jpg);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+#story4{
+    background: url(img/bg/desktop/ตลาด4.jpg);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
 .fishing-ship {
     width: 100vw;
     text-align: center;
@@ -492,35 +506,48 @@ button:hover {
     width: 25vw;
 }
 .mid-store{
-    width: 50vh;
+    width: 60vh;
     position: absolute;
-    bottom: 600px;
-    right: 600px;
+    bottom: 100px;
+    right: 550px;
 }
 .Rstore{
-    width: 40vh;
+    width: 50vh;
     position: absolute;
-    bottom: 600px;
+    bottom: 100px;
     right: 150px;
 }
 .Lstore{
-    width: 40vh;
+    width: 50vh;
     position: absolute;
-    bottom: 600px;
-    left: 150px;
+    bottom: 100px;
+    left: 140px;
 }
 .fishtank1{
-    width: 30vh;
+    width: 25vh;
     position: absolute;
-    bottom: 600px;
-    left: 800px;
+    bottom: 245px;
+    left: 650px;
     z-index: 1;
 }
 .fishtank2{
-    width: 20vh;
+    width: 23vh;
     position: absolute;
-    bottom: 600px;
-    left: 450px;
+    bottom: 70px;
+    left: 350px;
+    z-index: 1;
+}
+.mid-store2{
+    width: 45vh;
+    position: absolute;
+    top: 50px;
+    left: 350px;
+}
+.table{
+    width: 50vh;
+    position: absolute;
+    bottom: 70px;
+    right: 350px;
     z-index: 1;
 }
 #main5 {
