@@ -599,6 +599,34 @@ button:hover {
     right: 550px;
     z-index: 1;
 }
+.blue-boy2{
+    width: 65vh;
+    position: absolute;
+    bottom: 150px;
+    left: 500px;
+    z-index: 1;
+}
+.pa-orange2{
+    width: 65vh;
+    position: absolute;
+    bottom: -25px;
+    left: 700px;
+    z-index: 1;
+}
+.pink-girl2{
+    width: 65vh;
+    position: absolute;
+    bottom: 5px;
+    left: 380px;
+    z-index: 1;
+}
+.lung{
+    width: 65vh;
+    position: absolute;
+    bottom: 150px;
+    left: 600px;
+    z-index: 1;
+}
 #main5 {
     background: url(img/bg/mobile/ฉากเริ่มต้น7.png);
     background-size: 100% 100%;
