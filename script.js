@@ -10,20 +10,7 @@ window.onscroll = function() {
     let main4 = document.querySelector("#main4");
     let text2_in_main3 = document.querySelector("#text2-in-main4");
     let parrot_in_main3 = document.querySelector("#parrot-in-main3");
-    // if (scrollY <= (main3.offsetTop + text2_in_main3.offsetTop - 250) && scrollY >= main3.offsetTop) {
-
-    // if (scrollY >= main3.offsetTop - 100) {
-    //     let parrot_fish = document.querySelector("#parrot-in-main3");
-    //     parrot_fish.dataset.show = "1";
-
-    //     parrot_move = scrollY - main3.offsetTop - 200
-    //     if (parrot_move < 0){
-    //         parrot_move = 0;
-    //     }
-        
-    //     parrot_fish.style.setProperty("--mvY", parrot_move);
-    //     parrot_fish.style.setProperty("--scH", main3.offsetTop + text2_in_main3.offsetTop - 250 - main3.offsetTop);
-    // }
+    
     if (main3.offsetTop != 0 && scrollY >= main3.offsetTop) {
         parrot_in_main3.dataset.show = "1";
     }
@@ -55,6 +42,7 @@ function goto(page) {
 function gotopart(part){
     window.scroll(0, 0);
     body.dataset.mode = part;
+    document.querySelector("#parrot-in-main3").dataset.show = "0";
 }
 
 function openPage(page){
@@ -75,6 +63,5 @@ function changeText(){
         document.querySelector("#parrot-in-main3").dataset.play = "0";
         openPage("main5");
         openPage("main6");
-        openPage("main7");
     }
 }
