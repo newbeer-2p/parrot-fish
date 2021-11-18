@@ -488,7 +488,18 @@ button:hover {
     background-position: center bottom;
     background-repeat: no-repeat;
 }
-
+.red{
+    color: red;
+    font-size: 16px;
+}
+.text-black{
+    color: black;
+    font-size: 16px;
+}
+.story2_text{
+    color: white;
+    font-size: 16px;
+}
 .fishing-ship {
     width: 100vw;
     text-align: center;
