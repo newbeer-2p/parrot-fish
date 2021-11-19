@@ -696,13 +696,6 @@ button:hover {
 .btn-to-story>button {
     color: var(--aqua);
 }
-
-#story5{
-    background: url(img/bg/desktop/ตลาด5.jpg);
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-}
 .nok{
     position: absolute;
     bottom: 60vh;
@@ -735,27 +728,7 @@ button:hover {
         transform:rotate(360deg);
     }
 }
-#story6{
-    background: url(img/bg/desktop/คืนสู่ทะเล1.jpg);
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    width:100%;
-}
-#story7{
-    background: url(img/bg/desktop/คืนสู่ทะเล2.jpg);
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    width:100%;
-}
-#story8{
-    background: url(img/bg/desktop/คืนสู่ทะเล3.jpg);
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    width:100%;
-}
+
 .dead1{
     bottom: var(--b);
     left: var(--l);
@@ -836,6 +809,34 @@ button:hover {
         background-position: center bottom;
         background-repeat: no-repeat;
     }
+    #story5{
+        background: url(img/bg/desktop/ตลาด5.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story6{
+        background: url(img/bg/desktop/คืนสู่ทะเล1.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story7{
+        background: url(img/bg/desktop/คืนสู่ทะเล2.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story8{
+        background: url(img/bg/desktop/คืนสู่ทะเล3.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
 }
 @media (max-width: 500px) {
     #home {
@@ -875,6 +876,34 @@ button:hover {
         background-position: center bottom;
         background-repeat: no-repeat;
         height: 100vh;
+    }
+    #story5{
+        background: url(img/bg/mobile/ในตลาด5.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story6{
+        background: url(img/bg/mobile/คืนทะเล1.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story7{
+        background: url(img/bg/mobile/คืนทะเล2.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story8{
+        background: url(img/bg/mobile/คืนทะเล3.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
     }
     .mb-fs-24,
     .btn-sm {
