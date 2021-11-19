@@ -698,8 +698,10 @@ button:hover {
 }
 
 #story5{
-    background: url();
-    height: 200vh;
+    background: url(img/bg/desktop/ตลาด5.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 .nok{
     position: absolute;
@@ -707,6 +709,15 @@ button:hover {
     left: 45vw;
     width: 20vh;
     animation:nokbin 0.1s infinite alternate;
+    z-index:1;
+}
+.pla{
+    position: absolute;
+    bottom: 50vh;
+    left: 45vw;
+    width: 20vh;
+    animation:PlaSpin 0.5s infinite linear;
+    
 }
 @keyframes nokbin{
     from{
@@ -716,7 +727,77 @@ button:hover {
         transform:translateY(25px);
     }
 }
-
+@keyframes PlaSpin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+#story6{
+    background: url(img/bg/desktop/คืนสู่ทะเล1.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width:100%;
+}
+#story7{
+    background: url(img/bg/desktop/คืนสู่ทะเล2.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width:100%;
+}
+#story8{
+    background: url(img/bg/desktop/คืนสู่ทะเล3.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width:100%;
+}
+.dead1{
+    bottom: var(--b);
+    left: var(--l);
+    width: 22vh;
+    position: absolute;
+    z-index: var(--z);
+}
+.dead2{
+    bottom: var(--b);
+    left: var(--l);
+    width: 11vh;
+    position: absolute;
+    z-index: var(--z);
+}
+.dead3{
+    bottom: var(--b);
+    left: var(--l);
+    width: 12vh;
+    position: absolute;
+    z-index: var(--z);
+}
+.dead4{
+    bottom: var(--b);
+    left: var(--l);
+    width: 20vh;
+    position: absolute;
+    z-index: var(--z);
+}
+.dead5{
+    bottom: var(--b);
+    left: var(--l);
+    width: 20vh;
+    position: absolute;
+    z-index: var(--z);
+}
+.dead6{
+    bottom: var(--b);
+    left: var(--l);
+    width: 10vh;
+    position: absolute;
+    z-index: var(--z);
+}
 @media (min-width: 1200px) {
     #home {
         background: url(img/bg/desktop/main1.png);
