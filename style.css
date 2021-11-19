@@ -771,6 +771,336 @@ button:hover {
     position: absolute;
     z-index: var(--z);
 }
+.purple{
+    left: -10px;
+    bottom: -30px;
+    width: 180px !important;
+    position: absolute;
+    z-index: 1;
+    animation: dukdik 1.5s linear infinite;
+    animation-delay: -10s;
+}
+.orange{
+    left: 90px;
+    bottom: -30px;
+    width: 250px !important;
+    position: absolute;
+    animation: dukdik 1.5s .5s linear infinite;
+    animation-delay: -10s;
+}
+.seaweed{
+    left: 240px;
+    bottom: -40px;
+    width: 250px !important;
+    position: absolute;
+    z-index: -1 ;
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -10s;
+}
+.pink{
+    left: 470px;
+    bottom: -40px;
+    width: 250px !important;
+    position: absolute;
+    z-index: -1 ;
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -10s;
+}
+.seaweed-a{
+    left: 350px;
+    bottom: -200px;
+    width: 250px !important;
+    position: absolute;
+    z-index: -1 ;
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -10s;
+}
+.purple-r{
+    right: 400px;
+    bottom: -30px;
+    width: 250px !important;
+    position: absolute;
+    z-index: 1 ;
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -10s;
+}
+.orange-r{
+    right: 250px;
+    bottom: -30px;
+    width: 250px !important;
+    z-index: -1 ;
+    position: absolute;
+    animation: dukdik 1.5s .5s linear infinite;
+    animation-delay: -10s;
+}
+.seaweed-r{
+    right: 70px;
+    bottom: -30px;
+    width: 250px !important;
+    z-index: -2 ;
+    position: absolute;
+    animation: dukdik 1.5s .5s linear infinite;
+    animation-delay: -10s;
+}
+.pink-r{
+    right: 200px;
+    bottom: -200px;
+    width: 250px !important;
+    z-index: -1 ;
+    position: absolute;
+    animation: dukdik 1.5s .5s linear infinite;
+    animation-delay: -10s;
+}
+.seaweed-a-r{
+    right: 0;
+    bottom: -80px;
+    width: 250px !important;
+    z-index: -1 ;
+    position: absolute;
+    animation: dukdik 1.5s .5s linear infinite;
+    animation-delay: -10s;
+}
+.fish-rainbow{
+    top: 650px;
+    left: 500px;
+    width: 250px !important;
+    position: absolute;
+    transform: scaleX(-1);
+}
+.fish-head{
+    top: 350px;
+    right: 400;
+    width: 250px !important;
+    position: absolute;
+}
+.fish-ovi{
+    top: 550px;
+    left: 400px;
+    width: 250px !important;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+.fish-spot{
+    top: 420px;
+    right: 400;
+    width: 250px !important;
+    position: absolute;
+}
+
+.fish-red{
+    top: 570px;
+    left: 400px;
+    width: 250px !important;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+.fish-marbled{
+    top: 420px;
+    right: 400;
+    width: 250px !important;
+    position: absolute;
+}
+
+.fish-blue{
+    top: 580px;
+    left: 400px;
+    width: 250px !important;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+.fish-indian{
+    top: 460px;
+    right: 400;
+    width: 250px !important;
+    position: absolute;
+}
+
+.fish-chi{
+    top: 580px;
+    left: 400px;
+    width: 250px !important;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+.fish-bic{
+    top: 420px;
+    right: 400;
+    width: 250px !important;
+    position: absolute;
+}
+
+.content{
+    background: white;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 430px;
+    left: 380px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.content-2{
+    background: white;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 140px;
+    right: 300;
+    border-radius: 20px;
+    padding: 20px
+}
+
+.content-3{
+    background: white;
+    width: 500px;
+    height: 230px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content-4{
+    background: white;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    right: 300;
+    border-radius: 20px;
+    padding: 20px
+}
+
+.content-5{
+    background: white;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content-6{
+    background: white;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    right: 300;
+    border-radius: 20px;
+    padding: 20px
+}
+
+.content-7{
+    background: white;
+    width: 500px;
+    height: 210px;
+    position: absolute;
+    top: 350px;
+    left: 300px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content-8{
+    background: white;
+    width: 500px;
+    height: 240px;
+    position: absolute;
+    top: 200px;
+    right: 300;
+    border-radius: 20px;
+    padding: 20px
+}
+
+.content-9{
+    background: white;
+    width: 500px;
+    height: 240px;
+    position: absolute;
+    top: 350px;
+    left: 300px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content-10{
+    background: white;
+    width: 500px;
+    height: 190px;
+    position: absolute;
+    top: 200px;
+    right: 300;
+    border-radius: 20px;
+    padding: 20px
+}
+
+.next-lvl{
+    background: white;
+    width: 300px;
+    height: 100px;
+    top: 820px;
+    left: 850px;
+    position: absolute;
+    border-radius: 40px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.back-to-basic{
+    background: white;
+    width: 300px;
+    height: 100px;
+    top: 940px;
+    left: 850px;
+    position: absolute;
+    border-radius: 40px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.text-n{
+    margin-bottom: 100px;
+}
+
+.content, .content-2, .content-3, .content-4, .content-5, .content-6, .content-7, .content-8, .content-9, .content-10[data-show="0"]{
+    opacity: 0;
+}
+
+.fishname{
+    font-size: 30px;
+}
+
+.text-fish{
+    margin-bottom: 20px;
+    overflow-y: scroll; 
+    text-align: left;
+}
+.link-fish{
+    width: 100%;
+    text-align: right;
+    margin-top: -10px;
+    margin-left: -20px;
+}
+#more1{
+    overflow: hidden;
+}
+#more-part{
+    overflow: hidden;
+}
+.fish-l[data-show="0"]{
+    opacity: 0;
+}
+.fish-r[data-show="0"]{
+    opacity: 0;
+}
 @media (min-width: 1200px) {
     #home {
         background: url(img/bg/desktop/main1.png);
@@ -928,6 +1258,63 @@ button:hover {
     }
     .small-ship{
         bottom: 30vh;
+    }
+    .purple{
+        width: 125px!important;
+        left: -50px;
+    }
+    .orange{
+        width: 125px!important;
+        left: -10px;
+    }
+    .seaweed{
+        width: 125px!important;
+        left: 30px;
+    }
+    .pink{
+        width: 125px!important;
+        bottom: -50px;
+        left: 100px;
+    }
+    .seaweed-a{
+        width: 125px!important;
+        bottom: -120px;
+        left: 70px;
+    }
+    .purple-r{
+        width: 125px!important;
+        right: 20px;
+    }
+    .orange-r{
+        width: 125px!important;
+        right: -10px;
+    }
+    .seaweed-r{
+        width: 125px!important;
+        right: -20px;
+    }
+    .pink-r{
+        width: 125px!important;
+        right: -20px;
+    }
+    .seaweed-a-r{
+        width: 125px!important;
+        right: -20px;
+    }
+    .fish-rainbow{
+        width: 40vw!important;
+        left: 0;
+        top: 700px;
+    }
+    .fish-head{
+        width: 40vw!important;
+        left: 200px;
+    }
+    .content{
+        height: 250px;
+        width: 90vw!important;
+        left: 20px;
+        top: 450px;
     }
 }
 
