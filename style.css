@@ -710,7 +710,7 @@ button:hover {
 .blue-boy2{
     width: 32vw;
     position: absolute;
-    bottom: 18vh;
+    bottom: 20vh;
     left: 33vw;
     z-index: 1;
 }
@@ -725,14 +725,14 @@ button:hover {
     width: 32vw;
     position: absolute;
     bottom: 5vh;
-    left: 30vw;
+    left: 26vw;
     z-index: 1;
 }
 .lung{
-    width: 65vh;
+    width: 32vw;
     position: absolute;
-    bottom: 160px;
-    left: 600px;
+    bottom: 20vh;
+    left: 41vw;
     z-index: 1;
 }
 #main5 {
@@ -1404,6 +1404,36 @@ a:link {
         background-position: center bottom;
         background-repeat: no-repeat;
         height: 100vh;
+    }
+    .mid-store{
+        width: 80vw;
+        left: 10vw;
+    }
+    .fishtank1{
+        width: 60vw;
+        left:20vw;
+        bottom: 30vh;
+    }
+    .Rstore{
+        opacity: 0;
+    }
+    .Lstore{
+        opacity: 0;
+    }
+    .fishtank2{
+        opacity: 0;
+    }
+    .blue-boy{
+        width: 80vw;
+        left: -10vw;
+    }
+    .pink-girl{
+        width: 80vw;
+        left: 20vw;
+    }
+    .pa-orange{
+        width: 80vw;
+        left: 35vw;
     }
     #story2{
         background: url(img/bg/mobile/ในตลาด2.jpg);
