@@ -708,24 +708,24 @@ button:hover {
     right: 28vw;
 }
 .blue-boy2{
-    width: 65vh;
+    width: 32vw;
     position: absolute;
-    bottom: 160px;
-    left: 500px;
+    bottom: 18vh;
+    left: 33vw;
     z-index: 1;
 }
 .pa-orange2{
-    width: 65vh;
+    width: 32vw;
     position: absolute;
-    bottom: -25px;
-    left: 700px;
+    bottom: 5vh;
+    left: 45vw;
     z-index: 1;
 }
 .pink-girl2{
-    width: 65vh;
+    width: 32vw;
     position: absolute;
-    bottom: 5px;
-    left: 380px;
+    bottom: 5vh;
+    left: 30vw;
     z-index: 1;
 }
 .lung{
