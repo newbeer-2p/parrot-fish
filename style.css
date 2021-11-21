@@ -63,7 +63,6 @@ body {
 #story-part>div,
 #more-part>div {
     text-align: center;
-    top: 500px;
 }
 
 body[data-mode="story"] {
@@ -77,26 +76,18 @@ body[data-mode="more"] {
 }
 
 body[data-mode="main"]>:where(#story-part, #more-part) {
-    opacity: 0;
+    display: none;
     z-index: 0;
 }
 
 body[data-mode="story"]>:where(#main-part, #more-part) {
-    opacity: 0;
+    display: none;
     z-index: 0;
 }
 
 body[data-mode="more"]>:where(#story-part, #main-part) {
-    opacity: 0;
+    display: none;
     z-index: 0;
-}
-
-#story-part,
-#more-part {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 * {
@@ -118,14 +109,14 @@ body[data-mode="more"]>:where(#story-part, #main-part) {
 .page {
     width: 100vw;
     min-height: 100vh;
-    overflow: hidden;
     position: relative;
     /* border: 5px solid orange; */
 }
 
 #home {
-    background: url(img/bg/mobile/ฉากเริ่มต้น4.png);
-    background-size: 100% 100%;
+    background: url(img/bg/desktop/main1.png);
+    /* background-size: 100% 100%; */
+    background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
 }
@@ -145,15 +136,17 @@ body[data-mode="more"]>:where(#story-part, #main-part) {
 .small-ship {
     width: 250px;
     position: absolute;
-    bottom: 30vh;
+    bottom: 20vh;
     right: 0;
     animation: ship-move 10s infinite linear, ship-idle .5s infinite linear alternate;
 }
 
 #main2 {
-    background: url(img/bg/mobile/ฉากเริ่มต้น3.png);
-    background-size: 100% 100%;
-    background-position: center bottom;
+    background: url(img/bg/desktop/main2.png);
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -277,14 +270,17 @@ button:hover {
     padding: 200px 0;
     height: 100vh;
     overflow: visible;
-    background: url(img/bg/mobile/ฉากเริ่มต้น2.png);
-    background-size: 100% 100%;
+    background: url(img/bg/desktop/main3.png);
+    /* background-size: 100% 100%; */
+    background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
 }
 
 .img-main3[data-show="0"] {
-    transform: translateX(125vw) scaleX(-1);
+    /* transform: translateX(125vw) scaleX(-1); */
+    display: none;
+    /* transition: opacity 1s; */
     /* animation: fish-swim-go 2s; */
 }
 
@@ -317,7 +313,7 @@ button:hover {
 }
 
 .img-main3>img {
-    width: 20vw;
+    width: 350px;
     animation: dukdik 1s linear infinite;
 }
 
@@ -464,13 +460,67 @@ button:hover {
 }
 
 #main4 {
-    background: url(img/bg/mobile/ฉากเริ่มต้น1.png);
-    background-size: 100% 100%;
+    background: url(img/bg/desktop/main4.png);
+    /* background-size: 100% 100%; */
+    background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 
+#story1{
+    background: url(img/bg/desktop/ตลาด1.jpg);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+#story2{
+    background: url(img/bg/desktop/ตลาด2.jpg);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+#story3{
+    background: url(img/bg/desktop/ตลาด3.jpg);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+#story4{
+    background: url(img/bg/desktop/ตลาด4.jpg);
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.red{
+    color: red;
+    font-size: 16px;
+}
+.text-black{
+    color: black;
+    font-size: 16px;
+}
+.story2_text{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 100px;
+    right: 550px;
+}
+.story3_text{
+    color: white;
+    font-size: 16px;
+}
+.story4_text{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    bottom: 40px;
+    left:640px;
+}
 .fishing-ship {
     width: 100vw;
     text-align: center;
@@ -478,7 +528,8 @@ button:hover {
 }
 
 .fishing-ship>img {
-    width: 50%;
+    width: 65%;
+    /* height: 150vh; */
 }
 
 .page[data-show="0"] {
@@ -488,60 +539,153 @@ button:hover {
     width: 25vw;
 }
 .mid-store{
-    width: 50vh;
+    width: 60vh;
     position: absolute;
-    bottom: 600px;
-    right: 600px;
+    bottom: 100px;
+    right: 36vw;
 }
 .Rstore{
-    width: 40vh;
+    width: 50vh;
     position: absolute;
-    bottom: 600px;
-    right: 150px;
+    bottom: 100px;
+    right: 10vw;
 }
 .Lstore{
-    width: 40vh;
+    width: 50vh;
     position: absolute;
-    bottom: 600px;
-    left: 150px;
+    bottom: 100px;
+    left: 10vw;
 }
 .fishtank1{
-    width: 30vh;
+    width: 25vh;
     position: absolute;
-    bottom: 600px;
-    left: 800px;
+    bottom: 245px;
+    left: 650px;
     z-index: 1;
 }
 .fishtank2{
-    width: 20vh;
+    width: 23vh;
     position: absolute;
-    bottom: 600px;
-    left: 450px;
+    bottom: 70px;
+    left: 350px;
+    z-index: 1;
+}
+.blue-boy{
+    width: 50vh;
+    position: absolute;
+    bottom: 5px;
+    left: 35vw;
+    z-index: 1;
+}
+.pa-orange{
+    width: 50vh;
+    position: absolute;
+    bottom: 5px;
+    left: 45vw;
+    z-index: 1;
+}
+.pink-girl{
+    width: 50vh;
+    position: absolute;
+    bottom: 5px;
+    left: 42vw;
+    z-index: 1;
+}
+.mid-store2{
+    width: 45vh;
+    position: absolute;
+    top: 50px;
+    left: 350px;
+    z-index: 1;
+}
+.table{
+    width: 45vh;
+    position: absolute;
+    bottom: 70px;
+    right: 340px;
+    z-index: 1;
+}
+.hand{
+    width: 80vh;
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    z-index: 1;
+    transform: rotate(-20deg);
+}
+.pa-yellow{
+    width: 60vh;
+    position: absolute;
+    top: 100px;
+    right: 260px;
+    z-index: 1;
+}
+.fishtank3{
+    width: 30vh;
+    position: absolute;
+    top: 160px;
+    left: 410px;
+}
+.fishtank4{
+    width: 60vh;
+    position: absolute;
+    bottom: 100px;
+    right: 550px;
+    z-index: 1;
+}
+.blue-boy2{
+    width: 65vh;
+    position: absolute;
+    bottom: 160px;
+    left: 500px;
+    z-index: 1;
+}
+.pa-orange2{
+    width: 65vh;
+    position: absolute;
+    bottom: -25px;
+    left: 700px;
+    z-index: 1;
+}
+.pink-girl2{
+    width: 65vh;
+    position: absolute;
+    bottom: 5px;
+    left: 380px;
+    z-index: 1;
+}
+.lung{
+    width: 65vh;
+    position: absolute;
+    bottom: 160px;
+    left: 600px;
     z-index: 1;
 }
 #main5 {
-    background: url(img/bg/mobile/ฉากเริ่มต้น7.png);
-    background-size: 100% 100%;
+    background: url(img/bg/desktop/main5.png);
+    /* background-size: 100% 100%; */
+    background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
     position: relative;
 }
 
 #main6 {
-    background: url(img/bg/mobile/ฉากเริ่มต้น6.png);
-    background-size: 100% 100%;
+    background: url(img/bg/desktop/main6.png);
+    /* background-size: 100% 100%; */
+    background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    height: 200px;
+    height: 225vh;
 }
 
-#main7 {
-    background: url(img/bg/mobile/ฉากเริ่มต้น5.png);
+/* #main7 {
+    background: url(img/bg/desktop/main6.png);
     background-size: 100% 100%;
     background-position: center bottom;
     background-repeat: no-repeat;
     height: fit-content;
-}
+} */
 
 #main7-content-1 {
     position: absolute;
@@ -551,7 +695,7 @@ button:hover {
 
 #main7-content-2 {
     position: absolute;
-    bottom: 60vh;
+    bottom: 80vh;
     width: 100%;
 }
 
@@ -559,15 +703,13 @@ button:hover {
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin-top: 150px;
-    margin-bottom: 25px;
+    position: absolute;
+    /* margin-top: 18vh; */
+    bottom: 5vh;
 }
 
 .btn-to-story>button {
     color: var(--aqua);
-}
-#story5{
-    background: url();
 }
 .nok{
     position: absolute;
@@ -575,6 +717,15 @@ button:hover {
     left: 45vw;
     width: 20vh;
     animation:nokbin 0.1s infinite alternate;
+    z-index:1;
+}
+.pla{
+    position: absolute;
+    bottom: 50vh;
+    left: 45vw;
+    width: 20vh;
+    animation:PlaSpin 0.5s infinite linear;
+    
 }
 @keyframes nokbin{
     from{
@@ -584,48 +735,576 @@ button:hover {
         transform:translateY(25px);
     }
 }
-@media (max-width: 500px) {
+@keyframes PlaSpin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.dead1{
+    bottom: var(--b);
+    left: var(--l);
+    width: 22vh;
+    position: absolute;
+    z-index: var(--z);
+}
+.dead2{
+    bottom: var(--b);
+    left: var(--l);
+    width: 11vh;
+    position: absolute;
+    z-index: var(--z);
+}
+.dead3{
+    bottom: var(--b);
+    left: var(--l);
+    width: 12vh;
+    position: absolute;
+    z-index: var(--z);
+}
+.dead4{
+    bottom: var(--b);
+    left: var(--l);
+    width: 20vh;
+    position: absolute;
+    z-index: var(--z);
+}
+.dead5{
+    bottom: var(--b);
+    left: var(--l);
+    width: 20vh;
+    position: absolute;
+    z-index: var(--z);
+}
+.dead6{
+    bottom: var(--b);
+    left: var(--l);
+    width: 10vh;
+    position: absolute;
+    z-index: var(--z);
+}
+.purple{
+    left: -10px;
+    bottom: -30px;
+    width: 180px !important;
+    position: absolute;
+    z-index: 1;
+    animation: dukdik 1.5s linear infinite;
+    animation-delay: -10s;
+}
+.orange{
+    left: 90px;
+    bottom: -30px;
+    width: 250px !important;
+    position: absolute;
+    animation: dukdik 1.5s .5s linear infinite;
+    animation-delay: -10s;
+}
+.seaweed{
+    left: 240px;
+    bottom: -40px;
+    width: 250px !important;
+    position: absolute;
+    z-index: -1 ;
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -10s;
+}
+.pink{
+    left: 470px;
+    bottom: -40px;
+    width: 250px !important;
+    position: absolute;
+    z-index: -1 ;
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -10s;
+}
+.seaweed-a{
+    left: 350px;
+    bottom: -200px;
+    width: 250px !important;
+    position: absolute;
+    z-index: -1 ;
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -10s;
+}
+.purple-r{
+    right: 400px;
+    bottom: -30px;
+    width: 250px !important;
+    position: absolute;
+    z-index: 1 ;
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -10s;
+}
+.orange-r{
+    right: 250px;
+    bottom: -30px;
+    width: 250px !important;
+    z-index: -1 ;
+    position: absolute;
+    animation: dukdik 1.5s .5s linear infinite;
+    animation-delay: -10s;
+}
+.seaweed-r{
+    right: 70px;
+    bottom: -30px;
+    width: 250px !important;
+    z-index: -2 ;
+    position: absolute;
+    animation: dukdik 1.5s .5s linear infinite;
+    animation-delay: -10s;
+}
+.pink-r{
+    right: 200px;
+    bottom: -200px;
+    width: 250px !important;
+    z-index: -1 ;
+    position: absolute;
+    animation: dukdik 1.5s .5s linear infinite;
+    animation-delay: -10s;
+}
+.seaweed-a-r{
+    right: 0;
+    bottom: -80px;
+    width: 250px !important;
+    z-index: -1 ;
+    position: absolute;
+    animation: dukdik 1.5s .5s linear infinite;
+    animation-delay: -10s;
+}
+.fish-rainbow{
+    top: 650px;
+    left: 500px;
+    width: 250px !important;
+    position: absolute;
+    transform: scaleX(-1);
+}
+.fish-head{
+    top: 350px;
+    right: 400;
+    width: 250px !important;
+    position: absolute;
+}
+.fish-ovi{
+    top: 550px;
+    left: 400px;
+    width: 250px !important;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+.fish-spot{
+    top: 420px;
+    right: 400;
+    width: 250px !important;
+    position: absolute;
+}
+
+.fish-red{
+    top: 570px;
+    left: 400px;
+    width: 250px !important;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+.fish-marbled{
+    top: 420px;
+    right: 400;
+    width: 250px !important;
+    position: absolute;
+}
+
+.fish-blue{
+    top: 580px;
+    left: 400px;
+    width: 250px !important;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+.fish-indian{
+    top: 460px;
+    right: 400;
+    width: 250px !important;
+    position: absolute;
+}
+
+.fish-chi{
+    top: 580px;
+    left: 400px;
+    width: 250px !important;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+.fish-bic{
+    top: 420px;
+    right: 400;
+    width: 250px !important;
+    position: absolute;
+}
+
+.content{
+    background: white;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 430px;
+    left: 380px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.content-2{
+    background: white;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 140px;
+    right: 300;
+    border-radius: 20px;
+    padding: 20px
+}
+
+.content-3{
+    background: white;
+    width: 500px;
+    height: 230px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content-4{
+    background: white;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    right: 300;
+    border-radius: 20px;
+    padding: 20px
+}
+
+.content-5{
+    background: white;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content-6{
+    background: white;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    right: 300;
+    border-radius: 20px;
+    padding: 20px
+}
+
+.content-7{
+    background: white;
+    width: 500px;
+    height: 210px;
+    position: absolute;
+    top: 350px;
+    left: 300px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content-8{
+    background: white;
+    width: 500px;
+    height: 240px;
+    position: absolute;
+    top: 200px;
+    right: 300;
+    border-radius: 20px;
+    padding: 20px
+}
+
+.content-9{
+    background: white;
+    width: 500px;
+    height: 240px;
+    position: absolute;
+    top: 350px;
+    left: 300px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content-10{
+    background: white;
+    width: 500px;
+    height: 190px;
+    position: absolute;
+    top: 200px;
+    right: 300;
+    border-radius: 20px;
+    padding: 20px
+}
+
+.next-lvl{
+    background: white;
+    width: 300px;
+    height: 100px;
+    top: 820px;
+    left: 850px;
+    position: absolute;
+    border-radius: 40px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.back-to-basic{
+    background: white;
+    width: 300px;
+    height: 100px;
+    top: 940px;
+    left: 850px;
+    position: absolute;
+    border-radius: 40px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.text-n{
+    margin-bottom: 100px;
+}
+
+.content, .content-2, .content-3, .content-4, .content-5, .content-6, .content-7, .content-8, .content-9, .content-10[data-show="0"]{
+    opacity: 0;
+}
+
+.fishname{
+    font-size: 30px;
+}
+
+.text-fish{
+    margin-bottom: 20px;
+    overflow-y: scroll; 
+    text-align: left;
+}
+.link-fish{
+    width: 100%;
+    text-align: right;
+    margin-top: -10px;
+    margin-left: -20px;
+}
+#more1{
+    overflow: hidden;
+}
+#more-part{
+    overflow: hidden;
+}
+.fish-l[data-show="0"]{
+    opacity: 0;
+}
+.fish-r[data-show="0"]{
+    opacity: 0;
+}
+@media (min-width: 1200px) {
     #home {
-        background: url(img/bg/mobile/ฉากเริ่มต้น4.png);
+        background: url(img/bg/desktop/main1.png);
         background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main2 {
-        background: url(img/bg/mobile/ฉากเริ่มต้น3.png);
+        background: url(img/bg/desktop/main2.png);
         background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main3 {
-        background: url(img/bg/mobile/ฉากเริ่มต้น2.png);
+        background: url(img/bg/desktop/main3.png);
         background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main4 {
-        background: url(img/bg/mobile/ฉากเริ่มต้น1.png);
+        background: url(img/bg/desktop/main4.png);
         background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main5 {
-        background: url(img/bg/mobile/ฉากเริ่มต้น7.png);
+        background: url(img/bg/desktop/main5.png);
+
         background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main6 {
-        background: url(img/bg/mobile/ฉากเริ่มต้น6.png);
-        background-size: 100% 100%;
+        background: url(img/bg/desktop/main6.png);
+        background-size: 300% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
-    #main7 {
-        background: url(img/bg/mobile/ฉากเริ่มต้น5.png);
-        background-size: 100% 100%;
+    #story1{
+        background: url(img/bg/desktop/ตลาด1.jpg);
+        background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
+        width:100%;
+    }
+    #story2{
+        background: url(img/bg/desktop/ตลาด2.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story3{
+        background: url(img/bg/desktop/ตลาด3.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story4{
+        background: url(img/bg/desktop/ตลาด4.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story5{
+        background: url(img/bg/desktop/ตลาด5.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story6{
+        background: url(img/bg/desktop/คืนสู่ทะเล1.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story7{
+        background: url(img/bg/desktop/คืนสู่ทะเล2.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story8{
+        background: url(img/bg/desktop/คืนสู่ทะเล3.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+}
+@media (max-width: 500px) {
+    #home {
+        background: url(img/bg/mobile/ฉากเริ่มต้น4.png);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    #main2 {
+        background: url(img/bg/mobile/ฉากเริ่มต้น3.png);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    #main3 {
+        background: url(img/bg/mobile/ฉากเริ่มต้น2.png);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    #main4 {
+        background: url(img/bg/mobile/ฉากเริ่มต้น1.png);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    #main5 {
+        background: url(img/bg/desktop/main5.png);
+
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    #main6 {
+        background: url(img/bg/desktop/main6.png);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    #story1{
+        background: url(img/bg/mobile/ในตลาด1.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story2{
+        background: url(img/bg/mobile/ในตลาด2.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story3{
+        background: url(img/bg/mobile/ในตลาด3.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story4{
+        background: url(img/bg/mobile/ในตลาด4.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story5{
+        background: url(img/bg/mobile/ในตลาด5.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story6{
+        background: url(img/bg/mobile/คืนทะเล1.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story7{
+        background: url(img/bg/mobile/คืนทะเล2.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+    #story8{
+        background: url(img/bg/mobile/คืนทะเล3.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width:100%;
     }
     .mb-fs-24,
     .btn-sm {
@@ -639,10 +1318,74 @@ button:hover {
         font-size: 6vw;
     }
     .img-main3>img {
-        width: 40%;
+        width: 70%;
+    }
+    .fishing-ship{
+        bottom: 30vh;
+        position: absolute;
     }
     .fishing-ship>img {
-        width: 90%;
+        width: 150%;
+    }
+    .small-ship{
+        bottom: 30vh;
+    }
+    .purple{
+        width: 125px!important;
+        left: -50px;
+    }
+    .orange{
+        width: 125px!important;
+        left: -10px;
+    }
+    .seaweed{
+        width: 125px!important;
+        left: 30px;
+    }
+    .pink{
+        width: 125px!important;
+        bottom: -50px;
+        left: 100px;
+    }
+    .seaweed-a{
+        width: 125px!important;
+        bottom: -120px;
+        left: 70px;
+    }
+    .purple-r{
+        width: 125px!important;
+        right: 20px;
+    }
+    .orange-r{
+        width: 125px!important;
+        right: -10px;
+    }
+    .seaweed-r{
+        width: 125px!important;
+        right: -20px;
+    }
+    .pink-r{
+        width: 125px!important;
+        right: -20px;
+    }
+    .seaweed-a-r{
+        width: 125px!important;
+        right: -20px;
+    }
+    .fish-rainbow{
+        width: 40vw!important;
+        left: 0;
+        top: 700px;
+    }
+    .fish-head{
+        width: 40vw!important;
+        left: 200px;
+    }
+    .content{
+        height: 250px;
+        width: 90vw!important;
+        left: 20px;
+        top: 450px;
     }
 }
 
@@ -656,4 +1399,10 @@ button:hover {
 
 .text-coming-soon {
     font-size: 50px;
+}
+
+.test-goto{
+    right: 15px;
+    position: absolute;
+    z-index: 5;
 }
