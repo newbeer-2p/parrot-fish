@@ -964,7 +964,7 @@ button:hover {
     right: 0;
     bottom: -80px;
     width: 250px !important;
-    z-index: -1 ;
+    z-index: -2 ;
     position: absolute;
     animation: dukdik 1.5s .5s linear infinite;
     animation-delay: -10s;
@@ -985,7 +985,7 @@ button:hover {
 .fish-ovi{
     top: 550px;
     left: 400px;
-    width: 250px !important;
+    width: 250px;
     position: absolute;
     transform: scaleX(-1);
 }
@@ -993,14 +993,14 @@ button:hover {
 .fish-spot{
     top: 420px;
     right: 400;
-    width: 250px !important;
+    width: 250px;
     position: absolute;
 }
 
 .fish-red{
     top: 570px;
     left: 400px;
-    width: 250px !important;
+    width: 250px;
     position: absolute;
     transform: scaleX(-1);
 }
@@ -1008,14 +1008,14 @@ button:hover {
 .fish-marbled{
     top: 420px;
     right: 400;
-    width: 250px !important;
+    width: 250px;
     position: absolute;
 }
 
 .fish-blue{
     top: 580px;
     left: 400px;
-    width: 250px !important;
+    width: 250px;
     position: absolute;
     transform: scaleX(-1);
 }
@@ -1023,14 +1023,14 @@ button:hover {
 .fish-indian{
     top: 460px;
     right: 400;
-    width: 250px !important;
+    width: 250px;
     position: absolute;
 }
 
 .fish-chi{
     top: 580px;
     left: 400px;
-    width: 250px !important;
+    width: 250px;
     position: absolute;
     transform: scaleX(-1);
 }
@@ -1038,7 +1038,7 @@ button:hover {
 .fish-bic{
     top: 420px;
     right: 400;
-    width: 250px !important;
+    width: 250px;
     position: absolute;
 }
 
@@ -1057,8 +1057,8 @@ button:hover {
     width: 500px;
     height: 200px;
     position: absolute;
-    top: 140px;
-    right: 300;
+    top: 100px;
+    right: 100px;
     border-radius: 20px;
     padding: 20px
 }
@@ -1152,39 +1152,47 @@ button:hover {
 }
 
 .next-lvl{
-    background: white;
-    width: 300px;
+    /* background: white; */
+    width: 100vw;
     height: 100px;
-    top: 820px;
-    left: 850px;
+    bottom: 50px;
+    /* left: 850px; */
     position: absolute;
-    border-radius: 40px;
+    /* border-radius: 40px;
     padding-top: 30px;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
 .back-to-basic{
-    background: white;
-    width: 300px;
+    /* background: white; */
+    width: 100vw;
     height: 100px;
-    top: 940px;
-    left: 850px;
+    bottom: -20;
+    /* left: 850px; */
     position: absolute;
-    border-radius: 40px;
+    /* border-radius: 40px;
     padding-top: 30px;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
+a:link {
+    text-decoration: none;
+  }
+
+.header-fish-ja{
+    padding: 15px;
+    overflow: hidden;
+}
 .text-n{
     margin-bottom: 100px;
 }
 
-.content, .content-2, .content-3, .content-4, .content-5, .content-6, .content-7, .content-8, .content-9, .content-10[data-show="0"]{
-    opacity: 0;
+:where(.content, .content-2, .content-3, .content-4, .content-5, .content-6, .content-7, .content-8, .content-9, .content-10)[data-show="0"]{
+    display: none;
 }
 
 .fishname{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .text-fish{
@@ -1306,6 +1314,7 @@ button:hover {
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
+    
 }
 @media (max-width: 500px) {
     #home {
@@ -1487,6 +1496,587 @@ button:hover {
     }
 }
 
+/* FOR Destop 1280*720 */
+@media (max-width: 1280px){
+    .purple{
+        width: 200px!important;
+        left: -40px;
+    }
+    .orange{
+        width: 200px!important;
+        left: 40px;
+    }
+    .seaweed{
+        width: 200px!important;
+        left: 140px;
+    }
+    .pink{
+        width: 200px!important;
+        bottom: -50px;
+        left: 290px;
+    }
+    .seaweed-a{
+        width: 200px!important;
+        bottom: -180px;
+        left: 200px;
+    }
+    .purple-r{
+        width: 200px!important;
+        right: 270px;
+        bottom: -50px;
+    }
+    .orange-r{
+        width: 200px!important;
+        right: 170px;
+    }
+    .seaweed-r{
+        width: 200px!important;
+        right: 100px;
+    }
+    .pink-r{
+        width: 200px!important;
+        right: 40px;
+    }
+    .seaweed-a-r{
+        width: 200px!important;
+        right: -60px;
+    }
+    .fish-rainbow{
+        width: 15vw!important;
+        left: 300px;
+        top: 450px;
+    }
+    .fish-head{
+        width: 15vw!important;
+        left: 850px;
+        top: 350px;
+    }
+
+    .content{
+        height: 18vw;
+        width: 32vw;
+        left: 200px;
+        top: 200px;
+    }
+
+    .content-2{
+        height: 18vw;
+        width: 35vw;
+        left: 730px;
+        top: 110px;
+    }
+
+    .fish-ovi{
+        top: 450px;
+        left: 350px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-spot{
+        top: 350px;
+        right: 200px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-3{
+        height: 18vw;
+        width: 35vw;
+        left: 200px;
+        top: 200px;
+    }
+    
+    .content-4{
+        height: 18vw;
+        width: 35vw;
+        left: 730px;
+        top: 110px;
+    }
+    
+    .fish-red{
+        top: 470px;
+        left: 340px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-marbled{
+        top: 350px;
+        right: 230px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-5{
+        height: 20vw;
+        width: 35vw;
+        left: 200px;
+        top: 200px;
+    }
+    
+    .content-6{
+        height: 16vw;
+        width: 35vw;
+        left: 730px;
+        top: 110px;
+    }
+    
+    .fish-blue{
+        top: 450px;
+        left: 340px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-indian{
+        top: 360px;
+        right: 200px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-7{
+        height: 18vw;
+        width: 35vw;
+        left: 200px;
+        top: 200px;
+    }
+    
+    .content-8{
+        height: 20w;
+        width: 40vw;
+        left: 730px;
+        top: 110px;
+    }
+    
+    .fish-chi{
+        top: 420px;
+        left: 340px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-bic{
+        top: 310px;
+        right: 200px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-9{
+        height: 16vw;
+        width: 35vw;
+        left: 200px;
+        top: 200px;
+    }
+    
+    .content-10{
+        height: 20w;
+        width: 40vw;
+        left: 730px;
+        top: 110px;
+    }
+}
+
+/* For 1024*768 */
+@media (max-width: 1024px){
+    .purple{
+        width: 150px!important;
+        left: -10px;
+    }
+    .orange{
+        width: 150px!important;
+        left: 50px;
+    }
+    .seaweed{
+        width: 150px!important;
+        left: 140px;
+    }
+    .pink{
+        width: 150px!important;
+        bottom: -50px;
+        left: 250px;
+    }
+    .seaweed-a{
+        width: 150px!important;
+        bottom: -150px;
+        left: 150px;
+    }
+    .purple-r{
+        width: 150px!important;
+        right: 240px;
+        bottom: -20px;
+    }
+    .orange-r{
+        width: 150px!important;
+        right: 170px;
+    }
+    .seaweed-r{
+        width: 150px!important;
+        right: 50px;
+    }
+    .pink-r{
+        width: 150px!important;
+        right: 100px;
+        bottom: -150px;
+    }
+    .seaweed-a-r{
+        width: 150px!important;
+        right: -20px;
+        bottom: -20px;
+    }
+    .fish-rainbow{
+        width: 15vw;
+        left: 185px;
+        top: 480px;
+    }
+    .fish-head{
+        width: 15vw;
+        left: 710px;
+        top: 410px;
+    }
+
+    .content{
+        height: 22vw;
+        width: 37vw;
+        left: 80px;
+        top: 230px;
+    }
+
+    .content-2{
+        height: 24vw;
+        width: 38vw;
+        left: 580px;
+        top: 150px;
+    }
+
+    .fish-ovi{
+        top: 470px;
+        left: 200px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+
+    .fish-spot{
+        top: 360px;
+        right: 180px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-3{
+        height: 25vw;
+        width: 40vw;
+        left: 80px;
+        top: 200px;
+    }
+
+    .content-4{
+        height: 23vw;
+        width: 40vw;
+        left: 550px;
+        top: 110px;
+    }
+
+    .fish-red{
+        top: 490px;
+        left: 200px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+
+    .fish-marbled{
+        top: 350px;
+        right: 190px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-5{
+        height: 29vw;
+        width: 40vw;
+        left: 80px;
+        top: 180px;
+    }
+
+    .content-6{
+        height: 22vw;
+        width: 40vw;
+        left: 550px;
+        top: 110px;
+    }
+
+    .fish-blue{
+        top: 485px;
+        left: 200px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+
+    .fish-indian{
+        top: 385px;
+        right: 190px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-7{
+        height: 22vw;
+        width: 40vw;
+        left: 80px;
+        top: 250px;
+    }
+
+    .content-8{
+        height: 26vw;
+        width: 40vw;
+        left: 550px;
+        top: 110px;
+    }
+
+    .fish-chi{
+        top: 475px;
+        left: 200px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+
+    .fish-bic{
+        top: 370px;
+        right: 190px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-9{
+        height: 22vw;
+        width: 40vw;
+        left: 80px;
+        top: 240px;
+    }
+
+    .content-10{
+        height: 20vw;
+        width: 40vw;
+        left: 550px;
+        top: 150px;
+    }
+}
+
+/* For 767*481 */
+@media (max-width: 767px){
+
+    .test-goto{
+        width: 220px;
+        height: 15px;
+        position: absolute;
+        top: -10px;
+    }
+    .purple{
+        width: 15vw!important;
+        left: -40px;
+    }
+    .orange{
+        width: 15vw!important;
+        left: 40px;
+    }
+    .seaweed{
+        width: 15vw!important;
+        left: 120px;
+    }
+    .pink{
+        width: 15vw!important;
+        bottom: -50px;
+        left: 220px;
+    }
+    .seaweed-a{
+        width: 15vw!important;
+        bottom: -120px;
+        left: 170px;
+    }
+    .purple-r{
+        width: 15vw!important;
+        right: 210px;
+        bottom: -20px;
+        z-index: -1 ;
+    }
+    .orange-r{
+        width: 15vw!important;
+        right: 150px;
+        z-index: -2 ;
+    }
+    .seaweed-r{
+        width: 15vw!important;
+        right: 65px;
+        z-index: -3 ;
+    }
+    .pink-r{
+        width: 15vw!important;
+        right: 40px;
+        bottom: -120px;
+    }
+    .seaweed-a-r{
+        width: 15vw!important;
+        right: -40px;
+        bottom: -40px;
+    }
+    .fish-rainbow{
+        width: 15vw;
+        left: 120px;
+        top: 320px;
+    }
+    .fish-head{
+        width: 15vw;
+        left: 550px;
+        top: 350px;
+        
+    }
+
+    .content{
+        height: 30vw;
+        width: 50vw;
+        left: 0px;
+        top: 80px;
+    }
+
+    .content-2{
+        height: 32vw;
+        width: 50vw;
+        left: 390px;
+        top: 92px;
+    }
+
+    .fish-ovi{
+        top: 350px;
+        left: 120px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+        z-index: 1;
+    }
+    
+    .fish-spot{
+        top: 350px;
+        right: 100px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-3{
+        height: 36vw;
+        width: 50vw;
+        left: 0px;
+        top: 62px;
+    }
+    
+    .content-4{
+        height: 32vw;
+        width: 50vw;
+        left: 384px;
+        top: 93px;
+        font-size: 2px;
+    }
+    
+    .fish-red{
+        top: 350px;
+        left: 120px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+        z-index: 1;
+    }
+    
+    .fish-marbled{
+        top: 330px;
+        right: 100px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-5{
+        height: 36vw;
+        width: 50vw;
+        left: 0px;
+        top: 62px;
+    }
+    
+    .content-6{
+        height: 30vw;
+        width: 50vw;
+        left: 384px;
+        top: 93px;
+        font-size: 2px;
+    }
+    
+    .fish-blue{
+        top: 290px;
+        left: 150px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-indian{
+        top: 350px;
+        right: 100px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-7{
+        height: 28vw;
+        width: 50vw;
+        left: 0px;
+        top: 62px;
+    }
+    
+    .content-8{
+        height: 32vw;
+        width: 50vw;
+        left: 384px;
+        top: 93px;
+        font-size: 2px;
+    }
+    
+    .fish-chi{
+        top: 325px;
+        left: 120px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-bic{
+        top: 290px;
+        right: 130px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-9{
+        height: 28vw;
+        width: 50vw;
+        left: 0px;
+        top: 100px;
+    }
+    
+    .content-10{
+        height: 25vw;
+        width: 50vw;
+        left: 384px;
+        top: 93px;
+        font-size: 2px;
+    }
+}
 
 /* รอลบได้เลย */
 
