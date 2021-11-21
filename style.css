@@ -766,17 +766,53 @@ button:hover {
 .btn-to-story>button {
     color: var(--aqua);
 }
+#story5{
+    background: url(img/bg/desktop/ตลาด5.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 200vh;
+}
+#story6{
+    background: url(img/bg/desktop/คืนสู่ทะเล1.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 200vh;
+}
+#story7{
+    background: url(img/bg/desktop/คืนสู่ทะเล2.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#story8{
+    background: url(img/bg/desktop/คืนสู่ทะเล3.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.story7_text{
+    color: 4BA4A0;
+    font-size: 24;
+}
+
 .nok{
     position: absolute;
-    bottom: 60vh;
+    top: 50vh;
     left: 45vw;
-    width: 20vh;
+    width: 30vh;
     animation:nokbin 0.1s infinite alternate;
     z-index:1;
 }
 .pla{
     position: absolute;
-    bottom: 50vh;
+    top: 70vh;
     left: 45vw;
     width: 20vh;
     animation:PlaSpin 0.5s infinite linear;
@@ -1242,28 +1278,30 @@ button:hover {
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        background-size: 100% 100%;
+        height: 200vh;
     }
     #story6{
         background: url(img/bg/desktop/คืนสู่ทะเล1.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        background-size: 100% 100%;
+        height: 200vh;
     }
     #story7{
         background: url(img/bg/desktop/คืนสู่ทะเล2.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        background-size: 100% 100%;
     }
     #story8{
         background: url(img/bg/desktop/คืนสู่ทะเล3.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        background-size: 100% 100%;
     }
 }
 @media (max-width: 500px) {
@@ -1338,28 +1376,30 @@ button:hover {
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        background-size: 100% 100%;
+        height: 200vh;
     }
     #story6{
         background: url(img/bg/mobile/คืนทะเล1.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        background-size: 100% 100%;
+        height: 200vh;
     }
     #story7{
         background: url(img/bg/mobile/คืนทะเล2.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        background-size: 100% 100%;
     }
     #story8{
         background: url(img/bg/mobile/คืนทะเล3.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        background-size: 100% 100%;
     }
     .mb-fs-24,
     .btn-sm {
