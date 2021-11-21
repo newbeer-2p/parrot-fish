@@ -801,14 +801,14 @@ button:hover {
     color: 4BA4A0;
     font-size: 24;
 }
-.orange{
-    font-size: 32px;
+.orange-text{
+    font-size: 56px;
     color: orange;
 }
 .nok{
     position: absolute;
     top: 50vh;
-    left: 45vw;
+    left: 40vw;
     width: 30vh;
     animation:nokbin 0.1s infinite alternate;
     z-index:1;
