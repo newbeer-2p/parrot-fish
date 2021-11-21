@@ -801,7 +801,10 @@ button:hover {
     color: 4BA4A0;
     font-size: 24;
 }
-
+.orange{
+    font-size: 32px;
+    color: orange;
+}
 .nok{
     position: absolute;
     top: 50vh;
