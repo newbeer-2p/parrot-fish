@@ -507,8 +507,8 @@ button:hover {
     color: white;
     font-size: 16px;
     position: absolute;
-    top: 100px;
-    right: 550px;
+    top: 10vh;
+    right: 35vw;
 }
 .story3_text{
     color: white;
@@ -539,91 +539,105 @@ button:hover {
     width: 25vw;
 }
 .mid-store{
-    width: 60vh;
+    width: 28vw;
     position: absolute;
-    bottom: 100px;
+    bottom: 12vh;
     right: 36vw;
+    z-index: 1;
 }
 .Rstore{
-    width: 50vh;
+    width: 25vw;
     position: absolute;
-    bottom: 100px;
+    bottom: 12vh;
     right: 10vw;
 }
 .Lstore{
-    width: 50vh;
+    width: 25vw;
     position: absolute;
-    bottom: 100px;
-    left: 10vw;
+    bottom: 12vh;
+    left: 9vw;
 }
 .fishtank1{
-    width: 25vh;
+    width: 15vw;
     position: absolute;
-    bottom: 245px;
-    left: 650px;
-    z-index: 1;
+    bottom: 29vh;
+    right: 42vw;
 }
 .fishtank2{
-    width: 23vh;
+    width: 12vw;
     position: absolute;
-    bottom: 70px;
-    left: 350px;
+    bottom: 12vh;
+    left: 23vw;
     z-index: 1;
 }
 .blue-boy{
-    width: 50vh;
+    width: 25vw;
     position: absolute;
-    bottom: 5px;
+    bottom: 1vh;
     left: 35vw;
     z-index: 1;
 }
 .pa-orange{
-    width: 50vh;
+    width: 25vw;
     position: absolute;
-    bottom: 5px;
+    bottom: 1vh;
     left: 45vw;
     z-index: 1;
 }
 .pink-girl{
-    width: 50vh;
+    width: 25vw;
     position: absolute;
-    bottom: 5px;
+    bottom: 0vh;
     left: 42vw;
     z-index: 1;
 }
 .mid-store2{
     width: 45vh;
     position: absolute;
-    top: 50px;
+    top: 7vh;
     left: 350px;
+    z-index: 1;
+}
+.jarn1{
+    width: 10vw;
+    position: absolute;
+    bottom: 40vh;
+    right: 21vw;
+    z-index: 1;
+}
+.jarn2{
+    width: 12vw;
+    position: absolute;
+    bottom: 43vh;
+    right: 32vw;
     z-index: 1;
 }
 .table{
     width: 45vh;
     position: absolute;
-    bottom: 70px;
-    right: 340px;
+    bottom: 10vh;
+    right: 22vw;
     z-index: 1;
 }
 .hand{
     width: 80vh;
     position: absolute;
-    top: 50px;
-    left: -50px;
+    top: 10vh;
+    left: 0vw;
     z-index: 1;
     transform: rotate(-20deg);
 }
 .pa-yellow{
     width: 60vh;
     position: absolute;
-    top: 100px;
-    right: 260px;
+    bottom: 28vh;
+    right: 15vw;
     z-index: 1;
 }
 .fishtank3{
     width: 30vh;
     position: absolute;
-    top: 160px;
+    top: 22vh;
     left: 410px;
 }
 .fishtank4{
@@ -1255,28 +1269,28 @@ button:hover {
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        height: 100vh;
     }
     #story2{
         background: url(img/bg/mobile/ในตลาด2.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        height: 100vh;
     }
     #story3{
         background: url(img/bg/mobile/ในตลาด3.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        height: 100vh;
     }
     #story4{
         background: url(img/bg/mobile/ในตลาด4.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        height: 100vh;
     }
     #story5{
         background: url(img/bg/mobile/ในตลาด5.jpg);
