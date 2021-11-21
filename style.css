@@ -1351,38 +1351,37 @@ button:hover {
 
 @media (max-width: 500px) {
     #home {
-        background: url(img/bg/mobile/ฉากเริ่มต้น4.png);
+        background: url(img/bg/mobile/main1.png);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main2 {
-        background: url(img/bg/mobile/ฉากเริ่มต้น3.png);
+        background: url(img/bg/mobile/main2.png);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main3 {
-        background: url(img/bg/mobile/ฉากเริ่มต้น2.png);
+        background: url(img/bg/mobile/main3.png);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main4 {
-        background: url(img/bg/mobile/ฉากเริ่มต้น1.png);
+        background: url(img/bg/mobile/main4.png);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main5 {
-        background: url(img/bg/desktop/main5.png);
-
+        background: url(img/bg/mobile/main5.png);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main6 {
-        background: url(img/bg/desktop/main6.png);
+        background: url(img/bg/mobile/main6.png);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
