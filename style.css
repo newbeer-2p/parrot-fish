@@ -499,9 +499,12 @@ button:hover {
     color: red;
     font-size: 16px;
 }
-.text-black{
+.story1_text{
     color: black;
     font-size: 16px;
+    position: absolute;
+    top: 1vh;
+    right: 42vw;
 }
 .story2_text{
     color: white;
@@ -536,7 +539,7 @@ button:hover {
     display: none;
 }
 .fish-store{
-    width: 25vw;
+    width: 30vw;
 }
 .mid-store{
     width: 28vw;
@@ -592,7 +595,7 @@ button:hover {
     z-index: 1;
 }
 .mid-store2{
-    width: 45vh;
+    width: 20vw;
     position: absolute;
     top: 7vh;
     left: 350px;
@@ -613,14 +616,14 @@ button:hover {
     z-index: 1;
 }
 .table{
-    width: 45vh;
+    width: 22vw;
     position: absolute;
     bottom: 10vh;
     right: 22vw;
     z-index: 1;
 }
 .hand{
-    width: 80vh;
+    width: 40vw;
     position: absolute;
     top: 10vh;
     left: 0vw;
@@ -628,24 +631,36 @@ button:hover {
     transform: rotate(-20deg);
 }
 .pa-yellow{
-    width: 60vh;
+    width: 30vw;
     position: absolute;
     bottom: 28vh;
     right: 15vw;
     z-index: 1;
 }
+.ontable{
+    position: absolute;
+    bottom: 8vh;
+    right: 0vw;
+    z-index: 1;
+}
 .fishtank3{
-    width: 30vh;
+    width: 12vw;
     position: absolute;
     top: 22vh;
-    left: 410px;
+    left: 27vw;
 }
 .fishtank4{
-    width: 60vh;
+    width: 30vw;
     position: absolute;
-    bottom: 100px;
-    right: 550px;
+    bottom: 10vh;
+    right: 35vw;
     z-index: 1;
+}
+.water{
+    width: 40vw;
+    position: absolute;
+    bottom: 45vh;
+    right: 28vw;
 }
 .blue-boy2{
     width: 65vh;
