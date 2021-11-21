@@ -11,9 +11,22 @@
 </head>
 
 <body data-mode="main" class="font-kanit">
+    <div id="loading" data-show="0">
+        <div>
+            <div class="loading-logo">
+                <img src="/img/parrot_fish/Main_Parrot_Fish.png">
+            </div>
+            <!-- <div class="loading-text">Loading...</div> -->
+            <div class="loading-text">Loading<span id="loading-point1">.</span><span id="loading-point2">.</span><span id="loading-point3">.</span>
+            </div>
+        </div>
+    </div>
     <div id="main-part" class="part">
-        <div id="parrot-in-main3" class="img-main3" data-show="0" data-play="0">
-            <img src="img/parrot_fish/Main_Parrot_Fish.png">
+        <div id="parrot-in-main3" class="img-main3" data-show="0">
+            <img id="img-parrot-main" src="img/parrot_fish/Main_Parrot_Fish.png">
+        </div>
+        <div id="pic-click" data-show="0">
+            <img src="img/element/click.png">
         </div>
         <div class="page" id="home">
             <div class="small-ship">

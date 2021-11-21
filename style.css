@@ -121,6 +121,10 @@ body[data-mode="more"]>:where(#story-part, #main-part) {
     background-repeat: no-repeat;
 }
 
+#main-part>.page{
+    overflow: hidden;
+}
+
 .page-content {
     text-align: center;
 }
@@ -317,8 +321,28 @@ button:hover {
     animation: dukdik 1s linear infinite;
 }
 
-#parrot-in-main3[data-play="1"] {
+#img-parrot-main[data-play="1"] {
     cursor: pointer;
+}
+
+#pic-click{
+    top: 55vh;
+    left: calc( 50% - 50px);
+    position: fixed;
+    opacity: 0;
+}
+#pic-click[data-play="1"]{
+    cursor: pointer;
+    z-index: 2;
+    animation: krapib .5s linear infinite alternate;
+}
+#pic-click>img{
+    width: 100px;
+}
+@keyframes krapib {
+    to{
+        opacity: 1;
+    }
 }
 
 .img-fish {
@@ -528,6 +552,8 @@ button:hover {
     width: 100vw;
     text-align: center;
     transform: translateY(15vh);
+    position: absolute;
+    z-index: 2;
 }
 
 .fishing-ship>img {
@@ -1434,4 +1460,52 @@ button:hover {
     right: 15px;
     position: absolute;
     z-index: 5;
+}
+
+#loading{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    background: url(/img/bg/desktop/main3.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#loading[data-show="0"]{
+    display: none;
+}
+
+.loading-logo{
+    animation: dukdik 0.5s linear infinite, swim 8s linear infinite;
+    width: 250px;
+}
+
+.loading-text{
+    margin-top: 25px;
+    font-size: 50px;
+}
+
+.loading-text > span{
+    font-size: 50px;
+}
+
+#loading-point1{
+    animation: loading-appear 1s infinite alternate linear;
+}
+#loading-point2{
+    animation: loading-appear 1s .33s infinite alternate linear;
+}
+#loading-point3{
+    animation: loading-appear 1s .66s infinite alternate linear;
+}
+
+@keyframes loading-appear{
+    from{
+        /* display: none; */
+        opacity: 0;
+    }
 }
