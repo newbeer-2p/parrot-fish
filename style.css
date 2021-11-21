@@ -127,6 +127,7 @@ body[data-mode="more"]>:where(#story-part, #main-part) {
 
 .page-content {
     text-align: center;
+    z-index: 4;
 }
 
 .home-logo {
@@ -164,6 +165,15 @@ body[data-mode="more"]>:where(#story-part, #main-part) {
     cursor: pointer;
 }
 
+.click-main2{
+    position: absolute;
+    width: 75px;
+    left: calc(50% - 37.5px);
+    top: calc(50% - 37.5px);
+    animation: krapib .5s 5s infinite linear alternate;
+    opacity: 0;
+}
+
 .text-parrot-fish {
     color: var(--org);
     font-size: 36px;
@@ -178,6 +188,11 @@ body[data-mode="more"]>:where(#story-part, #main-part) {
 .text-white-22 {
     color: var(--wh);
     font-size: 22px;
+}
+
+.text-white-28 {
+    color: var(--wh);
+    font-size: 28px;
 }
 
 .text-white-36 {
@@ -273,7 +288,7 @@ button:hover {
 #main3 {
     padding: 200px 0;
     height: 100vh;
-    overflow: visible;
+    overflow: visible!important;
     background: url(img/bg/desktop/main3.png);
     /* background-size: 100% 100%; */
     background-size: cover;
@@ -293,26 +308,32 @@ button:hover {
 }
 
 .img-main3 {
+    --swY: 0;
     width: 100vw;
     text-align: center;
     z-index: 1;
     top: 45vh;
-    position: fixed;
-    transform: translateX(0px) scaleX(-1);
+    /* position: fixed; */
+    position: absolute;
+    /* transform: translateX(0px) scaleX(-1); */
+    transform: translate(0px, calc(var(--swY) * 1px)) scaleX(-1);
 }
 
 @keyframes fish-swim {
     from {
-        transform: translateX(-75vw) scaleX(-1);
+        /* transform: translateX(-75vw) scaleX(-1); */
+        transform: translate(-75vw, 0) scaleX(-1);
     }
 }
 
 @keyframes fish-swim-go {
     from {
-        transform: translateX(0px) scaleX(-1);
+        /* transform: translateX(0px) scaleX(-1); */
+        transform: translate(0px, 0) scaleX(-1);
     }
     to {
-        transform: translateX(125vw) scaleX(-1);
+        /* transform: translateX(125vw) scaleX(-1); */
+        transform: translate(125vw) scaleX(-1);
     }
 }
 
@@ -326,20 +347,23 @@ button:hover {
 }
 
 #pic-click{
-    top: 55vh;
-    left: calc( 50% - 50px);
+    top: 58vh;
+    left: calc( 50% - 10vw);
     position: fixed;
     opacity: 0;
 }
 #pic-click[data-play="1"]{
     cursor: pointer;
     z-index: 2;
-    animation: krapib .5s linear infinite alternate;
+    animation: krapib .5s 10s linear infinite alternate;
 }
 #pic-click>img{
-    width: 100px;
+    width: 20vw;
 }
 @keyframes krapib {
+    from{
+        opacity: 0;
+    }
     to{
         opacity: 1;
     }
@@ -556,11 +580,6 @@ button:hover {
     z-index: 2;
 }
 
-.fishing-ship>img {
-    width: 65%;
-    /* height: 150vh; */
-}
-
 .page[data-show="0"] {
     display: none;
 }
@@ -744,7 +763,7 @@ button:hover {
 
 #main7-content-1 {
     position: absolute;
-    top: 10vh;
+    top: 5vh;
     width: 100%;
 }
 
@@ -752,6 +771,8 @@ button:hover {
     position: absolute;
     bottom: 80vh;
     width: 100%;
+    z-index: 3;
+    text-shadow: 2px 2px 8px black;
 }
 
 .btn-to-story {
@@ -761,6 +782,7 @@ button:hover {
     position: absolute;
     /* margin-top: 18vh; */
     bottom: 5vh;
+    z-index: 4;
 }
 
 .btn-to-story>button {
@@ -1258,38 +1280,38 @@ a:link {
     }
     #story1{
         background: url(img/bg/desktop/ตลาด1.jpg);
-        background-size: cover;
+        background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
         width:100%;
     }
     #story2{
         background: url(img/bg/desktop/ตลาด2.jpg);
-        background-size: cover;
+        background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
         width:100%;
     }
     #story3{
         background: url(img/bg/desktop/ตลาด3.jpg);
-        background-size: cover;
+        background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        width: 100%;
     }
     #story4{
         background: url(img/bg/desktop/ตลาด4.jpg);
-        background-size: cover;
+        background-size: 100% 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
-        width:100%;
+        width: 100%;
     }
     #story5{
         background: url(img/bg/desktop/ตลาด5.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        /* background-size: 100% 100%; */
         height: 200vh;
     }
     #story6{
@@ -1297,7 +1319,7 @@ a:link {
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        /* background-size: 100% 100%; */
         height: 200vh;
     }
     #story7{
@@ -1305,51 +1327,72 @@ a:link {
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        /* background-size: 100% 100%; */
     }
     #story8{
         background: url(img/bg/desktop/คืนสู่ทะเล3.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        /* background-size: 100% 100%; */
+    }
+    .fishing-ship{
+        width: 100vw;
+        left: calc(50vw - (65% / 2));
+    }
+    .fishing-ship{
+        width: 65%;
     }
     
 }
+@media (max-width: 1120px) {
+    .img-main3{
+        top: 30vh;
+    }
+    /* .img-main3>img{
+        width: 50vw;
+    } */
+    .fishing-ship{
+        top: 15vh;
+    }
+    .fishing-ship>img{
+        width: 125vh;
+    }
+}
+
 @media (max-width: 500px) {
     #home {
-        background: url(img/bg/mobile/ฉากเริ่มต้น4.png);
+        background: url(img/bg/mobile/main1.png);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main2 {
-        background: url(img/bg/mobile/ฉากเริ่มต้น3.png);
+        background: url(img/bg/mobile/main2.png);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main3 {
-        background: url(img/bg/mobile/ฉากเริ่มต้น2.png);
+        background: url(img/bg/mobile/main3.png);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main4 {
-        background: url(img/bg/mobile/ฉากเริ่มต้น1.png);
+        background: url(img/bg/mobile/main4.png);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main5 {
-        background: url(img/bg/desktop/main5.png);
-
+        background: url(img/bg/mobile/main5.png);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
     }
     #main6 {
-        background: url(img/bg/desktop/main6.png);
+        background: url(img/bg/mobile/main6.png);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
@@ -1424,18 +1467,23 @@ a:link {
     .mb-fs-48 {
         font-size: 6vw;
     }
+    .img-main3{
+        top: 55vh;
+    }
     .img-main3>img {
-        width: 70%;
+        width: 50%;
     }
     .fishing-ship{
-        bottom: 30vh;
-        position: absolute;
+        top: -5vh;
     }
     .fishing-ship>img {
-        width: 150%;
+        width: 110%;
     }
     .small-ship{
         bottom: 30vh;
+    }
+    #main7-content-2{
+        bottom: 50vh;
     }
     .purple{
         width: 125px!important;
@@ -2100,7 +2148,7 @@ a:link {
     height: 100vh;
     position: fixed;
     z-index: 5;
-    background: url(/img/bg/desktop/main3.png);
+    background: #8cd1ca;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2138,7 +2186,6 @@ a:link {
 
 @keyframes loading-appear{
     from{
-        /* display: none; */
         opacity: 0;
     }
 }

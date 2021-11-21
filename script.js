@@ -1,6 +1,7 @@
 let window_height = window.innerHeight;
 let main_part = document.querySelector("#main-part");
 let pic_click = document.querySelector("#pic-click");
+let click_main2 = document.querySelector(".click-main2");
 
 let body = document.body;
 
@@ -15,9 +16,11 @@ window.onscroll = function() {
     
     if (main3.offsetTop != 0 && scrollY >= main3.offsetTop) {
         parrot_in_main3.dataset.show = "1";
+        parrot_in_main3.style.setProperty("--swY", scrollY - main3.offsetTop)
     }
     else if (main3.offsetTop != 0) {
-        parrot_in_main3.dataset.show = "0";
+        // parrot_in_main3.dataset.show = "0";
+        parrot_in_main3.style.setProperty("--swY", 0)
     }
 
     if (main4.offsetTop != 0 && scrollY >= main4.offsetTop - 100 && scrollY <= main4.offsetTop+300){
@@ -42,6 +45,7 @@ function goto(page) {
     if (page === "main3"){
         openPage("main3");
         openPage("main4");
+        click_main2.remove()
     }
     window.scroll(0, des_page.offsetTop);
 }
