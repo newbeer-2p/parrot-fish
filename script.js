@@ -7,7 +7,6 @@ let body = document.body;
 
 window.onscroll = function() {
     let scrollY = window.scrollY;
-    // console.log(window.scrollY)
     let main3 = document.querySelector("#main3");
     let main4 = document.querySelector("#main4");
     let text2_in_main3 = document.querySelector("#text2-in-main4");
@@ -16,6 +15,8 @@ window.onscroll = function() {
     let story5 = document.querySelector("#story5");
     let pla_story = document.querySelector("#pla-story");
     let img_pla = document.querySelector("#img-pla");
+    let story8 = document.querySelector("#story8");
+    let click_story8 = document.querySelector("#click-story8");
     
     if (main3.offsetTop != 0 && scrollY >= main3.offsetTop) {
         parrot_in_main3.dataset.show = "1";
@@ -52,6 +53,12 @@ window.onscroll = function() {
     else if (story5.offsetTop != 0) {
         // pla_story.dataset.show = "0";
         pla_story.style.setProperty("--swY", 0)
+    }
+    if (story8.offsetTop != 0 && scrollY >= story8.offsetTop){
+        click_story8.dataset.show = "1";
+    }
+    else{
+        click_story8.dataset.show = "0";
     }
 
 }
@@ -141,12 +148,14 @@ function changeText2() {
 let t = 1;
 function changeText3() {
     var tx = document.getElementById("chtext");
+    var click_story9 = document.getElementById("click-story9");
     if (t == 1) {
         tx.innerHTML = "*จับปลา หรือสัตว์น้ำเขตอุทยาน โทษสูงสุดจำคุกไม่เกิน 5 ปี <br>หรือปรับไม่เกิน 20,000 บาท หรือทั้งจำทั้งปรับ*";
         t++;
     } else if(x == 2){
         document.getElementById("chtext").style.display = "none";
         document.getElementById("sharebt").dataset.show = "1";
+        click_story9.dataset.show = "0";
     }
 } 
 function sharefb(){
@@ -174,7 +183,6 @@ function closePopup(){
 
 function showContent(fish_no){
     let fish_contents = document.querySelectorAll(".fish-contents");
-    console.log(fish_no)
 
     fish_contents[fish_no].dataset.show = "1";
 }
@@ -197,8 +205,6 @@ function changeInfo(){
         
         fishes[2*show_info].dataset.show = "1";
         fishes[2*show_info+1].dataset.show = "1";
-        console.log(show_info);
-        console.log(2*show_info+1);
         show_info++;
     
 }
