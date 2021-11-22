@@ -846,17 +846,20 @@ button:hover {
     width: 100vw;
     text-align: center;
     animation:nokbin 0.1s infinite alternate;
-    z-index:2;
+    z-index:3;
 }
 .pla{
-    --swY: -50;
+    --swY:-50;
     width: 25vh;
-    top: 50vh;
+    top: 75vh;
     width: 100vw;
     text-align: center;
     position: absolute;
     transform: translate(0px, calc(var(--swY) * 1px)) scaleX(-1);
-    z-index: 1;
+    z-index: 2;
+}
+.story5_text{
+    font-size: 32px;
 }
 @keyframes nokbin{
     from{
@@ -1359,7 +1362,9 @@ a:link {
     .fishing-ship{
         width: 65%;
     }
-    
+    .story5_text{
+        font-size: 32px;
+    }
 }
 @media (max-width: 1120px) {
     .img-main3{
@@ -1545,6 +1550,9 @@ a:link {
         width: 22vw;
         position: absolute;
         z-index: var(--z);
+    }
+    .story5_text{
+        font-size: 18px;
     }
     .dead2{
         bottom: calc(var(--b)*2);

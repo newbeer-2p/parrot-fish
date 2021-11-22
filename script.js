@@ -39,9 +39,15 @@ window.onscroll = function() {
         pic_click.dataset.play = "0";
     }
     
-    if (story5.offsetTop != 0 && scrollY >= story5.offsetTop) {
+    if (story5.offsetTop != 0 && scrollY >= story5.offsetTop+200) {
         pla_story.dataset.show = "1";
-        pla_story.style.setProperty("--swY", scrollY - story5.offsetTop)
+        let swY = scrollY -story5.offsetTop-200;
+        if(swY >= 0){
+            pla_story.style.setProperty("--swY", swY)
+        }
+        else{
+            pla_story.style.setProperty("--swY", 0)
+        }
     }
     else if (story5.offsetTop != 0) {
         // pla_story.dataset.show = "0";
