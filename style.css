@@ -360,7 +360,14 @@ button:hover {
     z-index: 2;
     animation: krapib .5s 4s linear infinite alternate;
 }
-
+#sh2{
+    width: 250px;
+    border-style: none;
+    padding: 20px 60px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 50px;
+}
 #pic-click>img {
     width: 120px;
 }
@@ -819,7 +826,15 @@ button:hover {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
+#sharebt[data-show="0"]{
+    display: none;
+}
+#sharebt{
+    width: 100vw;
+    bottom: 15vh;
+    text-align: center;
+    position: absolute;
+}
 .story7_text {
     color: 4BA4A0;
     font-size: 24;
@@ -860,8 +875,19 @@ button:hover {
     position: absolute;
     transform: translate(0px, calc(var(--swY) * 1px)) scaleX(-1);
     z-index: 2;
+    cursor: pointer;
 }
-
+.pla2{
+    --swY:-50;
+    width: 25vh;
+    top: 30vh;
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+    transform: translate(0px, calc(var(--swY) * 1px)) scaleX(-1);
+    z-index: 2;
+    cursor: pointer;
+}
 .story5_text {
     font-size: 18px;
 }
@@ -1694,6 +1720,9 @@ a:link {
         position: absolute;
         bottom: 0vh;
         left: 30vw;
+    }
+    #sh2{
+        width: 200px;
     }
     #story5 {
         background: url(img/bg/mobile/ในตลาด5.jpg);

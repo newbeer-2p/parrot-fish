@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/akj3mpv.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:image"         content="img/bg/desktop/shere.png" />
 </head>
 
 <body data-mode="main" class="font-kanit">
@@ -175,7 +177,7 @@
         <img style="width:40vh; transform: scaleX(-1);" src="img/element/นกนางนวย.png">
     </div>
     <div id="pla-story" class="pla" data-show="0">
-        <img id="img-pla" style="width:30vh; transform: scaleX(-1); " src="img/parrot_fish/Main_Parrot_Fish.png">
+        <img id="img-pla" style="width:30vh; transform: scaleX(-1); " src="img/parrot_fish/Main_Parrot_Fish.png" onclick="changeText2()">
     </div>
     <div class="page-content" style="padding-top: 800px;">
         <span class="story5_text">
@@ -195,13 +197,13 @@
 </div>
 <div class="page" id="story7" data-show="1">
     <div class="page-content" style="padding-top:150px ;">
-        <span class="story5_text">
+        <span class="story9_text">
             “ ได้กลับบ้านแล้ว รีบไปหาทุกคนดีกว่า “
             <br>ปลานกแก้วว่ายน้ำกลับแนวปะการัง
         </span>
     </div>
     <div class="page-content" style="padding-top:450px ;">
-        <span class="story5_text">
+        <span class="story9_text">
             ระหว่างทางกลับบ้าน<br>
             ปลานกแก้วแปลกใจ<br>
             เพื่อนๆ หายไปไหนกันหมด?
@@ -210,11 +212,11 @@
 </div>
 <div class="page" id="story8" data-show="1">
     <div class="page-content" style="padding-top:250px ;">
-        <span class="story5_text">
-            <div style="font-size: 32px;">“ อะไรกันเนี่ย “</div>
-            ปลานกแก้วถึงบ้านแล้ว
+        <span class="story9_text">
+            <div id="change" style="font-size: 32px;">“ อะไรกันเนี่ย “</div>
+            <div id="change2">ปลานกแก้วถึงบ้านแล้ว
             แต่ปะการังสีสดใสทั้งหลาย
-            ตอนนี้กลับกลายเป็น <span style="color: black;">สีหม่นหมอง</span>
+            ตอนนี้กลับกลายเป็น </div><span id="change3" style="color: black;">สีหม่นหมอง</span>
         </span>
     </div>
     <div class="dead1" style="--b:17vw;--l:0vw;--z:0;"><img src="img/element/ตาย1.png"></div>
@@ -235,16 +237,24 @@
 </div>
 <!-- จบ ส่วนของบูม -->
 
-        <!-- เริ่มต้น ส่วนของเอิ้น -->
-        <div class="page" id="story9" data-show="1">
-            <div class="page-content" style="padding-top:250px ;">
-                <span class="story9_text">
-                    <div style="font-size: 40px; color:#E25F08">#SAVEPARROTFISH</div>
-                    เพื่อปะการังที่สวยงามได้โปรดหยุดจับและกินเรา 
-                </span>
+       <!-- เริ่มต้น ส่วนของเอิ้น -->
+       <div class="page" id="story9" data-show="0">
+        <div class="page-content" style="padding-top:150px ;">
+            <span class="story9_text">
+                <div style="font-size: 35px; color:#E25F08">#SAVEPARROTFISH</div>
+                <div id="chtext">เพื่อปะการังที่สวยงามได้โปรดหยุดจับและกินเรา </div>
+            </span>
+            <div id="pla-story" class="pla2" data-show="0">
+                <img id="img-pla" style="width:40vh;  " src="img/element/ปลาเทา.png" onclick="changeText3()">
             </div>
+            <div id="sharebt" class="btn-home" data-show="0">
+                <button id="sh2" class="btn-classics" onclick="sharefb()" data-aos="zoom-in-down">แชร์</button><br>
+                <button class="btn-classics btn-sm btn-fade" onclick="gotopart('main')" data-aos="zoom-in-down">กลับหน้าหลัก</button>
+            </div>
+            
         </div>
-        <!-- จบ ส่วนของเอิ้น -->
+    </div>
+    <!-- จบ ส่วนของเอิ้น -->
     </div>
 
     <div id="more-part" class="part">
@@ -369,15 +379,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-        function changeImage() {
-            var Image_Id = document.getElementById('img-pla');
-            if (Image_Id.src.match("img/parrot_fish/Main_Parrot_Fish.png")) {
-                Image_Id.src = "img/element/ปลาเทา.png";
-            }
-            else {
-                Image_Id.src = "img/parrot_fish/Main_Parrot_Fish.png";
-            }
-        } 
+        
     </script>
 </body>
 

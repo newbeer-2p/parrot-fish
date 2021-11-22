@@ -116,7 +116,6 @@ function changeText(){
     }
 }
 
-
 function loading(){
     let loading = document.querySelector("#loading");
     loading.dataset.show = "1";
@@ -127,7 +126,7 @@ function loading(){
 }
 
 let x = 1;
-function changeText() {
+function changeText2() {
     var y = document.getElementById("change");
     var z = document.getElementById("change2");
     var b = document.getElementById("change3");
@@ -139,5 +138,21 @@ function changeText() {
     } else if(x == 2){
         openPage("story9");
         goto("story9");
+        document.getElementById("pla-story").style.display = "none";
     }
 } 
+
+let t = 1;
+function changeText3() {
+    var tx = document.getElementById("chtext");
+    if (t == 1) {
+        tx.innerHTML = "*จับปลา หรือสัตว์น้ำเขตอุทยาน โทษสูงสุดจำคุกไม่เกิน 5 ปี <br>หรือปรับไม่เกิน 20,000 บาท หรือทั้งจำทั้งปรับ*";
+        t++;
+    } else if(x == 2){
+        document.getElementById("chtext").style.display = "none";
+        document.getElementById("sharebt").dataset.show = "1";
+    }
+} 
+function sharefb(){
+    window.open("https://www.facebook.com/sharer/sharer.php?u=save-parrot-fish.netlify.app", "", "width=200,height=100");
+}
