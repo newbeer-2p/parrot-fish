@@ -579,8 +579,8 @@ button:hover {
     color: white;
     font-size: 16px;
     position: absolute;
-    bottom: 40px;
-    left: 640px;
+    bottom: 10vw;
+    left: 40vw;
 }
 
 .fishing-ship {
@@ -702,7 +702,7 @@ button:hover {
     left: 40vw;
     z-index: 1;
 }
-.kon{
+.kon2{
     width: 40vw;
     position: absolute;
     bottom: 10vh;
@@ -1355,6 +1355,13 @@ a:link {
         background-repeat: no-repeat;
         width: 100%;
     }
+    .story4_text{
+        color: white;
+        font-size: 22px;
+        position: absolute;
+        bottom: 0vh;
+        left: 38vw;
+    }
     #story5 {
         background: url(img/bg/desktop/ตลาด5.jpg);
         background-size: cover;
@@ -1664,11 +1671,29 @@ a:link {
         background-repeat: no-repeat;
         height: 100vh;
     }
-    .kon{
+    .kon2{
         width: 120vw;
         position: absolute;
         top: 25vh;
         left: -10vw;
+    }
+    .waterfish{
+        width: 60vw;
+        position: absolute;
+        bottom: 0vh;
+        left: 20vw;
+    }
+    .jumpfish2{
+        width: 40vw;
+        position: absolute;
+        bottom: 5vh;
+        left: 30vw;
+    }
+    .story4_text{
+        width: 100vw;
+        position: absolute;
+        bottom: 0vh;
+        left: 30vw;
     }
     #story5 {
         background: url(img/bg/mobile/ในตลาด5.jpg);
