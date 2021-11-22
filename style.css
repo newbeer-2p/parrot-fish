@@ -1539,7 +1539,48 @@ a:link {
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
-    
+    .dead1{
+        bottom: var(--b);
+        left: var(--l);
+        width: 22vw;
+        position: absolute;
+        z-index: var(--z);
+    }
+    .dead2{
+        bottom: var(--b);
+        left: var(--l);
+        width: 10vw;
+        position: absolute;
+        z-index: var(--z);
+    }
+    .dead3{
+        bottom: var(--b);
+        left: var(--l);
+        width: 12vw;
+        position: absolute;
+        z-index: var(--z);
+    }
+    .dead4{
+        bottom: var(--b);
+        left: var(--l);
+        width: 20vw;
+        position: absolute;
+        z-index: var(--z);
+    }
+    .dead5{
+        bottom: var(--b);
+        left: var(--l);
+        width: 20vw;
+        position: absolute;
+        z-index: var(--z);
+    }
+    .dead6{
+        bottom: var(--b);
+        left: var(--l);
+        width: 10vw;
+        position: absolute;
+        z-index: var(--z);
+    }
     .mb-fs-24,
     .btn-sm {
         font-size: 3vw!important;
