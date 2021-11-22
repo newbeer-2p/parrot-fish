@@ -595,104 +595,93 @@ button:hover {
     display: none;
 }
 
-.fish-store {
-    width: 30vw;
+.red{
+    color: red;
+    font-size: 22px;
 }
-
-.mid-store {
-    width: 28vw;
+.story1_text{
+    width: 100vw;
+    color: black;
+    font-size: 21px;
     position: absolute;
-    bottom: 12vh;
-    right: 36vw;
-    z-index: 1;
+    top: -7vh;
+    right: 0vw;
 }
-
-.Rstore {
-    width: 25vw;
+.story2_text{
+    color: white;
+    font-size: 22px;
     position: absolute;
-    bottom: 12vh;
-    right: 10vw;
+    top: 10vh;
+    right: 25vw;
 }
-
-.Lstore {
-    width: 25vw;
+.story3_text{
+    color: white;
+    font-size: 22px;
+}
+.story4_text{
+    color: white;
+    font-size: 22px;
     position: absolute;
-    bottom: 12vh;
-    left: 9vw;
+    bottom: 40px;
+    left:640px;
 }
-
-.fishtank1 {
-    width: 15vw;
+.fishing-ship {
+    width: 100vw;
+    text-align: center;
+    transform: translateY(15vh);
     position: absolute;
-    bottom: 29vh;
-    right: 42vw;
+    z-index: 2;
 }
 
-.fishtank2 {
-    width: 12vw;
+.page[data-show="0"] {
+    display: none;
+}
+.store{
+    width: 100vw;
     position: absolute;
-    bottom: 12vh;
-    left: 23vw;
-    z-index: 1;
+    bottom: 5vh;
+}
+.mid-store{
+    width: 100vw;
+    display: none;
 }
 
-.blue-boy {
+.blue-boy{
     width: 25vw;
     position: absolute;
     bottom: 1vh;
     left: 35vw;
     z-index: 1;
 }
-
-.pa-orange {
+.pa-orange{
     width: 25vw;
     position: absolute;
     bottom: 1vh;
     left: 45vw;
     z-index: 1;
 }
-
-.pink-girl {
+.pink-girl{
     width: 25vw;
     position: absolute;
     bottom: 0vh;
     left: 42vw;
     z-index: 1;
 }
-
-.mid-store2 {
-    width: 20vw;
+.mid-store2{
+    width: 25vw;
     position: absolute;
-    top: 7vh;
+    top: 0vh;
     left: 350px;
     z-index: 1;
 }
-
-.jarn1 {
-    width: 10vw;
-    position: absolute;
-    bottom: 40vh;
-    right: 21vw;
-    z-index: 1;
-}
-
-.jarn2 {
-    width: 12vw;
-    position: absolute;
-    bottom: 43vh;
-    right: 32vw;
-    z-index: 1;
-}
-
-.table {
+.table{
     width: 22vw;
     position: absolute;
     bottom: 10vh;
-    right: 22vw;
+    right: 10vw;
     z-index: 1;
 }
-
-.hand {
+.hand{
     width: 40vw;
     position: absolute;
     top: 10vh;
@@ -700,73 +689,37 @@ button:hover {
     z-index: 1;
     transform: rotate(-20deg);
 }
-
-.pa-yellow {
-    width: 30vw;
+.toopla{
+    width: 35vw;
     position: absolute;
-    bottom: 28vh;
-    right: 15vw;
+    top: 30vh;
+    left: 32vw;
+}
+.jumpfish{
+    width: 20vw;
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
     z-index: 1;
 }
-
-.ontable {
-    position: absolute;
-    bottom: 8vh;
-    right: 0vw;
-    z-index: 1;
-}
-
-.fishtank3 {
-    width: 12vw;
-    position: absolute;
-    top: 22vh;
-    left: 27vw;
-}
-
-.fishtank4 {
-    width: 30vw;
-    position: absolute;
-    bottom: 10vh;
-    right: 35vw;
-    z-index: 1;
-}
-
-.water {
+.kon{
     width: 40vw;
     position: absolute;
-    bottom: 45vh;
-    right: 28vw;
-}
-
-.blue-boy2 {
-    width: 32vw;
-    position: absolute;
-    bottom: 20vh;
-    left: 33vw;
+    bottom: 10vh;
+    left: 32vw;
     z-index: 1;
 }
-
-.pa-orange2 {
-    width: 32vw;
+.waterfish{
+    width: 18vw;
     position: absolute;
-    bottom: 5vh;
+    bottom: 10vw;
+    left:42vw;
+}
+.jumpfish2{
+    width: 12vw;
+    position: absolute;
+    bottom: 21vh;
     left: 45vw;
-    z-index: 1;
-}
-
-.pink-girl2 {
-    width: 32vw;
-    position: absolute;
-    bottom: 5vh;
-    left: 26vw;
-    z-index: 1;
-}
-
-.lung {
-    width: 32vw;
-    position: absolute;
-    bottom: 20vh;
-    left: 41vw;
     z-index: 1;
 }
 
@@ -1592,100 +1545,130 @@ a:link {
         background-repeat: no-repeat;
         height: 100vh;
     }
-    #story1 {
+    #story1{
         background: url(img/bg/mobile/ในตลาด1.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
         height: 100vh;
     }
-    .mid-store {
-        width: 80vw;
-        left: 10vw;
+    .store{
+        display: none;
     }
-    .fishtank1 {
+    .mid-store{
+        width: 80vw;
+        right: 10vw;
+        bottom: 10vh;
+        position: absolute;
+        display: block;
+    }
+    .fishtank1{
         width: 60vw;
-        left: 20vw;
+        left:20vw;
         bottom: 30vh;
     }
-    .Rstore {
+    .Rstore{
         opacity: 0;
     }
-    .Lstore {
+    .Lstore{
         opacity: 0;
     }
-    .fishtank2 {
+    .fishtank2{
         opacity: 0;
     }
-    .blue-boy {
+    .blue-boy{
         width: 80vw;
         left: -10vw;
     }
-    .pink-girl {
+    .pink-girl{
         width: 80vw;
         left: 20vw;
     }
-    .pa-orange {
+    .pa-orange{
         width: 80vw;
         left: 35vw;
     }
-    #story2 {
+    .story1_text{
+        width: 100vw;
+        color: black;
+        font-size: 16px;
+        position: absolute;
+        /*top: 1vh;
+        right: 42vw;*/
+        left: 0vw;
+        top: 10vh;
+    }
+    .red{
+        font-size: 16px;
+    }
+    #story2{
         background: url(img/bg/mobile/ในตลาด2.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
         height: 100vh;
     }
-    .mid-store2 {
+    .mid-store2{
         width: 45vw;
         left: 10vw;
-        top: 20vh
+        top:20vh
     }
-    .fishtank3 {
+    .fishtank3{
         width: 20vw;
         left: 18vw;
         top: 20vh;
     }
-    .hand {
-        width: 65vw;
-        top: 42vh;
+    .hand{
+        width: 55vw;
+        top:42vh;
         left: 5vw;
-        z-index: 2;
+        z-index: 1;
     }
-    .table {
+    .table{
         width: 45vw;
         bottom: 10vh;
         right: 10vw;
-        z-index: 1;
+        z-index: 2;
     }
-    .jarn1 {
-        width: 25vw;
-        bottom: 30vh;
-        right: 7vw;
+    .story2_text{
+        color: white;
+        font-size: 16px;
+        position: absolute;
+        top: 10vh;
+        right: 25vw;
     }
-    .jarn2 {
-        width: 27vw;
-        bottom: 32vh;
-    }
-    .pa-yellow {
-        width: 80vw;
-        bottom: 18vh;
-        right: -10vw;
-        z-index: 3;
-    }
-    #story3 {
+    #story3{
         background: url(img/bg/mobile/ในตลาด3.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
         height: 100vh;
     }
-    #story4 {
+    .toopla{
+        width: 60vw;
+        position: absolute;
+        top: 35vh;
+        left: 20vw;
+    }
+    .jumpfish{
+        width: 40vw;
+        position: absolute;
+        top: 25vh;
+        left: 32vw;
+        z-index: 1;
+    }
+    #story4{
         background: url(img/bg/mobile/ในตลาด4.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
         height: 100vh;
+    }
+    .kon{
+        width: 120vw;
+        position: absolute;
+        top: 25vh;
+        left: -10vw;
     }
     #story5 {
         background: url(img/bg/mobile/ในตลาด5.jpg);
