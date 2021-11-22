@@ -1627,6 +1627,192 @@ a:link {
     }
 }
 
+@media (max-width: 1980px){
+    .purple{
+        width: 200px!important;
+        left: -40px;
+    }
+    .orange{
+        width: 200px!important;
+        left: 40px;
+    }
+    .seaweed{
+        width: 200px!important;
+        left: 140px;
+    }
+    .pink{
+        width: 200px!important;
+        bottom: -50px;
+        left: 290px;
+    }
+    .seaweed-a{
+        width: 200px!important;
+        bottom: -180px;
+        left: 200px;
+    }
+    .purple-r{
+        width: 200px!important;
+        right: 270px;
+        bottom: -50px;
+    }
+    .orange-r{
+        width: 200px!important;
+        right: 170px;
+    }
+    .seaweed-r{
+        width: 200px!important;
+        right: 100px;
+    }
+    .pink-r{
+        width: 200px!important;
+        right: 40px;
+    }
+    .seaweed-a-r{
+        width: 200px!important;
+        right: -60px;
+    }
+    .fish-rainbow{
+        width: 15vw!important;
+        left: 300px;
+        top: 450px;
+    }
+    .fish-head{
+        width: 15vw!important;
+        left: 850px;
+        top: 350px;
+    }
+
+    .content{
+        height: 18vw;
+        width: 32vw;
+        left: 200px;
+        top: 200px;
+    }
+
+    .content-2{
+        height: 18vw;
+        width: 35vw;
+        left: 730px;
+        top: 110px;
+    }
+/* 
+    .fish-ovi{
+        top: 450px;
+        left: 350px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-spot{
+        top: 350px;
+        right: 200px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-3{
+        height: 18vw;
+        width: 35vw;
+        left: 200px;
+        top: 200px;
+    }
+    
+    .content-4{
+        height: 18vw;
+        width: 35vw;
+        left: 730px;
+        top: 110px;
+    } */
+    
+    /* .fish-red{
+        top: 470px;
+        left: 340px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-marbled{
+        top: 350px;
+        right: 230px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-5{
+        height: 20vw;
+        width: 35vw;
+        left: 200px;
+        top: 200px;
+    }
+    
+    .content-6{
+        height: 16vw;
+        width: 35vw;
+        left: 730px;
+        top: 110px;
+    } */
+    
+    /* .fish-blue{
+        top: 450px;
+        left: 340px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-indian{
+        top: 360px;
+        right: 200px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-7{
+        height: 18vw;
+        width: 35vw;
+        left: 200px;
+        top: 200px;
+    }
+    
+    .content-8{
+        height: 20w;
+        width: 40vw;
+        left: 730px;
+        top: 110px;
+    } */
+    
+    /* .fish-chi{
+        top: 420px;
+        left: 340px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-bic{
+        top: 310px;
+        right: 200px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-9{
+        height: 16vw;
+        width: 35vw;
+        left: 200px;
+        top: 200px;
+    }
+    
+    .content-10{
+        height: 20w;
+        width: 40vw;
+        left: 730px;
+        top: 110px;
+    } */
+}
+
 /* FOR Destop 1280*720 */
 @media (max-width: 1280px){
     .purple{
