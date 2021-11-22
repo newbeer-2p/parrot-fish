@@ -127,13 +127,9 @@ function loading(){
 
 let x = 1;
 function changeText2() {
-    var y = document.getElementById("change");
-    var z = document.getElementById("change2");
     var b = document.getElementById("change3");
     if (x == 1) {
-        y.innerHTML = "";
-        b.innerHTML = "";
-        z.innerHTML = "ปลานกแก้วได้แต่เศร้าใจ <br> อาศัยอยู่ที่นี่คนเดียวต่อไป <br>..................";
+        b.innerHTML = "ปลานกแก้วได้แต่เศร้าใจ <br> อาศัยอยู่ที่นี่คนเดียวต่อไป <br>..................";
         x++;
     } else if(x == 2){
         openPage("story9");
