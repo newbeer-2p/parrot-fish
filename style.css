@@ -360,7 +360,8 @@ button:hover {
     z-index: 2;
     animation: krapib .5s 4s linear infinite alternate;
 }
-#sh2{
+
+#sh2 {
     width: 250px;
     border-style: none;
     padding: 20px 60px;
@@ -368,6 +369,7 @@ button:hover {
     background: white;
     border-radius: 50px;
 }
+
 #pic-click>img {
     width: 120px;
 }
@@ -602,11 +604,12 @@ button:hover {
     display: none;
 }
 
-.red{
+.red {
     color: red;
     font-size: 22px;
 }
-.story1_text{
+
+.story1_text {
     width: 100vw;
     color: black;
     font-size: 21px;
@@ -614,24 +617,28 @@ button:hover {
     top: -7vh;
     right: 0vw;
 }
-.story2_text{
+
+.story2_text {
     color: white;
     font-size: 22px;
     position: absolute;
     top: 10vh;
     right: 25vw;
 }
-.story3_text{
+
+.story3_text {
     color: white;
     font-size: 22px;
 }
-.story4_text{
+
+.story4_text {
     color: white;
     font-size: 22px;
     position: absolute;
     bottom: 40px;
-    left:640px;
+    left: 640px;
 }
+
 .fishing-ship {
     width: 100vw;
     text-align: center;
@@ -643,52 +650,59 @@ button:hover {
 .page[data-show="0"] {
     display: none;
 }
-.store{
+
+.store {
     width: 100vw;
     position: absolute;
     bottom: 5vh;
 }
-.mid-store{
+
+.mid-store {
     width: 100vw;
     display: none;
 }
 
-.blue-boy{
+.blue-boy {
     width: 25vw;
     position: absolute;
     bottom: 1vh;
     left: 35vw;
     z-index: 1;
 }
-.pa-orange{
+
+.pa-orange {
     width: 25vw;
     position: absolute;
     bottom: 1vh;
     left: 45vw;
     z-index: 1;
 }
-.pink-girl{
+
+.pink-girl {
     width: 25vw;
     position: absolute;
     bottom: 0vh;
     left: 42vw;
     z-index: 1;
 }
-.mid-store2{
+
+.mid-store2 {
     width: 25vw;
     position: absolute;
     top: 0vh;
     left: 350px;
     z-index: 1;
 }
-.table{
+
+.table {
     width: 22vw;
     position: absolute;
     bottom: 10vh;
     right: 10vw;
     z-index: 1;
 }
-.hand{
+
+.hand {
     width: 40vw;
     position: absolute;
     top: 10vh;
@@ -696,33 +710,38 @@ button:hover {
     z-index: 1;
     transform: rotate(-20deg);
 }
-.toopla{
+
+.toopla {
     width: 35vw;
     position: absolute;
     top: 30vh;
     left: 32vw;
 }
-.jumpfish{
+
+.jumpfish {
     width: 20vw;
     position: absolute;
     top: 20vh;
     left: 40vw;
     z-index: 1;
 }
-.kon2{
+
+.kon2 {
     width: 40vw;
     position: absolute;
     bottom: 10vh;
     left: 32vw;
     z-index: 1;
 }
-.waterfish{
+
+.waterfish {
     width: 18vw;
     position: absolute;
     bottom: 10vw;
-    left:42vw;
+    left: 42vw;
 }
-.jumpfish2{
+
+.jumpfish2 {
     width: 12vw;
     position: absolute;
     bottom: 21vh;
@@ -826,15 +845,18 @@ button:hover {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-#sharebt[data-show="0"]{
+
+#sharebt[data-show="0"] {
     display: none;
 }
-#sharebt{
+
+#sharebt {
     width: 100vw;
     bottom: 15vh;
     text-align: center;
     position: absolute;
 }
+
 .story7_text {
     color: 4BA4A0;
     font-size: 24;
@@ -877,8 +899,9 @@ button:hover {
     z-index: 2;
     cursor: pointer;
 }
-.pla2{
-    --swY:-50;
+
+.pla2 {
+    --swY: -50;
     width: 25vh;
     top: 30vh;
     width: 100vw;
@@ -888,6 +911,7 @@ button:hover {
     z-index: 2;
     cursor: pointer;
 }
+
 .story5_text {
     font-size: 18px;
 }
@@ -1381,7 +1405,7 @@ a:link {
         background-repeat: no-repeat;
         width: 100%;
     }
-    .story4_text{
+    .story4_text {
         color: white;
         font-size: 22px;
         position: absolute;
@@ -1435,13 +1459,6 @@ a:link {
         width: 160px!important;
         animation-delay: -10s;
     }
-    .coral-pink-l {
-        left: 380px;
-        bottom: 130px;
-        width: 140px!important;
-        animation: dukdik 1.5s linear infinite;
-        animation-delay: -10s;
-    }
     .coral-pp-r {
         right: 330px;
         bottom: 55px;
@@ -1463,15 +1480,8 @@ a:link {
         animation: dukdik 3s linear infinite;
         animation-delay: -10s;
     }
-    .seaweeds {
-        left: 320px;
-        bottom: 70px;
-        width: 120px !important;
-        animation: dukdik 0.8s linear infinite;
-        animation-delay: -10s;
-    }
     #pic-click {
-        bottom: 290px;
+        bottom: 280px;
         left: calc( 55% - 10px);
         position: fixed;
         opacity: 0;
@@ -1578,50 +1588,50 @@ a:link {
         background-repeat: no-repeat;
         height: 100vh;
     }
-    #story1{
+    #story1 {
         background: url(img/bg/mobile/ในตลาด1.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
         height: 100vh;
     }
-    .store{
+    .store {
         display: none;
     }
-    .mid-store{
+    .mid-store {
         width: 80vw;
         right: 10vw;
         bottom: 10vh;
         position: absolute;
         display: block;
     }
-    .fishtank1{
+    .fishtank1 {
         width: 60vw;
-        left:20vw;
+        left: 20vw;
         bottom: 30vh;
     }
-    .Rstore{
+    .Rstore {
         opacity: 0;
     }
-    .Lstore{
+    .Lstore {
         opacity: 0;
     }
-    .fishtank2{
+    .fishtank2 {
         opacity: 0;
     }
-    .blue-boy{
+    .blue-boy {
         width: 80vw;
         left: -10vw;
     }
-    .pink-girl{
+    .pink-girl {
         width: 80vw;
         left: 20vw;
     }
-    .pa-orange{
+    .pa-orange {
         width: 80vw;
         left: 35vw;
     }
-    .story1_text{
+    .story1_text {
         width: 100vw;
         color: black;
         font-size: 16px;
@@ -1631,97 +1641,97 @@ a:link {
         left: 0vw;
         top: 10vh;
     }
-    .red{
+    .red {
         font-size: 16px;
     }
-    #story2{
+    #story2 {
         background: url(img/bg/mobile/ในตลาด2.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
         height: 100vh;
     }
-    .mid-store2{
+    .mid-store2 {
         width: 45vw;
         left: 10vw;
-        top:20vh
+        top: 20vh
     }
-    .fishtank3{
+    .fishtank3 {
         width: 20vw;
         left: 18vw;
         top: 20vh;
     }
-    .hand{
+    .hand {
         width: 55vw;
-        top:42vh;
+        top: 42vh;
         left: 5vw;
         z-index: 1;
     }
-    .table{
+    .table {
         width: 45vw;
         bottom: 10vh;
         right: 10vw;
         z-index: 2;
     }
-    .story2_text{
+    .story2_text {
         color: white;
         font-size: 16px;
         position: absolute;
         top: 10vh;
         right: 25vw;
     }
-    #story3{
+    #story3 {
         background: url(img/bg/mobile/ในตลาด3.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
         height: 100vh;
     }
-    .toopla{
+    .toopla {
         width: 60vw;
         position: absolute;
         top: 35vh;
         left: 20vw;
     }
-    .jumpfish{
+    .jumpfish {
         width: 40vw;
         position: absolute;
         top: 25vh;
         left: 32vw;
         z-index: 1;
     }
-    #story4{
+    #story4 {
         background: url(img/bg/mobile/ในตลาด4.jpg);
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
         height: 100vh;
     }
-    .kon2{
+    .kon2 {
         width: 120vw;
         position: absolute;
         top: 25vh;
         left: -10vw;
     }
-    .waterfish{
+    .waterfish {
         width: 60vw;
         position: absolute;
         bottom: 0vh;
         left: 20vw;
     }
-    .jumpfish2{
+    .jumpfish2 {
         width: 40vw;
         position: absolute;
         bottom: 5vh;
         left: 30vw;
     }
-    .story4_text{
+    .story4_text {
         width: 100vw;
         position: absolute;
         bottom: 0vh;
         left: 30vw;
     }
-    #sh2{
+    #sh2 {
         width: 200px;
     }
     #story5 {
