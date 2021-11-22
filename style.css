@@ -834,11 +834,16 @@ button:hover {
 .story9_text{
     color: white;
     font-size: 16px;
-
 }
 .orange-text{
-    font-size: 56px;
+    font-size: 32px;
     color: orange;
+}
+.story-content{
+    position:absolute;
+    width: 100vw;
+    text-align: center;
+    top: var(--b);
 }
 .nok{
     position: absolute;
@@ -859,7 +864,7 @@ button:hover {
     z-index: 2;
 }
 .story5_text{
-    font-size: 24px;
+    font-size: 18px;
 }
 @keyframes nokbin{
     from{
@@ -1363,7 +1368,7 @@ a:link {
         width: 65%;
     }
     .story5_text{
-        font-size: 32px;
+        font-size: 18px;
     }
 }
 @media (max-width: 1120px) {
