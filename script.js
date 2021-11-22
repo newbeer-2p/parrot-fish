@@ -156,3 +156,53 @@ function changeText3() {
 function sharefb(){
     window.open("https://www.facebook.com/sharer/sharer.php?u=save-parrot-fish.netlify.app", "", "width=200,height=100");
 }
+
+function openPopup(fish){
+    let popup = document.querySelector("#popup-picture");
+    let popup_img = document.querySelector(".popup-img");
+    let imgs = document.querySelectorAll(".real-fish");
+
+    imgs.forEach((img) => {
+        img.dataset.show = "0";
+
+    })
+    imgs[fish].dataset.show = "1";
+    popup.dataset.show = "1";
+
+}
+
+function closePopup(){
+    let popup = document.querySelector("#popup-picture");
+    popup.dataset.show = "0";
+}
+
+function showContent(fish_no){
+    let fish_contents = document.querySelectorAll(".fish-contents");
+    console.log(fish_no)
+
+    fish_contents[fish_no].dataset.show = "1";
+}
+
+let show_info = 1;
+
+function changeInfo(){
+    if (show_info >= 4){
+        show_info = 0;
+    }
+        let fishes = document.querySelectorAll(".fishes");
+        let fish_contents = document.querySelectorAll(".fish-contents");
+
+        fishes.forEach((fish) => {
+            fish.dataset.show = "0";
+        })
+        fish_contents.forEach((content) => {
+            content.dataset.show = "0";
+        })
+        
+        fishes[2*show_info].dataset.show = "1";
+        fishes[2*show_info+1].dataset.show = "1";
+        console.log(show_info);
+        console.log(2*show_info+1);
+        show_info++;
+    
+}

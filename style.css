@@ -245,6 +245,15 @@ button,
     }
 }
 
+@keyframes dukdik1 {
+    50% {
+        transform: translateX(2px)rotate(4deg)scaleX(-1);
+    }
+    100% {
+        transform: translateX(0px)rotate(0deg)scaleX(-1);
+    }
+}
+
 @keyframes swim {
     0% {
         left: 100vw;
@@ -982,7 +991,7 @@ button:hover {
     z-index: var(--z);
 }
 
-.purple {
+.purple{
     left: -10px;
     bottom: -30px;
     width: 180px !important;
@@ -991,172 +1000,176 @@ button:hover {
     animation: dukdik 1.5s linear infinite;
     animation-delay: -10s;
 }
-
-.orange {
+.orange{
     left: 90px;
     bottom: -30px;
     width: 250px !important;
     position: absolute;
     animation: dukdik 1.5s .5s linear infinite;
-    animation-delay: -10s;
+    animation-delay: -18s;
 }
-
-.seaweed {
+.seaweed{
     left: 240px;
     bottom: -40px;
     width: 250px !important;
     position: absolute;
-    z-index: -1;
+    z-index: -1 ;
     animation: dukdik 1.5s .3s linear infinite;
-    animation-delay: -10s;
+    animation-delay: -26s;
 }
-
-.pink {
+.pink{
     left: 470px;
     bottom: -40px;
     width: 250px !important;
     position: absolute;
-    z-index: -1;
+    z-index: -1 ;
     animation: dukdik 1.5s .3s linear infinite;
-    animation-delay: -10s;
+    animation-delay: -12s;
 }
-
-.seaweed-a {
+.seaweed-a{
     left: 350px;
     bottom: -200px;
     width: 250px !important;
     position: absolute;
-    z-index: -1;
+    z-index: -1 ;
     animation: dukdik 1.5s .3s linear infinite;
     animation-delay: -10s;
 }
-
-.purple-r {
+.purple-r{
     right: 400px;
     bottom: -30px;
     width: 250px !important;
     position: absolute;
-    z-index: 1;
+    z-index: 1 ;
     animation: dukdik 1.5s .3s linear infinite;
     animation-delay: -10s;
 }
-
-.orange-r {
+.orange-r{
     right: 250px;
     bottom: -30px;
     width: 250px !important;
-    z-index: -1;
+    z-index: -1 ;
     position: absolute;
     animation: dukdik 1.5s .5s linear infinite;
-    animation-delay: -10s;
+    animation-delay: -18s;
 }
-
-.seaweed-r {
+.seaweed-r{
     right: 70px;
     bottom: -30px;
     width: 250px !important;
-    z-index: -2;
+    z-index: -2 ;
     position: absolute;
     animation: dukdik 1.5s .5s linear infinite;
-    animation-delay: -10s;
+    animation-delay: -17s;
 }
-
-.pink-r {
+.pink-r{
     right: 200px;
     bottom: -200px;
     width: 250px !important;
-    z-index: -1;
+    z-index: -1 ;
     position: absolute;
     animation: dukdik 1.5s .5s linear infinite;
-    animation-delay: -10s;
+    animation-delay: -20s;
 }
-
-.seaweed-a-r {
+.seaweed-a-r{
     right: 0;
     bottom: -80px;
     width: 250px !important;
-    z-index: -2;
+    z-index: -2 ;
     position: absolute;
     animation: dukdik 1.5s .5s linear infinite;
     animation-delay: -10s;
 }
-
-.fish-rainbow {
+.fish-rainbow{
     top: 650px;
     left: 500px;
     /* width: 250px !important; */
     position: absolute;
-    transform: scaleX(-1);
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -10s;
+    
 }
-
-.fish-head {
+.fish-head{
     top: 350px;
     right: 400;
-    width: 250px !important;
+    /* width: 250px !important; */
     position: absolute;
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -15s;
 }
-
-.fish-ovi {
+.fish-ovi{
     top: 550px;
     left: 400px;
     width: 250px;
     position: absolute;
-    transform: scaleX(-1);
+    animation: dukdik1 1.5s .3s linear infinite;
+    animation-delay: -15s;
 }
 
-.fish-spot {
+.fish-spot{
     top: 420px;
     right: 400;
     width: 250px;
     position: absolute;
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -15s;
 }
 
-.fish-red {
+.fish-red{
     top: 570px;
     left: 400px;
     width: 250px;
     position: absolute;
-    transform: scaleX(-1);
+    animation: dukdik1 1.5s .3s linear infinite;
+    animation-delay: -15s;
 }
 
-.fish-marbled {
+.fish-marbled{
     top: 420px;
     right: 400;
     width: 250px;
     position: absolute;
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -15s;
 }
 
-.fish-blue {
+.fish-blue{
     top: 580px;
     left: 400px;
     width: 250px;
     position: absolute;
-    transform: scaleX(-1);
+    animation: dukdik1 1.5s .3s linear infinite;
+    animation-delay: -15s;
 }
 
-.fish-indian {
+.fish-indian{
     top: 460px;
     right: 400;
     width: 250px;
     position: absolute;
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -15s;
 }
 
-.fish-chi {
+.fish-chi{
     top: 580px;
     left: 400px;
     width: 250px;
     position: absolute;
-    transform: scaleX(-1);
+    animation: dukdik1 1.5s .3s linear infinite;
+    animation-delay: -15s;
 }
 
-.fish-bic {
+.fish-bic{
     top: 420px;
     right: 400;
     width: 250px;
     position: absolute;
+    animation: dukdik 1.5s .3s linear infinite;
+    animation-delay: -15s;
 }
 
-.content {
+.content{
     background: white;
     width: 500px;
     height: 200px;
@@ -1166,8 +1179,7 @@ button:hover {
     border-radius: 20px;
     padding: 20px;
 }
-
-.content-2 {
+.content-2{
     background: white;
     width: 500px;
     height: 200px;
@@ -1178,7 +1190,7 @@ button:hover {
     padding: 20px
 }
 
-.content-3 {
+.content-3{
     background: white;
     width: 500px;
     height: 230px;
@@ -1189,7 +1201,7 @@ button:hover {
     padding: 20px;
 }
 
-.content-4 {
+.content-4{
     background: white;
     width: 500px;
     height: 200px;
@@ -1200,7 +1212,7 @@ button:hover {
     padding: 20px
 }
 
-.content-5 {
+.content-5{
     background: white;
     width: 500px;
     height: 250px;
@@ -1211,7 +1223,7 @@ button:hover {
     padding: 20px;
 }
 
-.content-6 {
+.content-6{
     background: white;
     width: 500px;
     height: 200px;
@@ -1222,7 +1234,7 @@ button:hover {
     padding: 20px
 }
 
-.content-7 {
+.content-7{
     background: white;
     width: 500px;
     height: 210px;
@@ -1233,7 +1245,7 @@ button:hover {
     padding: 20px;
 }
 
-.content-8 {
+.content-8{
     background: white;
     width: 500px;
     height: 240px;
@@ -1244,7 +1256,7 @@ button:hover {
     padding: 20px
 }
 
-.content-9 {
+.content-9{
     background: white;
     width: 500px;
     height: 240px;
@@ -1255,7 +1267,7 @@ button:hover {
     padding: 20px;
 }
 
-.content-10 {
+.content-10{
     background: white;
     width: 500px;
     height: 190px;
@@ -1266,32 +1278,125 @@ button:hover {
     padding: 20px
 }
 
-.next-lvl {
+.next-lvl{
     width: 100vw;
     bottom: 80px;
     position: absolute;
     overflow: hidden;
 }
 
-.back-to-basic {
+.back-to-basic{
     width: 100vw;
     bottom: 10px;
     position: absolute;
-    overflow: hidden;
+    overflow: hidden; 
+}
+#popup-picture{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 0%, .5);
+}
+#popup-picture[data-show="0"]{
+    display: none;
+}
+
+#main-popup{
+    width: 80%;
+    height: 80%;
+    background: white;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 2px 2px 8px hsl(0, 0%, 0%, .5);
+}
+
+.popup-img{
+    width: 100%;
+    height: 100%;
+    /* background: black; */
+    padding: 50px;
+}
+
+.popup-img>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.popup-img>img[data-show="0"]{
+    display: none;
+}
+
+.close-btn{
+    padding: 15px 20px;
+    background: red;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px black;
 }
 
 a:link {
     text-decoration: none;
-}
+  }
 
-.header-fish-ja {
+.header-fish-ja{
     color: white;
     padding: 15px;
     overflow: hidden;
 }
-
-.text-n {
+.text-n{
     margin-bottom: 100px;
+}
+
+:where(.content, .content-2, .content-3, .content-4, .content-5, .content-6, .content-7, .content-8, .content-9, .content-10)[data-show="0"]{
+    display: none;
+}
+
+.fishname{
+    font-size: 25px;
+    color: hsl(174, 31%, 40%, 100);
+    font-weight: bold;
+}
+
+.text-fish{
+    margin-bottom: 20px;
+    overflow-y: scroll; 
+    text-align: left;
+    color: hsl(174, 31%, 40%, 100)
+}
+.linkfish{
+    text-align: right;
+    margin-top: -10px;
+    margin-left: -20px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: hsl(174, 31%, 40%, 100)
+}
+#more1{
+    overflow: hidden;
+}
+#more-part{
+    overflow: hidden;
+}
+.fish-l[data-show="0"]{
+    display: none;
+}
+.fish-r[data-show="0"]{
+    display: none;
 }
 
 :where(.content,
@@ -1333,11 +1438,11 @@ a:link {
 }
 
 .fish-l[data-show="0"] {
-    opacity: 0;
+    display: none;
 }
 
 .fish-r[data-show="0"] {
-    opacity: 0;
+    display: none;
 }
 
 @media (min-width: 1200px) {
@@ -1532,6 +1637,211 @@ a:link {
         transform: scaleX(-1);
         right: 400px;
         bottom: 0px;
+    }
+    .fishing-ship{
+        width: 100vw;
+        left: calc(50vw - (65% / 2));
+    }
+    .fishing-ship{
+        width: 65%;
+    }
+    .story5_text{
+        font-size: 18px;
+    }
+    .purple{
+        width: 200px!important;
+        left: -40px;
+    }
+    .orange{
+        width: 200px!important;
+        left: 90px;
+    }
+    .seaweed{
+        width: 200px!important;
+        left: 170px;
+    }
+    .pink{
+        width: 200px!important;
+        bottom: -50px;
+        left: 350px;
+    }
+    .seaweed-a{
+        width: 200px!important;
+        bottom: -180px;
+        left: 260px;
+    }
+    .purple-r{
+        width: 200px!important;
+        right: 350px;
+        bottom: -50px;
+        z-index: -1;
+    }
+    .orange-r{
+        width: 200px!important;
+        right: 240px;
+        z-index: -2;
+        top: 590px;
+    }
+    .seaweed-r{
+        width: 200px!important;
+        right: 120px;
+        z-index: -3;
+    }
+    .pink-r{
+        width: 200px!important;
+        right: 70px;
+    }
+    .seaweed-a-r{
+        width: 200px!important;
+        right: -60px;
+    }
+    .fish-rainbow{
+        width: 15vw;
+        left: 300px;
+        top: 450px;
+    }
+    .fish-head{
+        width: 15vw;
+        left: 850px;
+        top: 350px;
+    }
+
+    .content{
+        height: 18vw;
+        width: 32vw;
+        left: 200px;
+        top: 200px;
+    }
+
+    .content-2{
+        height: 18vw;
+        width: 35vw;
+        left: 730px;
+        top: 110px;
+    }
+
+    .fish-ovi{
+        top: 450px;
+        left: 350px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-spot{
+        top: 350px;
+        right: 200px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-3{
+        height: 18vw;
+        width: 35vw;
+        left: 200px;
+        top: 200px;
+    }
+    
+    .content-4{
+        height: 18vw;
+        width: 35vw;
+        left: 730px;
+        top: 110px;
+    }
+    
+    .fish-red{
+        top: 470px;
+        left: 340px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-marbled{
+        top: 330px;
+        right: 230px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-5{
+        height: 20vw;
+        width: 35vw;
+        left: 200px;
+        top: 200px;
+    }
+    
+    .content-6{
+        height: 16vw;
+        width: 35vw;
+        left: 730px;
+        top: 110px;
+    }
+    
+    .fish-blue{
+        top: 450px;
+        left: 340px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-indian{
+        top: 330px;
+        right: 200px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-7{
+        height: 18vw;
+        width: 35vw;
+        left: 200px;
+        top: 200px;
+    }
+    
+    .content-8{
+        height: 16vw;
+        width: 40vw;
+        left: 730px;
+        top: 110px;
+    }
+    
+    .fish-chi{
+        top: 420px;
+        left: 340px;
+        width: 15vw;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    
+    .fish-bic{
+        top: 310px;
+        right: 200px;
+        width: 15vw;
+        position: absolute;
+    }
+
+    .content-9{
+        height: 16vw;
+        width: 35vw;
+        left: 200px;
+        top: 200px;
+    }
+    
+    .content-10{
+        height: 14vw;
+        width: 40vw;
+        left: 730px;
+        top: 110px;
+    }
+    .next-lvl{
+        bottom: 75px;
+        position: absolute;
+    }
+    .back-to-basic{
+        bottom: 5px;
+        position: absolute;
     }
 }
 
