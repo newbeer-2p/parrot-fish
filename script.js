@@ -117,4 +117,5 @@ function loading(){
     window.setTimeout(() => {
         loading.dataset.show = "0";
     }, 1000)
+
 }
