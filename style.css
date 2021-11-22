@@ -71,7 +71,7 @@ body[data-mode="story"] {
 }
 
 body[data-mode="more"] {
-    background: salmon;
+    background: url(img/bg/desktop/ฉากวงศ์ปลา\(เดสทอป\).jpg);
     height: 100vh;
 }
 
@@ -206,7 +206,7 @@ body[data-mode="more"]>:where(#story-part, #main-part) {
 }
 
 .text-org-36 {
-    color: var(--org);
+    color: white;
     font-size: 36px;
 }
 
@@ -1017,7 +1017,7 @@ button:hover {
 .fish-rainbow{
     top: 650px;
     left: 500px;
-    width: 250px !important;
+    /* width: 250px !important; */
     position: absolute;
     transform: scaleX(-1);
 }
@@ -1197,27 +1197,17 @@ button:hover {
 }
 
 .next-lvl{
-    /* background: white; */
     width: 100vw;
-    height: 100px;
-    bottom: 50px;
-    /* left: 850px; */
+    bottom: 80px;
     position: absolute;
-    /* border-radius: 40px;
-    padding-top: 30px;
-    overflow: hidden; */
+    overflow: hidden;
 }
 
 .back-to-basic{
-    /* background: white; */
     width: 100vw;
-    height: 100px;
-    bottom: -20;
-    /* left: 850px; */
+    bottom: 10px;
     position: absolute;
-    /* border-radius: 40px;
-    padding-top: 30px;
-    overflow: hidden; */
+    overflow: hidden;
 }
 
 a:link {
@@ -1225,6 +1215,7 @@ a:link {
   }
 
 .header-fish-ja{
+    color: white;
     padding: 15px;
     overflow: hidden;
 }
@@ -1246,7 +1237,7 @@ a:link {
     text-align: left;
 }
 .link-fish{
-    width: 100%;
+    font-size: 25px;
     text-align: right;
     margin-top: -10px;
     margin-left: -20px;
@@ -1600,7 +1591,7 @@ a:link {
     }
     .mb-fs-30,
     .btn-classics {
-        font-size: 4vw;
+        font-size: 5vw;
     }
     .mb-fs-48 {
         font-size: 6vw;
@@ -1623,9 +1614,13 @@ a:link {
     #main7-content-2{
         bottom: 50vh;
     }
+    .text-fish{
+        font-size: 13px;
+    }
     .purple{
         width: 125px!important;
-        left: -50px;
+        left: 0px;
+        z-index: -5;
     }
     .orange{
         width: 125px!important;
@@ -1648,6 +1643,7 @@ a:link {
     .purple-r{
         width: 125px!important;
         right: 20px;
+        z-index: -5;
     }
     .orange-r{
         width: 125px!important;
@@ -1666,207 +1662,23 @@ a:link {
         right: -20px;
     }
     .fish-rainbow{
-        width: 40vw!important;
-        left: 0;
-        top: 700px;
+        width: 50vw;
+        left: 130px;
+        top: 320px;
     }
     .fish-head{
         width: 40vw!important;
         left: 200px;
     }
     .content{
-        height: 250px;
-        width: 90vw!important;
-        left: 20px;
-        top: 450px;
+        height: 190px!important;
+        width: 79vw!important;
+        left: 10px!important;
+        top: 120px!important;
     }
 }
 
-@media (max-width: 1980px){
-    .purple{
-        width: 200px!important;
-        left: -40px;
-    }
-    .orange{
-        width: 200px!important;
-        left: 40px;
-    }
-    .seaweed{
-        width: 200px!important;
-        left: 140px;
-    }
-    .pink{
-        width: 200px!important;
-        bottom: -50px;
-        left: 290px;
-    }
-    .seaweed-a{
-        width: 200px!important;
-        bottom: -180px;
-        left: 200px;
-    }
-    .purple-r{
-        width: 200px!important;
-        right: 270px;
-        bottom: -50px;
-    }
-    .orange-r{
-        width: 200px!important;
-        right: 170px;
-    }
-    .seaweed-r{
-        width: 200px!important;
-        right: 100px;
-    }
-    .pink-r{
-        width: 200px!important;
-        right: 40px;
-    }
-    .seaweed-a-r{
-        width: 200px!important;
-        right: -60px;
-    }
-    .fish-rainbow{
-        width: 15vw!important;
-        left: 300px;
-        top: 450px;
-    }
-    .fish-head{
-        width: 15vw!important;
-        left: 850px;
-        top: 350px;
-    }
 
-    .content{
-        height: 18vw;
-        width: 32vw;
-        left: 200px;
-        top: 200px;
-    }
-
-    .content-2{
-        height: 18vw;
-        width: 35vw;
-        left: 730px;
-        top: 110px;
-    }
-/* 
-    .fish-ovi{
-        top: 450px;
-        left: 350px;
-        width: 15vw;
-        position: absolute;
-        transform: scaleX(-1);
-    }
-    
-    .fish-spot{
-        top: 350px;
-        right: 200px;
-        width: 15vw;
-        position: absolute;
-    }
-
-    .content-3{
-        height: 18vw;
-        width: 35vw;
-        left: 200px;
-        top: 200px;
-    }
-    
-    .content-4{
-        height: 18vw;
-        width: 35vw;
-        left: 730px;
-        top: 110px;
-    } */
-    
-    /* .fish-red{
-        top: 470px;
-        left: 340px;
-        width: 15vw;
-        position: absolute;
-        transform: scaleX(-1);
-    }
-    
-    .fish-marbled{
-        top: 350px;
-        right: 230px;
-        width: 15vw;
-        position: absolute;
-    }
-
-    .content-5{
-        height: 20vw;
-        width: 35vw;
-        left: 200px;
-        top: 200px;
-    }
-    
-    .content-6{
-        height: 16vw;
-        width: 35vw;
-        left: 730px;
-        top: 110px;
-    } */
-    
-    /* .fish-blue{
-        top: 450px;
-        left: 340px;
-        width: 15vw;
-        position: absolute;
-        transform: scaleX(-1);
-    }
-    
-    .fish-indian{
-        top: 360px;
-        right: 200px;
-        width: 15vw;
-        position: absolute;
-    }
-
-    .content-7{
-        height: 18vw;
-        width: 35vw;
-        left: 200px;
-        top: 200px;
-    }
-    
-    .content-8{
-        height: 20w;
-        width: 40vw;
-        left: 730px;
-        top: 110px;
-    } */
-    
-    /* .fish-chi{
-        top: 420px;
-        left: 340px;
-        width: 15vw;
-        position: absolute;
-        transform: scaleX(-1);
-    }
-    
-    .fish-bic{
-        top: 310px;
-        right: 200px;
-        width: 15vw;
-        position: absolute;
-    }
-
-    .content-9{
-        height: 16vw;
-        width: 35vw;
-        left: 200px;
-        top: 200px;
-    }
-    
-    .content-10{
-        height: 20w;
-        width: 40vw;
-        left: 730px;
-        top: 110px;
-    } */
-}
 
 /* FOR Destop 1280*720 */
 @media (max-width: 1280px){
@@ -1914,7 +1726,7 @@ a:link {
         right: -60px;
     }
     .fish-rainbow{
-        width: 15vw!important;
+        width: 15vw;
         left: 300px;
         top: 450px;
     }
@@ -2053,10 +1865,18 @@ a:link {
         left: 730px;
         top: 110px;
     }
+    .next-lvl{
+        bottom: 75px;
+        position: absolute;
+    }
+    .back-to-basic{
+        bottom: 5px;
+        position: absolute;
+    }
 }
 
 /* For 1024*768 */
-@media (max-width: 1024px){
+/* @media (max-width: 1024px){
     .purple{
         width: 150px!important;
         left: -10px;
@@ -2242,14 +2062,23 @@ a:link {
         left: 550px;
         top: 150px;
     }
-}
+} */
 
 /* For 767*481 */
-@media (max-width: 767px){
+/* @media (max-width: 767px){
 
+    .fishname{
+        font-size: 28px;
+    }
+    .text-fish{
+        font-size: 12px;
+    }
+    .link-fish{
+        font-size: 10px;
+    }
     .test-goto{
-        width: 220px;
-        height: 15px;
+        width: 30vw;
+        left: 530px;
         position: absolute;
         top: -10px;
     }
@@ -2309,22 +2138,20 @@ a:link {
     .fish-head{
         width: 15vw;
         left: 550px;
-        top: 350px;
-        
+        top: 280px;
     }
-
     .content{
-        height: 30vw;
-        width: 50vw;
-        left: 0px;
-        top: 80px;
+        height: 21vw;
+        width: 45vw;
+        left: 10px;
+        top: 150px;
     }
 
     .content-2{
-        height: 32vw;
+        height: 22vw;
         width: 50vw;
-        left: 390px;
-        top: 92px;
+        left: 375px;
+        top: 100px;
     }
 
     .fish-ovi{
@@ -2448,7 +2275,9 @@ a:link {
         top: 93px;
         font-size: 2px;
     }
-}
+} */
+
+
 
 /* รอลบได้เลย */
 
