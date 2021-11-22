@@ -819,9 +819,22 @@ button:hover {
     background-size: 100% 100%;
     
 }
+#story9{
+    background: url(img/bg/desktop/save\ parrotfish.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
 .story7_text{
     color: 4BA4A0;
     font-size: 24;
+}
+.story9_text{
+    color: white;
+    font-size: 16px;
+
 }
 .orange-text{
     font-size: 56px;
