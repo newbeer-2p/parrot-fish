@@ -13,6 +13,9 @@ window.onscroll = function() {
     let text2_in_main3 = document.querySelector("#text2-in-main4");
     let parrot_in_main3 = document.querySelector("#parrot-in-main3");
     let img_parrot_main = document.querySelector("#img-parrot-main");
+    let story5 = document.querySelector("#story5");
+    let pla_story = document.querySelector("#pla-story");
+    let img_pla = document.querySelector("#img-pla");
     
     if (main3.offsetTop != 0 && scrollY >= main3.offsetTop) {
         parrot_in_main3.dataset.show = "1";
@@ -35,6 +38,22 @@ window.onscroll = function() {
         img_parrot_main.dataset.play = "0";
         pic_click.dataset.play = "0";
     }
+    
+    if (story5.offsetTop != 0 && scrollY >= story5.offsetTop+200) {
+        pla_story.dataset.show = "1";
+        let swY = scrollY -story5.offsetTop-200;
+        if(swY >= 0){
+            pla_story.style.setProperty("--swY", swY)
+        }
+        else{
+            pla_story.style.setProperty("--swY", 0)
+        }
+    }
+    else if (story5.offsetTop != 0) {
+        // pla_story.dataset.show = "0";
+        pla_story.style.setProperty("--swY", 0)
+    }
+
 }
 
 function goto(page) {
@@ -104,4 +123,21 @@ function loading(){
     window.setTimeout(() => {
         loading.dataset.show = "0";
     }, 1000)
+
 }
+
+let x = 1;
+function changeText() {
+    var y = document.getElementById("change");
+    var z = document.getElementById("change2");
+    var b = document.getElementById("change3");
+    if (x == 1) {
+        y.innerHTML = "";
+        b.innerHTML = "";
+        z.innerHTML = "ปลานกแก้วได้แต่เศร้าใจ <br> อาศัยอยู่ที่นี่คนเดียวต่อไป <br>..................";
+        x++;
+    } else if(x == 2){
+        openPage("story9");
+        goto("story9");
+    }
+} 

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body data-mode="more" class="font-kanit">
+<body data-mode="main" class="font-kanit">
     <div id="loading" data-show="0">
         <div>
             <div class="loading-logo">
@@ -177,7 +177,7 @@
         
 <!-- เริ่มต้น ส่วนของบูม -->
 <div class="page" id="story5" data-show="1">
-    <div class="page-content" style="padding-top: 150px;">
+    <div class="story-content" style="top: 15vw;">
         <span class="story5_text">
             <span class="orange-text">ทันใดนั้น</span>
             <br>มีนกนางนวลบินมาจับเจ้าปลา
@@ -186,38 +186,36 @@
         </span>
     </div>
     <div class="nok">
-        <span class="text-white-22">แอ๊ก แอ๊ก</span>
-        <img src="img/element/นกนางนวย.png">
+        <img style="width:40vh; transform: scaleX(-1);" src="img/element/นกนางนวย.png">
     </div>
-    <div id="" class="pla" data-show="0" data-play="0">
-        <span class="text-white-22">อ้ากกกก</span>
-        <img src="img/parrot_fish/Main_Parrot_Fish.png">
+    <div id="pla-story" class="pla" data-show="0">
+        <img id="img-pla" style="width:30vh; transform: scaleX(-1); " src="img/parrot_fish/Main_Parrot_Fish.png" onclick="changeText()">
     </div>
-    <div class="page-content" style="padding-top: 800px;">
+    <div class="story-content" style="bottom: 50vw;">
         <span class="story5_text">
-            <div style="font-size: 32px;">“ ปล่อยฉันนะ</div>
+            <div style="font-size: 24px;">“ ปล่อยฉันนะ “</div>
             <br>ปลานกแก้วดิ้นจนหลุด
             <br>และร่วงหล่นลงสู่พื้นทะเล
         </span>
     </div>
 </div>
 <div class="page" id="story6" data-show="1">
-    <div class="page-content" style="padding-top:150px ;">
+    <div class="story-content" style="--b:25vw;">
         <span class="story7_text">
-            <div style="font-size: 32px;">จ๋อม!</div>
+            <span style="font-size: 24px;">จ๋อม!</span><br>
             เสียงปลานกแก้วตกลงน้ำ
         </span>
     </div>
 </div>
 <div class="page" id="story7" data-show="1">
-    <div class="page-content" style="padding-top:150px ;">
-        <span class="story5_text">
+    <div class="story-content" style="--b:-70vh;">
+        <span class="story9_text">
             “ ได้กลับบ้านแล้ว รีบไปหาทุกคนดีกว่า “
             <br>ปลานกแก้วว่ายน้ำกลับแนวปะการัง
         </span>
     </div>
-    <div class="page-content" style="padding-top:450px ;">
-        <span class="story5_text">
+    <div class="story-content" style="--b:0vw;">
+        <span class="story9_text">
             ระหว่างทางกลับบ้าน<br>
             ปลานกแก้วแปลกใจ<br>
             เพื่อนๆ หายไปไหนกันหมด?
@@ -225,35 +223,42 @@
     </div>
 </div>
 <div class="page" id="story8" data-show="1">
-    <div class="page-content" style="padding-top:250px ;">
-        <span class="story5_text">
-            <div style="font-size: 32px;">“ อะไรกันเนี่ย “</div>
-            ปลานกแก้วถึงบ้านแล้ว
-            แต่ปะการังสีสดใสทั้งหลาย
-            ตอนนี้กลับกลายเป็น <span style="color: black;">สีหม่นหมอง</span>
+    <div class="story-content" style="bottom:65vh;">
+        <span class="story9_text">
+            <div id="change" >“ อะไรกันเนี่ย “</div>
+            <div id="change2">ปลานกแก้วถึงบ้านแล้ว<br>
+                แต่ปะการังสีสดใสทั้งหลาย<br>
+                ตอนนี้กลับกลายเป็น
+                <span id="change3" style="color: black;">สีหม่นหมอง</span>
+            </div> 
         </span>
     </div>
-    <div class="dead1" style="--b:35vh;--l:0vw;--z:0;"><img src="img/element/ตาย1.png"></div>
-    <div class="dead1" style="--b:10vh;--l:-1vw;--z:0;"><img src="img/element/ตาย1.png"></div>
-    <div class="dead1" style="--b:12vh;--l:15vw;--z:0;"><img src="img/element/ตาย1.png"></div>
-    <div class="dead1" style="--b:2vh;--l:70vw;--z:1;"><img src="img/element/ตาย1.png"></div>
-    <div class="dead2" style="--b:20vh;--l:13vw;--z:1;"><img src="img/element/ตาย2.png"></div>
-    <div class="dead2" style="--b:7vh;--l:65vw;--z:1;"><img src="img/element/ตาย2.png"></div>
-    <div class="dead3" style="--b:25vh;--l:5vw;--z:1;"><img src="img/element/ตาย3.png"></div>
-    <div class="dead3" style="--b:8vh;--l:35vw;--z:1;"><img src="img/element/ตาย3.png"></div>
-    <div class="dead4" style="--b:1vh;--l:80vw;--z:1;"><img src="img/element/ตาย4.png"></div>
-    <div class="dead4" style="--b:30vh;--l:10vw;--z:0;"><img src="img/element/ตาย4.png"></div>
-    <div class="dead4" style="--b:10vh;--l:65vw;--z:0;"><img src="img/element/ตาย4.png"></div>
-    <div class="dead5" style="--b:23vh;--l:20vw;--z:1;"><img src="img/element/ตาย5.png"></div>
-    <div class="dead6" style="--b:25vh;--l:18vw;--z:0;"><img src="img/element/ตาย6.png"></div>
-    <div class="dead6" style="--b:2vh;--l:8vw;--z:0;"><img src="img/element/ตาย6.png"></div>
-    <div class="dead6" style="--b:4vh;--l:60vw;--z:0;"><img src="img/element/ตาย6.png"></div>
+    <div class="dead1" style="--b:17vw;--l:0vw;--z:0;"><img src="img/element/ตาย1.png"></div>
+    <div class="dead1" style="--b:5vw;--l:-1vw;--z:0;"><img src="img/element/ตาย1.png"></div>
+    <div class="dead1" style="--b:6vw;--l:15vw;--z:0;"><img src="img/element/ตาย1.png"></div>
+    <div class="dead1" style="--b:1vw;--l:70vw;--z:1;"><img src="img/element/ตาย1.png"></div>
+    <div class="dead2" style="--b:10vw;--l:13vw;--z:1;"><img src="img/element/ตาย2.png"></div>
+    <div class="dead2" style="--b:4vw;--l:65vw;--z:1;"><img src="img/element/ตาย2.png"></div>
+    <div class="dead3" style="--b:13vw;--l:5vw;--z:1;"><img src="img/element/ตาย3.png"></div>
+    <div class="dead3" style="--b:4vw;--l:35vw;--z:1;"><img src="img/element/ตาย3.png"></div>
+    <div class="dead4" style="--b:0vw;--l:80vw;--z:1;"><img src="img/element/ตาย4.png"></div>
+    <div class="dead4" style="--b:15vw;--l:10vw;--z:0;"><img src="img/element/ตาย4.png"></div>
+    <div class="dead4" style="--b:5vw;--l:65vw;--z:0;"><img src="img/element/ตาย4.png"></div>
+    <div class="dead5" style="--b:12vw;--l:20vw;--z:1;"><img src="img/element/ตาย5.png"></div>
+    <div class="dead6" style="--b:13vw;--l:18vw;--z:0;"><img src="img/element/ตาย6.png"></div>
+    <div class="dead6" style="--b:1vw;--l:8vw;--z:0;"><img src="img/element/ตาย6.png"></div>
+    <div class="dead6" style="--b:2vw;--l:60vw;--z:0;"><img src="img/element/ตาย6.png"></div>
 </div>
 <!-- จบ ส่วนของบูม -->
 
         <!-- เริ่มต้น ส่วนของเอิ้น -->
-        <div class="page" id="story9" data-show="1">
-            
+        <div class="page" id="story9" data-show="0">
+            <div class="page-content" style="padding-top:250px ;">
+                <span class="story9_text">
+                    <div style="font-size: 40px; color:#E25F08">#SAVEPARROTFISH</div>
+                    เพื่อปะการังที่สวยงามได้โปรดหยุดจับและกินเรา 
+                </span>
+            </div>
         </div>
         <!-- จบ ส่วนของเอิ้น -->
     </div>
@@ -261,9 +266,9 @@
     <div id="more-part" class="part">
        <div class="page" id="more1">
            <!-- เอาไว้กดข้ามหน้าเฉยๆ ทำเสร็จถึงลบ -->
-           <div class="test-goto">
+           <!-- <div class="test-goto">
                 <button class="btn-classics" onclick="gotopart('main')">กลับไปสู่หน้าหลัก</button>
-            </div>
+            </div> -->
             <!-- จบ -->
             <div class="header-fish-ja"><span class="text-org-36 mb-fs-48">วงศ์ปลานกแก้ว</span></div>
             <div class="fish-rainbow fish-l" data-show="1"><img src="img/parrot_fish/ชนิดปลานกแก้ว/Rainbow_Parrotfish_.png"></div>
@@ -300,7 +305,8 @@
                     ปลานกแก้วหัวโหนก มีอายุได้นานถึง 40 ปี 
                     เป็นปลานกแก้วที่มีขนาดใหญ่ที่สุด โดยมีขนาดใหญ่ได้ถึง 0 ถึง 0.3 เมตร 
                     และมีน้ำหนักได้มากถึง 46 กิโลกรัม มีลักษณะทั่วไปคล้ายปลานกขุนทองหัวโหนก</div>
-                    <div class="link-fish"><a href="img/parrot_fish/ชนิดปลานกแก้ว/รูปจริง/นกแก้วหัวโหนก.jpeg" target="_blank">(Tap to see real fish)</a></div>
+                    <div class="link-fish">
+                        <div class="link-fish"><a href="img/parrot_fish/ชนิดปลานกแก้ว/รูปจริง/นกแก้วหัวโหนก (1).jpeg" target="_blank">(Tap to see real fish)</a></div>
             </div>
 
             <div class="content-3" max-width="300px" data-show="0">
@@ -364,21 +370,29 @@
                 <div class="text-fish"><span class="fishname">Bicolor parrot</span><br>
                     เป็นปลาสายพันธุ์ที่อยู่ในวงศ์ Scaridae พบเฉพาะในทะเลแดง มักพบตัวอ่อนขนาดเล็กในปะการังหนาแน่นและในแหล่งอาศัยที่อุดมด้วยสาหร่าย</div>
                     <div class="link-fish"><a href="img/parrot_fish/ชนิดปลานกแก้ว/รูปจริง/Bicolor parrotfish (Cetoscarus bicolor).jpeg" target="_blank">(Tap to see real fish)</a></div>
-            </div>
-
-            <div class="next-lvl">
-                <button>ต่อไป</button>
-            </div>
-                
-            <div class="back-to-basic">
-                <button>กลับหน้าแรก</button>
-            </div>
+            </div>  
+        </div>
+        <div class="next-lvl">
+            <button>ต่อไป</button>
+        </div>
+            
+        <div class="back-to-basic">
+            <button onclick="gotopart('main')">กลับหน้าแรก</button>
         </div>
     </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+        function changeImage() {
+            var Image_Id = document.getElementById('img-pla');
+            if (Image_Id.src.match("img/parrot_fish/Main_Parrot_Fish.png")) {
+                Image_Id.src = "img/element/ปลาเทา.png";
+            }
+            else {
+                Image_Id.src = "img/parrot_fish/Main_Parrot_Fish.png";
+            }
+        } 
     </script>
 </body>
 
