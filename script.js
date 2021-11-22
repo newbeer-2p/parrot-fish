@@ -39,9 +39,15 @@ window.onscroll = function() {
         pic_click.dataset.play = "0";
     }
     
-    if (story5.offsetTop != 0 && scrollY >= story5.offsetTop) {
+    if (story5.offsetTop != 0 && scrollY >= story5.offsetTop+200) {
         pla_story.dataset.show = "1";
-        pla_story.style.setProperty("--swY", scrollY - story5.offsetTop)
+        let swY = scrollY -story5.offsetTop-200;
+        if(swY >= 0){
+            pla_story.style.setProperty("--swY", swY)
+        }
+        else{
+            pla_story.style.setProperty("--swY", 0)
+        }
     }
     else if (story5.offsetTop != 0) {
         // pla_story.dataset.show = "0";
@@ -119,3 +125,19 @@ function loading(){
     }, 1000)
 
 }
+
+let x = 1;
+function changeText() {
+    var y = document.getElementById("change");
+    var z = document.getElementById("change2");
+    var b = document.getElementById("change3");
+    if (x == 1) {
+        y.innerHTML = "";
+        b.innerHTML = "";
+        z.innerHTML = "ปลานกแก้วได้แต่เศร้าใจ <br> อาศัยอยู่ที่นี่คนเดียวต่อไป <br>..................";
+        x++;
+    } else if(x == 2){
+        openPage("story9");
+        goto("story9");
+    }
+} 
