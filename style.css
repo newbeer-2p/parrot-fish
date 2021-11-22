@@ -1456,6 +1456,43 @@ a:link {
         background-repeat: no-repeat;
         height: 100vh;
     }
+    .mid-store2{
+        width: 45vw;
+        left: 10vw;
+        top:20vh
+    }
+    .fishtank3{
+        width: 20vw;
+        left: 18vw;
+        top: 20vh;
+    }
+    .hand{
+        width: 65vw;
+        top:42vh;
+        left: 5vw;
+        z-index: 2;
+    }
+    .table{
+        width: 45vw;
+        bottom: 10vh;
+        right: 10vw;
+        z-index: 1;
+    }
+    .jarn1{
+        width: 25vw;
+        bottom: 30vh;
+        right: 7vw;
+    }
+    .jarn2{
+        width: 27vw;
+        bottom: 32vh;
+    }
+    .pa-yellow{
+        width: 80vw;
+        bottom: 18vh;
+        right: -10vw;
+        z-index: 3;
+    }
     #story3{
         background: url(img/bg/mobile/ในตลาด3.jpg);
         background-size: cover;
