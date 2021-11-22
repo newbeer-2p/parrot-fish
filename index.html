@@ -190,7 +190,7 @@
         <img src="img/element/นกนางนวย.png">
     </div>
     <div id="pla-story" class="pla" data-show="0">
-        <img id="img-pla" src="img/parrot_fish/Main_Parrot_Fish.png">
+        <img id="img-pla" src="img/parrot_fish/Main_Parrot_Fish.png" onclick="changeImage()">
     </div>
     <div class="page-content" style="padding-top: 800px;">
         <span class="story5_text">
@@ -254,7 +254,7 @@
         <div class="page" id="story9" data-show="1">
             <div class="page-content" style="padding-top:250px ;">
                 <span class="story9_text">
-                    <div style="font-size: 32px;">#SAVEPARROTFISH</div>
+                    <div style="font-size: 40px; color:#E25F08">#SAVEPARROTFISH</div>
                     เพื่อปะการังที่สวยงามได้โปรดหยุดจับและกินเรา 
                 </span>
             </div>
@@ -384,6 +384,15 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+        function changeImage() {
+            var Image_Id = document.getElementById('img-pla');
+            if (Image_Id.src.match("img/parrot_fish/Main_Parrot_Fish.png")) {
+                Image_Id.src = "img/element/ปลาเทา.png";
+            }
+            else {
+                Image_Id.src = "img/parrot_fish/Main_Parrot_Fish.png";
+            }
+        } 
     </script>
 </body>
 
