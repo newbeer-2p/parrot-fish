@@ -13,6 +13,9 @@ window.onscroll = function() {
     let text2_in_main3 = document.querySelector("#text2-in-main4");
     let parrot_in_main3 = document.querySelector("#parrot-in-main3");
     let img_parrot_main = document.querySelector("#img-parrot-main");
+    let story5 = document.querySelector("#story5");
+    let pla_story = document.querySelector("#pla-story");
+    let img_pla = document.querySelector("#img-pla");
     
     if (main3.offsetTop != 0 && scrollY >= main3.offsetTop) {
         parrot_in_main3.dataset.show = "1";
@@ -35,6 +38,16 @@ window.onscroll = function() {
         img_parrot_main.dataset.play = "0";
         pic_click.dataset.play = "0";
     }
+    
+    if (story5.offsetTop != 0 && scrollY >= story5.offsetTop) {
+        pla_story.dataset.show = "1";
+        pla_story.style.setProperty("--swY", scrollY - story5.offsetTop)
+    }
+    else if (story5.offsetTop != 0) {
+        // pla_story.dataset.show = "0";
+        pla_story.style.setProperty("--swY", 0)
+    }
+
 }
 
 function goto(page) {

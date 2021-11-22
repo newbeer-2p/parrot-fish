@@ -846,15 +846,16 @@ button:hover {
     left: 40vw;
     width: 30vh;
     animation:nokbin 0.1s infinite alternate;
-    z-index:1;
+    z-index:2;
 }
 .pla{
-    position: absolute;
-    top: 70vh;
+    --swY: -50;
+    width: 25vh;
     left: 45vw;
-    width: 20vh;
-    animation:PlaSpin 0.5s infinite linear;
-    
+    top: 50vh;
+    position: absolute;
+    transform: translate(0px, calc(var(--swY) * 1px)) scaleX(-1);
+    z-index: 1;
 }
 @keyframes nokbin{
     from{
@@ -876,42 +877,42 @@ button:hover {
 .dead1{
     bottom: var(--b);
     left: var(--l);
-    width: 22vh;
+    width: 11vw;
     position: absolute;
     z-index: var(--z);
 }
 .dead2{
     bottom: var(--b);
     left: var(--l);
-    width: 11vh;
+    width: 5vw;
     position: absolute;
     z-index: var(--z);
 }
 .dead3{
     bottom: var(--b);
     left: var(--l);
-    width: 12vh;
+    width: 6vw;
     position: absolute;
     z-index: var(--z);
 }
 .dead4{
     bottom: var(--b);
     left: var(--l);
-    width: 20vh;
+    width: 10vw;
     position: absolute;
     z-index: var(--z);
 }
 .dead5{
     bottom: var(--b);
     left: var(--l);
-    width: 20vh;
+    width: 10vw;
     position: absolute;
     z-index: var(--z);
 }
 .dead6{
     bottom: var(--b);
     left: var(--l);
-    width: 10vh;
+    width: 5vw;
     position: absolute;
     z-index: var(--z);
 }
