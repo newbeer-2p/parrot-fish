@@ -1540,42 +1540,42 @@ a:link {
         background-size: 100% 100%;
     }
     .dead1{
-        bottom: var(--b);
+        bottom: calc(var(--b)*2);
         left: var(--l);
         width: 22vw;
         position: absolute;
         z-index: var(--z);
     }
     .dead2{
-        bottom: var(--b);
+        bottom: calc(var(--b)*2);
         left: var(--l);
         width: 10vw;
         position: absolute;
         z-index: var(--z);
     }
     .dead3{
-        bottom: var(--b);
+        bottom: calc(var(--b)*2);
         left: var(--l);
         width: 12vw;
         position: absolute;
         z-index: var(--z);
     }
     .dead4{
-        bottom: var(--b);
+        bottom: calc(var(--b)*2);
         left: var(--l);
         width: 20vw;
         position: absolute;
         z-index: var(--z);
     }
     .dead5{
-        bottom: var(--b);
+        bottom: calc(var(--b)*2);
         left: var(--l);
         width: 20vw;
         position: absolute;
         z-index: var(--z);
     }
     .dead6{
-        bottom: var(--b);
+        bottom: calc(var(--b)*2);
         left: var(--l);
         width: 10vw;
         position: absolute;
