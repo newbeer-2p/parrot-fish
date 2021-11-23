@@ -1312,6 +1312,10 @@ button:hover {
     box-shadow: 2px 2px 8px black;
 }
 
+.close-btn:hover{
+    cursor: pointer;
+}
+
 a:link {
     text-decoration: none;
   }
@@ -1419,6 +1423,9 @@ a:link {
 .fishes{
     z-index: 3;
 }
+.fishes:hover{
+    cursor: pointer;
+}
 
 .fish-l{
     left: 10vw;
@@ -1452,6 +1459,8 @@ a:link {
 .btn-more{
     z-index: 5;
 }
+
+
 
 @media (min-width: 1200px) {
     #home {
