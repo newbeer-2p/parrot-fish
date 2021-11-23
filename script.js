@@ -190,21 +190,21 @@ function showContent(fish_no){
 let show_info = 1;
 
 function changeInfo(){
-    if (show_info >= 4){
+    if (show_info >= 5){
         show_info = 0;
     }
-        let fishes = document.querySelectorAll(".fishes");
-        let fish_contents = document.querySelectorAll(".fish-contents");
+    let fishes = document.querySelectorAll(".fishes");
+    let fish_contents = document.querySelectorAll(".fish-contents");
 
-        fishes.forEach((fish) => {
-            fish.dataset.show = "0";
-        })
-        fish_contents.forEach((content) => {
-            content.dataset.show = "0";
-        })
-        
-        fishes[2*show_info].dataset.show = "1";
-        fishes[2*show_info+1].dataset.show = "1";
-        show_info++;
+    fishes.forEach((fish) => {
+        fish.dataset.show = "0";
+    })
+    fish_contents.forEach((content) => {
+        content.dataset.show = "0";
+    })
+    
+    fishes[2*show_info].dataset.show = "1";
+    fishes[2*show_info+1].dataset.show = "1";
+    show_info++;
     
 }

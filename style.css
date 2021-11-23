@@ -1416,6 +1416,43 @@ a:link {
     display: none;
 }
 
+.fishes{
+    z-index: 3;
+}
+
+.fish-l{
+    left: 10vw;
+    top: 100vw;
+    width: 250px;
+}
+.fish-r{
+    right: 10vw;
+    top: 45vw;
+    width: 250px;
+}
+
+.content-2,
+.content-4,
+.content-6,
+.content-8,
+.content-10{
+    right: 10vw;
+    top: 15vw;
+}
+
+.content,
+.content-3,
+.content-5,
+.content-7,
+.content-9{
+    left: 10vw;
+    top: 65vw;
+}
+
+.btn-more{
+    z-index: 5;
+}
+
 @media (min-width: 1200px) {
     #home {
         background: url(img/bg/desktop/main1.png);
