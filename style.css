@@ -1263,7 +1263,7 @@ button:hover {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    z-index: 5;
+    z-index: 6;
     display: flex;
     justify-content: center;
     align-items: center;
