@@ -2058,7 +2058,7 @@ a:link {
         width: 100vw;
         position: absolute;
         bottom: 3vh;
-        /* left: 3vw; */
+        left: 3vw;
     }
     #sh2 {
         width: 200px;
