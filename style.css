@@ -1841,6 +1841,10 @@ a:link {
         bottom: 5px;
         position: absolute;
     }
+
+    .fish-contents{
+        height: 200px;
+    }
 }
 
 @media (max-width: 1120px) {
