@@ -581,6 +581,7 @@ button:hover {
     position: absolute;
     top: 1vh;
     right: 42vw;
+    z-index: 1;
 }
 
 .story2_text {
@@ -588,7 +589,7 @@ button:hover {
     font-size: 16px;
     position: absolute;
     top: 10vh;
-    right: 15vw;
+    right: 20vw;
 }
 
 .story3_text {
@@ -601,7 +602,7 @@ button:hover {
     font-size: 16px;
     position: absolute;
     bottom: 10vw;
-    left: 40vw;
+    /* left: 40vw; */
 }
 
 .fishing-ship {
@@ -1532,7 +1533,7 @@ a:link {
         font-size: 22px;
         position: absolute;
         bottom: 0vh;
-        left: 38vw;
+        /* left: 38vw; */
     }
     #story5 {
         background: url(img/bg/desktop/ตลาด5.jpg);
@@ -1961,7 +1962,8 @@ a:link {
         /*top: 1vh;
         right: 42vw;*/
         left: 0vw;
-        top: 10vh;
+        top: 5vh;
+        z-index: 1;
     }
     .red {
         font-size: 16px;
@@ -2056,7 +2058,7 @@ a:link {
         width: 100vw;
         position: absolute;
         bottom: 3vh;
-        left: 3vw;
+        /* left: 3vw; */
     }
     #sh2 {
         width: 200px;
