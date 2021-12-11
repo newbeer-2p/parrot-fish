@@ -208,3 +208,23 @@ function changeInfo(){
     show_info++;
     
 }
+
+function showNavbarText(cmd, order){
+    let navbar_text = document.querySelectorAll(".navbar-item-text")[order];
+    if (cmd === "show"){
+        navbar_text.dataset.show = "1";
+    }
+    else {
+        navbar_text.dataset.show = "0";
+    }
+}
+
+function toggleNavbar(){
+    let navbar = document.querySelector(".navbar-mobile");
+    if (navbar.dataset.open === "0"){
+        navbar.dataset.open = "1"
+    }
+    else{
+        navbar.dataset.open = "0"
+    }
+}

@@ -1871,6 +1871,22 @@ a:link {
     .fishing-ship>img {
         width: 125vh;
     }
+    
+    .navbar-item-text{
+        display: none;
+    }
+
+    .btnOpen{
+        display: flex!important;
+    }
+
+    .navbar{
+        display: none!important;
+    }
+
+    .navbar-mobile{
+        display: block!important;
+    }
 }
 
 @media (max-width: 500px) {
@@ -2593,4 +2609,94 @@ a:link {
     from {
         opacity: 0;
     }
+}
+
+.navbar, .navbar-mobile{
+    position: fixed;
+    z-index: 4;
+    right: -40px;
+    top: calc(50vh - 130px);
+    transition: .5s;
+}
+
+.navbar-mobile{
+    display: none;
+}
+
+.navbar-item{
+    transition: .5s;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    column-gap: 10px
+}
+
+.navbar-item > div{
+    display: inline-block;
+}
+
+.navbar-item-text{
+    width: 130px;
+    border: 2px solid var(--aqua);
+    border-radius: 20px;
+    background: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.navbar-item-text[data-show="0"]{
+    display: none;
+    opacity: 0;
+}
+
+.navbar-item-icon{
+    width: 80px;
+    height: 80px;
+    border: 4px solid var(--aqua);
+    border-radius: 50%;
+    background: var(--url);
+    background-size: cover;
+}
+
+.navbar .navbar-item:hover{
+    cursor: pointer;
+    transform: translateX(-60px);
+}
+
+.navbar-space{
+    height: 10px;
+}
+
+.btnOpen{
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -70px;
+    display: none;
+    transition: .5s;
+}
+
+.navbar-mobile[data-open="0"]{
+    transform: translateX(75px);
+}
+.navbar-mobile[data-open="1"]{
+    transform: translateX(-40px);
+}
+
+.btnOpen:hover{
+    cursor: pointer;
+}
+
+.btnOpen > div{
+    padding: 10px 17px;
+    color: black;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.btnOpen > div:hover{
+    box-shadow: 0 0 8px hsl(0, 100%, 0%, .25);
 }

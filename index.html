@@ -22,6 +22,41 @@
             </div>
         </div>
     </div>
+    <div class="navbar">
+        <div class="navbar-item" onclick="gotopart('main')" onmouseover="showNavbarText('show', 0)" onmouseout="showNavbarText('out', 0)">
+            <div class="navbar-item-text" data-show="0">หน้าหลัก</div>
+            <div class="navbar-item-icon selected" style="--url: url(img/bar/home.png)"></div>
+        </div>
+        <div class="navbar-space"></div>
+        <div class="navbar-item" onclick="gotopart('story')" onmouseover="showNavbarText('show', 1)" onmouseout="showNavbarText('out', 1)">
+            <div class="navbar-item-text" data-show="0">เนื้อเรื่อง</div>
+            <div class="navbar-item-icon" style="--url: url(img/bar/story.png)"></div>
+        </div>
+        <div class="navbar-space"></div>
+        <div class="navbar-item" onclick="gotopart('more')" onmouseover="showNavbarText('show', 2)" onmouseout="showNavbarText('out', 2)">
+            <div class="navbar-item-text" data-show="0">เรียนรู้เพิ่มเติม</div>
+            <div class="navbar-item-icon" style="--url: url(img/bar/more.png)"></div>
+        </div>
+    </div>
+    <div class="navbar-mobile" data-open="0">
+        <div class="btnOpen">
+            <div onclick="toggleNavbar()"><</div>
+        </div>
+        <div class="navbar-item" onclick="gotopart('main')">
+            <div class="navbar-item-text" data-show="0">หน้าหลัก</div>
+            <div class="navbar-item-icon selected" style="--url: url(img/bar/home.png)"></div>
+        </div>
+        <div class="navbar-space"></div>
+        <div class="navbar-item" onclick="gotopart('story')">
+            <div class="navbar-item-text" data-show="0">เนื้อเรื่อง</div>
+            <div class="navbar-item-icon" style="--url: url(img/bar/story.png)"></div>
+        </div>
+        <div class="navbar-space"></div>
+        <div class="navbar-item" onclick="gotopart('more')">
+            <div class="navbar-item-text" data-show="0">เรียนรู้เพิ่มเติม</div>
+            <div class="navbar-item-icon" style="--url: url(img/bar/more.png)"></div>
+        </div>
+    </div>
     <div id="main-part" class="part">
         <div id="pic-click" data-show="0">
             <img src="img/element/click.png">
