@@ -17,6 +17,7 @@ window.onscroll = function() {
     let img_pla = document.querySelector("#img-pla");
     let story8 = document.querySelector("#story8");
     let click_story8 = document.querySelector("#click-story8");
+    let story9 = document.querySelector("#story9");
     
     if (main3.offsetTop != 0 && scrollY >= main3.offsetTop) {
         parrot_in_main3.dataset.show = "1";
@@ -59,6 +60,13 @@ window.onscroll = function() {
     }
     else{
         click_story8.dataset.show = "0";
+    }
+    if (story9.offsetTop != 0 && scrollY+window_height*(2/3) >= story9.offsetTop){
+        document.getElementById("pla-story").style.display="none";
+
+    }
+    else{
+        document.getElementById("pla-story").style.display="block";
     }
 
 }
@@ -141,7 +149,7 @@ function changeText2() {
     } else if(x == 2){
         openPage("story9");
         goto("story9");
-        document.getElementById("pla-story").style.display = "none";
+        
     }
 } 
 

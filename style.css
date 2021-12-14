@@ -235,7 +235,7 @@ button,
 }
 
 .parrot-ani {
-    animation: dukdik 0.5s linear infinite, swim 8s linear infinite;
+    animation:  swim 8s linear infinite;
     animation-delay: -10s;
 }
 
@@ -259,10 +259,21 @@ button,
 
 @keyframes swim {
     0% {
-        left: 100vw;
+        left: 70vw;
+    }
+    49% {
+        transform: scaleX(1);
+    }
+    50% {
+        left: 20vw;
+        transform: scaleX(-1);
+    }
+    99% {
+        transform: scaleX(-1);
     }
     100% {
-        left: -50vw;
+        left: 80vw;
+        transform: scaleX(1);
     }
 }
 
