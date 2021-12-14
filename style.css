@@ -259,20 +259,20 @@ button,
 
 @keyframes swim {
     0% {
-        left: 70vw;
+        left: calc(90vw - 30vh);
     }
     49% {
         transform: scaleX(1);
     }
     50% {
-        left: 20vw;
+        left: 10vw;
         transform: scaleX(-1);
     }
     99% {
         transform: scaleX(-1);
     }
     100% {
-        left: 80vw;
+        left: calc(90vw - 30vh);
         transform: scaleX(1);
     }
 }
